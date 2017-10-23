@@ -27,6 +27,7 @@
 
 
     <link href="./template-fifacom_files/breakpoint-helper.css" rel="stylesheet" type="text/css">
+    <link href="./template-fifacom_files/grid-debug.css" rel="stylesheet" type="text/css">
 
 
 
@@ -74,7 +75,8 @@
 
 
     <script src="./template-fifacom_files/require-2.2.0.min.js.download" type="text/javascript"></script>
-    <script src="./template-fifacom_files/main.js.download" type="text/javascript"></script>
+    <script src="./template-fifacom_files/main.js" type="text/javascript"></script>
+    <!--<script src="../../../CompiledAssets/js/main.js" type="text/javascript"></script>-->
     <script src="./template-fifacom_files/picturefill.min.js.download" type="text/javascript" async=""></script>
 
     <link rel="prefetch" href="https://securepubads.g.doubleclick.net/static/3p_cookie.html">
@@ -224,8 +226,13 @@
 
 
             <ul class="nav navbar-nav navbar-right fi-icons-bar pull-right">
+                <li class="fi-icons-bar__search">
+                    <a href="#" data-dropdown="fi-site-header__dropdown__search">
+                        <svg class="fi-svg-icon icon-search"><use xlink:href="#icon-search"></use></svg>
+                    </a>
+                </li>
                 <li class="fi-icons-bar__login">
-                    <a href="https://www.fifa.com/theclub/">
+                    <a href="#" data-dropdown="fi-site-header__dropdown__login">
                         <svg class="fi-svg-icon icon-login"><use xlink:href="#icon-login"></use></svg>
                         <!--<i class="fi-icon fi-icon-login"></i>-->
                     </a>
@@ -246,198 +253,292 @@
         <div class="fi-site-header__dropdown-wrap">
             <div class="container-fluid">
                 <div class="fi-site-header__dropdown__main hidden">
-                    <div class="row">
 
-
-
-
-
-                        <div class="col-xs-12 fi-nav__lev1-wrap clearfix">
-                            <div class="fi-title-wrap ">
-                                <h5 class="fi-heading">
-                                    Main Topics
-                                </h5>
-                            </div>
-
-
-
-                            <ul class="nav navbar-nav fi-main-menu">
-                                <li>
-                                    <a href="#/worldcup/">
-                                        FIFA World Cup™
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="#/fifa-tournaments/">
-                                        FIFA Tournaments
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="#/live-scores/">
-                                        Live Scores
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="#/fifa-world-ranking/">
-                                        FIFA Ranking
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="#/womens-football/">
-                                        Women's Football
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="#/media/">
-                                        Media
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="#/associations/">
-                                        Associations
-                                    </a>
-                                </li>
-                            </ul>
-
+                    <div class="fi-nav__lev1-wrap clearfix">
+                        <div class="fi-title-wrap ">
+                            <h5 class="fi-heading">
+                                Main Topics
+                            </h5>
                         </div>
 
-                        <div class="col-xs-12 fi-nav__lev0-wrap">
-                            <div class="fi-title-wrap ">
-                                <h5 class="fi-heading">
-                                    FIFA Corporate
-                                </h5>
-                            </div>
 
 
-
-                            <ul class="nav navbar-nav fi-corporate-links">
-                                <li>
-                                    <a href="#/about-fifa/">
-                                        About FIFA
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="#/development/">
-                                        Development
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="#/governance/">
-                                        Governance
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="#/sustainability/">
-                                        Sustainability
-                                    </a>
-                                </li>
-                            </ul>
-
-                        </div>
-
-                        <!--<div class="col-xs-12 fi-nav__media-wrap">
-                            <div class="fi-title-wrap">
-                                <h5 class="fi-heading">
+                        <ul class="nav navbar-nav fi-main-menu">
+                            <li>
+                                <a href="#/worldcup/">
+                                    FIFA World Cup™
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#/fifa-tournaments/">
+                                    FIFA Tournaments
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#/live-scores/">
+                                    Live Scores
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#/fifa-world-ranking/">
+                                    FIFA Ranking
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#/womens-football/">
+                                    Women's Football
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#/media/">
                                     Media
-                                </h5>
-                            </div>
-
-
-
-                            <ul class="nav navbar-nav fi-media-menu">
-                                <li>
-                                    <a href="#/news/">
-                                        <i class="fi-icon fi-icon-news"></i>
-                                        <span class="fi-icon__label">News</span>
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="#/photos/">
-                                        <i class="fi-icon fi-icon-photos"></i>
-                                        <span class="fi-icon__label">Photos</span>
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="#/videos/">
-                                        <i class="fi-icon fi-icon-videos"></i>
-                                        <span class="fi-icon__label">Videos</span>
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="http://www.fifa.com/calendar/">
-                                        <i class="fi-icon fi-icon-calendar"></i>
-                                        <span class="fi-icon__label">Calendar</span>
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="http://store.fifa.com/">
-                                        <i class="fi-icon fi-icon-shop"></i>
-                                        <span class="fi-icon__label">Store</span>
-                                    </a>
-                                </li>
-                            </ul>
-
-                        </div>-->
-                        <!--<div class="col-xs-12 fi-site-header__dropdown__sub">
-                            <div class="row">
-                                <div class="col-xs-12 col-sm-6 fi-nav__social-menu-wrap">
-                                    <div class="fi-title-wrap">
-                                        <h5 class="fi-heading">
-                                            All Social Channels
-                                        </h5>
-                                    </div>
-
-
-
-                                    <ul class="nav navbar-nav fi-social-channels">
-                                        <li>
-                                            <a href="https://www.facebook.com/fifa" target="&#39;_blank&#39;">
-                                                <i class="fi-icon fi-icon-facebook"></i>
-                                                <span class="fi-icon__label">facebook</span>
-                                            </a>
-                                        </li>
-                                        <li>
-                                            <a href="https://twitter.com/FIFAcom" target="&#39;_blank&#39;">
-                                                <i class="fi-icon fi-icon-twitter"></i>
-                                                <span class="fi-icon__label">twitter</span>
-                                            </a>
-                                        </li>
-                                        <li>
-                                            <a href="https://www.youtube.com/FIFATV" target="&#39;_blank&#39;">
-                                                <i class="fi-icon fi-icon-youtube"></i>
-                                                <span class="fi-icon__label">youtube</span>
-                                            </a>
-                                        </li>
-                                        <li>
-                                            <a href="http://instagram.com/fifaworldcup" target="&#39;_blank&#39;">
-                                                <i class="fi-icon fi-icon-instagram"></i>
-                                                <span class="fi-icon__label">instagram</span>
-                                            </a>
-                                        </li>
-                                        <li>
-                                            <a href="https://www.linkedin.com/company/fifa" target="&#39;_blank&#39;">
-                                                <i class="fi-icon fi-icon-linkedin"></i>
-                                                <span class="fi-icon__label">linkedin</span>
-                                            </a>
-                                        </li>
-                                    </ul>
-
-                                </div>
-                            </div>
-                        </div>-->
-
-
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#/associations/">
+                                    Associations
+                                </a>
+                            </li>
+                        </ul>
 
                     </div>
 
+                    <div class="fi-nav__lev0-wrap">
+                        <div class="fi-title-wrap ">
+                            <h5 class="fi-heading">
+                                FIFA Corporate
+                            </h5>
+                        </div>
+
+
+
+                        <ul class="nav navbar-nav fi-corporate-links">
+                            <li>
+                                <a href="#/about-fifa/">
+                                    About FIFA
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#/development/">
+                                    Development
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#/governance/">
+                                    Governance
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#/sustainability/">
+                                    Sustainability
+                                </a>
+                            </li>
+                        </ul>
+
+                    </div>
+
+                    <!--<div class="col-xs-12 fi-nav__media-wrap">
+                        <div class="fi-title-wrap">
+                            <h5 class="fi-heading">
+                                Media
+                            </h5>
+                        </div>
+
+
+
+                        <ul class="nav navbar-nav fi-media-menu">
+                            <li>
+                                <a href="#/news/">
+                                    <i class="fi-icon fi-icon-news"></i>
+                                    <span class="fi-icon__label">News</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#/photos/">
+                                    <i class="fi-icon fi-icon-photos"></i>
+                                    <span class="fi-icon__label">Photos</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#/videos/">
+                                    <i class="fi-icon fi-icon-videos"></i>
+                                    <span class="fi-icon__label">Videos</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="http://www.fifa.com/calendar/">
+                                    <i class="fi-icon fi-icon-calendar"></i>
+                                    <span class="fi-icon__label">Calendar</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="http://store.fifa.com/">
+                                    <i class="fi-icon fi-icon-shop"></i>
+                                    <span class="fi-icon__label">Store</span>
+                                </a>
+                            </li>
+                        </ul>
+
+                    </div>-->
+                    <!--<div class="col-xs-12 fi-site-header__dropdown__sub">
+                        <div class="row">
+                            <div class="col-xs-12 col-sm-6 fi-nav__social-menu-wrap">
+                                <div class="fi-title-wrap">
+                                    <h5 class="fi-heading">
+                                        All Social Channels
+                                    </h5>
+                                </div>
+
+
+
+                                <ul class="nav navbar-nav fi-social-channels">
+                                    <li>
+                                        <a href="https://www.facebook.com/fifa" target="&#39;_blank&#39;">
+                                            <i class="fi-icon fi-icon-facebook"></i>
+                                            <span class="fi-icon__label">facebook</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="https://twitter.com/FIFAcom" target="&#39;_blank&#39;">
+                                            <i class="fi-icon fi-icon-twitter"></i>
+                                            <span class="fi-icon__label">twitter</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="https://www.youtube.com/FIFATV" target="&#39;_blank&#39;">
+                                            <i class="fi-icon fi-icon-youtube"></i>
+                                            <span class="fi-icon__label">youtube</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="http://instagram.com/fifaworldcup" target="&#39;_blank&#39;">
+                                            <i class="fi-icon fi-icon-instagram"></i>
+                                            <span class="fi-icon__label">instagram</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="https://www.linkedin.com/company/fifa" target="&#39;_blank&#39;">
+                                            <i class="fi-icon fi-icon-linkedin"></i>
+                                            <span class="fi-icon__label">linkedin</span>
+                                        </a>
+                                    </li>
+                                </ul>
+
+                            </div>
+                        </div>
+                    </div>-->
+
                 </div>
                 <div class="fi-site-header__dropdown__sectionheader hidden">
-
                     <i class="fi-icon fi-icon-close"></i>
                 </div>
                 <div class="fi-site-header__dropdown__login is-notlogged hidden">
 
+                    <!--<div class="fi-teaser" data-lang="">
+                        <div class="measure-placeholder">
+                            TEASER
+                        </div>
+                    </div>
+                    <div class="fi-activities" data-lang="">
+                        <h3 class="fi-login__title">@translateHelper.GetText("fifa_activities")</h3>
+                        <div class="fi-activities_activity">
+                            <img class="fi-activities_img" src="http://placehold.it/80x80" />
+                            <a href="#" class="fi-activities_link"><span class="fi-activities_name">@translateHelper.GetText("fifa_predictor_officialName")</span></a>
+                        </div>
+                        <div class="fi-activities_activity">
+                            <img class="fi-activities_img" src="http://placehold.it/80x80" />
+                            <a href="#" class="fi-activities_link"><span class="fi-activities_name">@translateHelper.GetText("fifa_trivia_officialName")</span></a>
+                        </div>
+                        <div class="fi-activities__button">
+                            <a href="#" class="btn btn-primary">
+                                @translateHelper.GetText("fifa_discover")<i class="fi-icon fi-icon-next"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="fi-login fi-login--not-logged " data-lang="">
+                        <div class="fi-login__social">
+                            <h3 class="fi-login__title">fifa_theclub</h3>
+                            <p class="fi-login__desc">fifa_loginSocial</p>
+                            <div class="fi-login__btn-wrap form-group">
+                                <form>
+                                    <button id="#" type="submit" class="btn fi-btn fi-btn__fb">
+                                        <i class="fi-icon fi-icon-facebook-square"></i>
+                                    </button>
+                                    <button id="#" type="submit" class="btn fi-btn fi-btn__tw">
+                                        <i class="fi-icon fi-icon-twitter"></i>
+                                    </button>
+                                    <button id="#" type="submit" class="btn fi-btn fi-btn__gplus">
+                                        <i class="fi-icon fi-icon-google-plus"></i>
+                                    </button>
+                                </form>
+                            </div>
+                        </div>
+                        <p class="fi-login__or">or</p>
 
+                        <div class="fi-login__form">
+                            <p class="fi-login__desc">the club login</p>
+                            <div class="fi-login__theclub form-group">
+                                <form>
+                                    <input id="#" name="c_email" maxlength="100" data-required="true" data-validate="loginUserValidate" class="form-control " title="email" type="email" placeholder="email">
+                                    <input id="cp_password" name="c_password" maxlength="50" title="password" data-required="true" data-validate="loginPasswordValidate" class="form-control" type="password" placeholder="password">
+                                    <div id="#" class="fi-login__stay">
+                                        <span class="fi-checkbox">
+                                            <input type="checkbox" name="c_rememberMe" id="c_rememberMe">
+                                            <label for="c_rememberMe">stay logged in</label>
+                                        </span>
+                                    </div>
+                                    <a class="fi-login__forgot" href="#">forgot your password</a>
+                                    <div class="fi-login__submit-wrap" id="#">
+                                        <input class="btn btn-primary fi-btn--submit" value="sign in" type="submit">
+                                    </div>
+                                </form>
+                            </div>
+                            <div class="fi-login__not-member form-group">
+                                <form>
+                                    <p class="fi-login__not-member__title">not a member</p>
+                                    <p class="fi-login__not-member__desc">not a member description</p>
+                                    <div class="fi-login__submit-wrap" id="#">
+                                        <input class="btn btn-primary fi-btn--submit" value="register" type="submit">
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="fi-login fi-login--logged" data-lang="">
+                        <h3 class="fi-login__title">your profile</h3>
+                        <div class="fi-login__user">
+                            <img class="fi-login__avatar" src="https://img.fifa.com/userdata/205/953/avatar_80.png">
+                            <div class="fi-login__userinfo">
+                                <h4 class="fi-login__username">username</h4>
+                                <a class="fi-login__edit" href="/account/profile/edit.htmx">edit<i class="fi-icon fi-icon-next"></i></a>
+                            </div>
+                        </div>
+                        <div class="fi-login__submit-wrap" id="#">
+                            <input class="btn btn-primary fi-btn--submit" value="logout" type="submit">
+                        </div>
+                        <p class="fi-login__desc">social</p>
+                        <div class="fi-login__btn-wrap form-group">
+                            <form>
+                                <button id="#" type="submit" class="btn fi-btn fi-btn__fb">
+                                    <i class="fi-icon fi-icon-facebook-square"></i>
+                                </button>
+                                <button id="#" type="submit" class="btn fi-btn fi-btn__tw">
+                                    <i class="fi-icon fi-icon-twitter"></i>
+                                </button>
+                                <button id="#" type="submit" class="btn fi-btn fi-btn__gplus">
+                                    <i class="fi-icon fi-icon-google-plus"></i>
+                                </button>
+                            </form>
+                        </div>
+                    </div>-->
+                    <div class="row">
+                        <div class="col-xs-12 fi-search__wrap">
+                            <div class="fi-title-wrap">
+                                <h5 class="fi-heading">login</h5>
+                            </div>
+                        </div>
+                    </div>
+                    <i class="fi-icon fi-icon-close"></i>
 
                 </div>
                 <div class="fi-site-header__dropdown__search hidden">
@@ -474,6 +575,11 @@
             <ul class="nav navbar-nav fi-main-menu">
                 <li>
                     <a href="/worldcup/">
+                        Explore FIFA
+                    </a>
+                </li>
+                <li>
+                    <a href="/worldcup/">
                         FIFA World Cup™
                     </a>
                 </li>
@@ -482,29 +588,15 @@
                         FIFA Tournaments
                     </a>
                 </li>
-                <li>
-                    <a href="/live-scores/">
-                        Live Scores
-                    </a>
-                </li>
+
                 <li>
                     <a href="/fifa-world-ranking/">
                         FIFA Ranking
                     </a>
                 </li>
                 <li>
-                    <a href="/womens-football/">
-                        Women's Football
-                    </a>
-                </li>
-                <li>
-                    <a href="/media/">
-                        Media
-                    </a>
-                </li>
-                <li>
                     <a href="/associations/">
-                        Associations
+                        The Best
                     </a>
                 </li>
             </ul>
@@ -724,5 +816,34 @@
             </div>
         </div>
     </footer>
+    <!--<script type="text/javascript">
+        $(document).ready(function () {
+
+            var params = Utility.toQuerParams(window.location.href);
+            alert(params);
+            if (params.css_gridview === "true") {
+                $("#gridTable").removeClass("hidden");
+            }
+
+        });
+    </script>-->
+    <table id="gridTable" class="fi-grid-layout hidden">
+        <tbody>
+            <tr>
+                <td class="col-xs-1"><span>1</span></td>
+                <td class="col-xs-1"><span>2</span></td>
+                <td class="col-xs-1"><span>3</span></td>
+                <td class="col-xs-1"><span>4</span></td>
+                <td class="col-xs-1"><span>5</span></td>
+                <td class="col-xs-1"><span>6</span></td>
+                <td class="col-xs-1"><span>7</span></td>
+                <td class="col-xs-1"><span>8</span></td>
+                <td class="col-xs-1"><span>9</span></td>
+                <td class="col-xs-1"><span>10</span></td>
+                <td class="col-xs-1"><span>11</span></td>
+                <td class="col-xs-1"><span>12</span></td>
+            </tr>
+        </tbody>
+    </table>
 </body>
 </html>
