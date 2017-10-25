@@ -12,6 +12,10 @@
     position: relative;
     overflow: hidden;
     padding: 15px 0 5px;
+    display: none;
+    &--active {
+      display: block;
+    }
     .row {
       margin-bottom: 0;
     }
