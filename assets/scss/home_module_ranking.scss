@@ -1,56 +1,8 @@
-$xs: "(max-width:479px)";
-$s: "(min-width: 480px)";
-$m: "(min-width: 768px)";
-$l: "(min-width: 1024px)";
-$xl: "(min-width: 1280px)";
-$xxl: "(min-width: 1440px)";
-
+@import "common";
 .fifa-ranking-section {
   .container-fluid {
-    max-width: 1200px;
+    //max-width: 1200px;
     background: transparent !important;
-  }
-  &__title {
-    border-left: 1px solid #ccc;
-    padding-left: 10px;
-    font-size: 24px;
-    line-height: 1.1;
-    text-transform: uppercase;
-    font-weight: 600;
-    color:#000;
-    padding-top: 30px;
-    margin-bottom: 30px;
-    @media #{$m} {
-      font-size: 30px;
-      padding-top: 45px;
-      margin-bottom: 35px;
-      margin-left: 30px;
-      padding-left: 15px;
-    }
-    @media #{$l} {
-      font-size: 35px;
-      padding-top: 60px;
-      margin-bottom: 40px;
-      margin-left: 90px;
-      padding-left: 20px;
-    }
-    img {
-      float: left;
-      margin-right: 10px;
-      margin-top: 2px;
-      height: 46px;
-      display: inline-block;
-      @media #{$m} {
-        height: 56px;
-        margin-top: 5px;
-        margin-right: 12px;
-      }
-      @media #{$l} {
-        height: 64px;
-        margin-top: 7px;
-        margin-right: 15px;
-      }
-    }
   }
   &__content {
     background-size: cover;
