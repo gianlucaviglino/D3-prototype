@@ -681,17 +681,7 @@
         <!---------------------------------------------------------------------------------
         E N D  V I D E O S
         --------------------------------------------------------------------------------->
-        <!---------------------------------------------------------------------------------
-        P H O T O S
-        --------------------------------------------------------------------------------->
-        <section class="section">
-
-            <h1>PHOTOS</h1>
-
-        </section>
-        <!---------------------------------------------------------------------------------
-        E N D  P H O T O S
-        --------------------------------------------------------------------------------->
+       
         <!---------------------------------------------------------------------------------
         P L A Y E R   S T O R Y
         --------------------------------------------------------------------------------->
@@ -721,81 +711,202 @@
 
 
         <!---------------------------------------------------------------------------------
-        F I F A   R A N K I N G
+        PHOTOS
         --------------------------------------------------------------------------------->
 
-        <link href="./assets/css/home_module_ranking.css" rel="stylesheet" type="text/css">
-
-        <section class="fifa-ranking-section">
+        <link href="./assets/css/home_module_photos.css" rel="stylesheet" type="text/css">
+        <link href="./assets/css/owl.carousel.min.css" rel="stylesheet" type="text/css">
+        <link href="./assets/css/jquery.fancybox.min.css" rel="stylesheet" type="text/css">
+        <script src="./assets/js/owl.carousel.min.js"></script>
+        <script src="./assets/js/jquery.fancybox.min.js"></script>
+        <section class="latest-photos-section">
           <div class="container-fluid">
-            <h1 class="fifa-ranking-section__title"><img src="media/module-ranking/ranking-coca-cola-fifa-logo.png" /> Fifa/Coca Cola<br />World Ranking</h1>
-          </div>
-          <div class="fifa-ranking-section__content">
-            <span class="fifa-ranking-section__content__bg">
-              <picture>
-                <source srcset="media/module-ranking/ranking-bg-1440-630.jpg" media="(min-width: 1280px)" />
-                <source srcset="media/module-ranking/ranking-bg-1024-576.jpg" media="(min-width: 1024px)" />
-                <source srcset="media/module-ranking/ranking-bg-768-432.jpg" media="(min-width: 768px)" />
-                <img srcset="media/module-ranking/ranking-bg-580-580.jpg" />
-              </picture>
-            </span>
-            <div class="container-fluid">
+            <header class="home-module-header">
               <div class="row">
-                <div class="col-sm-6 col-md-7 col-lg-8">
-                  <div class="fifa-ranking-section__main">
-                    <div class="fifa-ranking-section__main__wrap">
-                      <p><strong>+47</strong> Cape Verde Islands<br />bounce back in style</p>
-                      <a href="#" class="fifa-ranking-section__main__button">
-                        Discover
-                        <svg width="12px" height="9px" viewBox="0 0 12 9" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-                          <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
-                            <polyline stroke="#FFFFFF" stroke-linecap="round" stroke-linejoin="round" transform="translate(9.157898, 4.455394) scale(-1, 1) translate(-9.157898, -4.455394) " points="11.315796 0.799987793 7 4.50757596 11.315796 8.11079998"></polyline>
-                            <path d="M10.5,4.5 L1.44461486,4.5" stroke="#FFFFFF" stroke-linecap="square"></path>
-                          </g>
-                        </svg>
-                      </a>
-                    </div>
+                <div class="col-xs-6 col-md-8 col-md-offset-1">
+                  <h1 class="home-module-header__title">Latest<br />Photos</h1>
+                </div>
+                <div class="col-xs-6 col-md-3">
+                  <div class="home-module-header__carousel-nav pull-right">
+                    <span class="home-module-header__carousel-nav__button home-module-header__carousel-nav__button--prev">
+                      <svg viewBox="0 0 9 13" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                        <polyline points="7.49645714 2 2 6.72186348 7.49645714 11.3108122" stroke-width="2.5" fill="none" fill-rule="evenodd" stroke-linecap="round" stroke-linejoin="round" stroke="#2E89CF"></polyline>
+                      </svg>
+                    </span>
+                    <span class="home-module-header__carousel-nav__state"><strong>01</strong> / 03</span>
+                    <span class="home-module-header__carousel-nav__button home-module-header__carousel-nav__button--next">
+                      <svg viewBox="0 0 9 13" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                        <polyline points="2 2 7.49645714 6.72186348 2 11.3108122" stroke-width="2.5" fill="none" fill-rule="evenodd" stroke-linecap="round" stroke-linejoin="round" stroke="#2E89CF"></polyline>
+                      </svg>
+                    </span>
                   </div>
                 </div>
-                <div class="col-sm-6 col-md-5 col-lg-4">
-                  <ul class="list-unstyled fifa-ranking-section__ranking">
-                    <li class="fifa-ranking-section__ranking__item">
-                      <span class="fifa-ranking-section__ranking__item__number">#1</span>
-                      <img src="http://img.fifa.com/images/flags/4/ger.png" class="fifa-ranking-section__ranking__item__flag" />
-                      <span class="fifa-ranking-section__ranking__item__name">Germany</span>
-                      <img src="media/module-ranking/ranking-arrow-01.svg" class="fifa-ranking-section__ranking__item__arrow" />
-                      <span class="fifa-ranking-section__ranking__item__points">PTS. <strong>1606</strong></span>
-                    </li>
-                    <li class="fifa-ranking-section__ranking__item">
-                      <span class="fifa-ranking-section__ranking__item__number">#2</span>
-                      <img src="http://img.fifa.com/images/flags/4/bra.png" class="fifa-ranking-section__ranking__item__flag" />
-                      <span class="fifa-ranking-section__ranking__item__name">Brazil</span>
-                      <img src="media/module-ranking/ranking-arrow-02.svg" class="fifa-ranking-section__ranking__item__arrow" />
-                      <span class="fifa-ranking-section__ranking__item__points">PTS. <strong>1590</strong></span>
-                    </li>
-                    <li class="fifa-ranking-section__ranking__item">
-                      <span class="fifa-ranking-section__ranking__item__number">#3</span>
-                      <img src="http://img.fifa.com/images/flags/4/por.png" class="fifa-ranking-section__ranking__item__flag" />
-                      <span class="fifa-ranking-section__ranking__item__name">Portugal</span>
-                      <img src="media/module-ranking/ranking-arrow-01.svg" class="fifa-ranking-section__ranking__item__arrow" />
-                      <span class="fifa-ranking-section__ranking__item__points">PTS. <strong>1386</strong></span>
-                    </li>
-                    <li class="fifa-ranking-section__ranking__item fifa-ranking-section__ranking__item--active">
-                      <span class="fifa-ranking-section__ranking__item__number">#67</span>
-                      <img src="http://img.fifa.com/images/flags/4/cpv.png" class="fifa-ranking-section__ranking__item__flag" />
-                      <span class="fifa-ranking-section__ranking__item__name">Cape Verde Island</span>
-                      <img src="media/module-ranking/ranking-arrow-01.svg" class="fifa-ranking-section__ranking__item__arrow" />
-                      <span class="fifa-ranking-section__ranking__item__points">PTS. <strong>1035</strong></span>
-                    </li>
-                  </ul>
-                </div>
               </div>
-            </div>
+            </header>
+          </div>
+          <div class="latest-photos-section__galleries owl-carousel">
+            <ul class="latest-photos-section__gallery list-unstyled">
+              <li class="latest-photos-section__gallery__item latest-photos-section__gallery__item--big">
+                <a href="http://placehold.it/1400x800" data-fancybox="latest-photos" class="latest-photos-section__gallery__item__image">
+                  <picture>
+                    <source srcset="http://placehold.it/800x800" media="(min-width: 1440px)" />
+                    <img srcset="http://placehold.it/580x580" />
+                  </picture>
+                </a>
+              </li>
+              <li class="latest-photos-section__gallery__item latest-photos-section__gallery__item--wide">
+                <a href="http://placehold.it/1400x800" data-fancybox="latest-photos" class="latest-photos-section__gallery__item__image">
+                  <picture>
+                    <source srcset="http://placehold.it/768x432" media="(min-width: 1024px)" />
+                    <source srcset="http://placehold.it/320x180" media="(min-width: 768px)" />
+                    <img srcset="http://placehold.it/220x220" />
+                  </picture>
+                </a>
+              </li>
+              <li class="latest-photos-section__gallery__item">
+                <a href="http://placehold.it/1400x800" data-fancybox="latest-photos" class="latest-photos-section__gallery__item__image">
+                  <picture>
+                    <source srcset="http://placehold.it/580x580" media="(min-width: 1024px)" />
+                    <img srcset="http://placehold.it/220x220" />
+                  </picture>
+                </a>
+              </li>
+              <li class="latest-photos-section__gallery__item">
+                <a href="http://placehold.it/1400x800" data-fancybox="latest-photos" class="latest-photos-section__gallery__item__image">
+                  <picture>
+                    <source srcset="http://placehold.it/580x580" media="(min-width: 1024px)" />
+                    <img srcset="http://placehold.it/220x220" />
+                  </picture>
+                </a>
+              </li>
+              <li class="latest-photos-section__gallery__item latest-photos-section__gallery__item--wide">
+                <a href="http://placehold.it/1400x800" data-fancybox="latest-photos" class="latest-photos-section__gallery__item__image">
+                  <picture>
+                    <source srcset="http://placehold.it/768x432" media="(min-width: 1024px)" />
+                    <source srcset="http://placehold.it/320x180" media="(min-width: 768px)" />
+                    <img srcset="http://placehold.it/220x220" />
+                  </picture>
+                </a>
+              </li>
+            </ul>
+            <ul class="latest-photos-section__gallery list-unstyled">
+              <li class="latest-photos-section__gallery__item latest-photos-section__gallery__item--big">
+                <a href="http://placehold.it/1400x800" data-fancybox="latest-photos" class="latest-photos-section__gallery__item__image">
+                  <picture>
+                    <source srcset="http://placehold.it/800x800" media="(min-width: 1440px)" />
+                    <img srcset="http://placehold.it/580x580" />
+                  </picture>
+                </a>
+              </li>
+              <li class="latest-photos-section__gallery__item latest-photos-section__gallery__item--wide">
+                <a href="http://placehold.it/1400x800" data-fancybox="latest-photos" class="latest-photos-section__gallery__item__image">
+                  <picture>
+                    <source srcset="http://placehold.it/768x432" media="(min-width: 1024px)" />
+                    <source srcset="http://placehold.it/320x180" media="(min-width: 768px)" />
+                    <img srcset="http://placehold.it/220x220" />
+                  </picture>
+                </a>
+              </li>
+              <li class="latest-photos-section__gallery__item">
+                <a href="http://placehold.it/1400x800" data-fancybox="latest-photos" class="latest-photos-section__gallery__item__image">
+                  <picture>
+                    <source srcset="http://placehold.it/580x580" media="(min-width: 1024px)" />
+                    <img srcset="http://placehold.it/220x220" />
+                  </picture>
+                </a>
+              </li>
+              <li class="latest-photos-section__gallery__item">
+                <a href="http://placehold.it/1400x800" data-fancybox="latest-photos" class="latest-photos-section__gallery__item__image">
+                  <picture>
+                    <source srcset="http://placehold.it/580x580" media="(min-width: 1024px)" />
+                    <img srcset="http://placehold.it/220x220" />
+                  </picture>
+                </a>
+              </li>
+              <li class="latest-photos-section__gallery__item latest-photos-section__gallery__item--wide">
+                <a href="http://placehold.it/1400x800" data-fancybox="latest-photos" class="latest-photos-section__gallery__item__image">
+                  <picture>
+                    <source srcset="http://placehold.it/768x432" media="(min-width: 1024px)" />
+                    <source srcset="http://placehold.it/320x180" media="(min-width: 768px)" />
+                    <img srcset="http://placehold.it/220x220" />
+                  </picture>
+                </a>
+              </li>
+            </ul>
+            <ul class="latest-photos-section__gallery list-unstyled">
+              <li class="latest-photos-section__gallery__item latest-photos-section__gallery__item--big">
+                <a href="http://placehold.it/1400x800" data-fancybox="latest-photos" class="latest-photos-section__gallery__item__image">
+                  <picture>
+                    <source srcset="http://placehold.it/800x800" media="(min-width: 1440px)" />
+                    <img srcset="http://placehold.it/580x580" />
+                  </picture>
+                </a>
+              </li>
+              <li class="latest-photos-section__gallery__item latest-photos-section__gallery__item--wide">
+                <a href="http://placehold.it/1400x800" data-fancybox="latest-photos" class="latest-photos-section__gallery__item__image">
+                  <picture>
+                    <source srcset="http://placehold.it/768x432" media="(min-width: 1024px)" />
+                    <source srcset="http://placehold.it/320x180" media="(min-width: 768px)" />
+                    <img srcset="http://placehold.it/220x220" />
+                  </picture>
+                </a>
+              </li>
+              <li class="latest-photos-section__gallery__item">
+                <a href="http://placehold.it/1400x800" data-fancybox="latest-photos" class="latest-photos-section__gallery__item__image">
+                  <picture>
+                    <source srcset="http://placehold.it/580x580" media="(min-width: 1024px)" />
+                    <img srcset="http://placehold.it/220x220" />
+                  </picture>
+                </a>
+              </li>
+              <li class="latest-photos-section__gallery__item">
+                <a href="http://placehold.it/1400x800" data-fancybox="latest-photos" class="latest-photos-section__gallery__item__image">
+                  <picture>
+                    <source srcset="http://placehold.it/580x580" media="(min-width: 1024px)" />
+                    <img srcset="http://placehold.it/220x220" />
+                  </picture>
+                </a>
+              </li>
+              <li class="latest-photos-section__gallery__item latest-photos-section__gallery__item--wide">
+                <a href="http://placehold.it/1400x800" data-fancybox="latest-photos" class="latest-photos-section__gallery__item__image">
+                  <picture>
+                    <source srcset="http://placehold.it/768x432" media="(min-width: 1024px)" />
+                    <source srcset="http://placehold.it/320x180" media="(min-width: 768px)" />
+                    <img srcset="http://placehold.it/220x220" />
+                  </picture>
+                </a>
+              </li>
+            </ul>
           </div>
         </section>
+        <script>
+          $(function() {
+            $.fancybox.defaults.buttons = [
+              'slideShow',
+              'fullScreen',
+              'close'
+            ];
+            $('.latest-photos-section__galleries').owlCarousel({
+              loop:true,
+              margin:0,
+              nav:false,
+              items:1
+            }).on("changed.owl.carousel", function(event) {
+              var numItem = event.page.index + 1;
+              if (numItem < 10) numItem = "0"+numItem;
+              $(".home-module-header__carousel-nav__state strong").text(numItem);
+            });
+            $(".home-module-header__carousel-nav__button--prev").on("click", function() {
+              $(".latest-photos-section__galleries").trigger('prev.owl.carousel');
+            });
+            $(".home-module-header__carousel-nav__button--next").on("click", function() {
+              $(".latest-photos-section__galleries").trigger('next.owl.carousel');
+            });
+          });
+        </script>
 
         <!---------------------------------------------------------------------------------
-        E N D  F I F A   R A N K I N G
+        PHOTOS
         --------------------------------------------------------------------------------->
 
 
