@@ -106,6 +106,10 @@
   height: 100%;
 }
 
+.latest-photos-section__gallery__item--right {
+  float: right;
+}
+
 @media (min-width: 768px) {
   .home-module-header {
     padding-top: 45px;

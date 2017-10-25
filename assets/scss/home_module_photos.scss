@@ -37,6 +37,9 @@
           height: 100%;
         }
       }
+      &--right {
+        float: right;
+      }
       &--wide {
         @media #{$m} {
           width: 40%;
