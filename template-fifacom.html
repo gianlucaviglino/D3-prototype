@@ -1153,7 +1153,7 @@
         <!-- *****************************************************************************
         E N D  P H O T O S
         ***************************************************************************** -->
-        <!-- *********************************************************************
+       <!-- *********************************************************************
         F I F A   R A N K I N G
         ********************************************************************* -->
 
@@ -1177,8 +1177,8 @@
                                     <li data-value="women" class="fifa-ranking-section__nav__item"><a href="#">Women's Ranking</a></li>
                                 </ul>
                                 <select class="fifa-ranking-section__nav fi-select">
-                                    <option class="fifa-ranking-section__nav__item fifa-ranking-section__nav__item--active" value="Men's Ranking" data-abbr="Men's Ranking">Men's Ranking</option>
-                                    <option class="fifa-ranking-section__nav__item" value="Women's Ranking" data-abbr="Women's Ranking">Women's Ranking</option>
+                                    <option value="Men's Ranking" data-abbr="Men's Ranking">Men's Ranking</option>
+                                    <option value="Women's Ranking" data-abbr="Women's Ranking">Women's Ranking</option>
                                 </select>
                                 <span class="fi-select__caret">
                                     <svg class="fi-svg-icon icon-triangle"><use xlink:href="#icon-triangle"></use></svg>
@@ -1341,7 +1341,7 @@
             </div>
         </section>
         <script>
-            $(".fifa-ranking-section__nav a, .fifa-ranking-section__nav option").on("click", function () {
+            $(".fifa-ranking-section__nav a").on("click", function () {
                 index = $(this).parent().index();
                 $(".fifa-ranking-section__nav__item").removeClass("fifa-ranking-section__nav__item--active");
                 $(this).parent().addClass("fifa-ranking-section__nav__item--active");
