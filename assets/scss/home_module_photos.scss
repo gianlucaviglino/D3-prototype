@@ -1,0 +1,47 @@
+@import "common";
+.latest-photos-section {
+  overflow: hidden;
+  &__gallery {
+    overflow: hidden;
+    margin: 0 -.5px;
+    height: 50vw;
+    @media #{$m} {
+      height: 40vw;
+    }
+    &__item {
+      float: left;
+      width: 25%;
+      height: 50%;
+      border: .5px solid #fff;
+      overflow: hidden;
+      @media #{$m} {
+        width: 20%;
+        height: 50%;
+      }
+      &__image {
+        display: block;
+        height: 100%;
+        position: relative;
+        img {
+          display: block;
+          object-fit: cover;
+          width: 100%;
+          height: 100%;
+        }
+      }
+      &--big {
+        width: 50%;
+        height: 100%;
+        @media #{$m} {
+          width: 40%;
+          height: 100%;
+        }
+      }
+      &--wide {
+        @media #{$m} {
+          width: 40%;
+        }
+      }
+    }
+  }
+}
