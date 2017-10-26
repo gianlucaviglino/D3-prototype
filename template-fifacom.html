@@ -917,7 +917,10 @@
         <script src="./assets/js/jquery.fancybox.min.js"></script>
         <section class="latest-photos-section">
           <div class="container-fluid">
-            <header class="home-module-header">
+                <div class="fi-module__header">
+                    <h1 class="fifa-section__title">LATEST<br />PHOTOS</h1>
+                </div>
+            <!-- <header class="home-module-header">
               <div class="row">
                 <div class="col-xs-6 col-md-8 col-md-offset-1">
                   <h1 class="home-module-header__title">Latest<br />Photos</h1>
@@ -938,7 +941,7 @@
                   </div>
                 </div>
               </div>
-            </header>
+            </header> -->
           </div>
           <div class="latest-photos-section__galleries owl-carousel">
             <ul class="latest-photos-section__gallery list-unstyled">
@@ -1130,13 +1133,14 @@
             $('.latest-photos-section__galleries').owlCarousel({
               loop:true,
               margin:0,
-              nav:false,
+              nav:true,
               items:1
-            }).on("changed.owl.carousel", function(event) {
-              var numItem = event.page.index + 1;
-              if (numItem < 10) numItem = "0"+numItem;
-              $(".home-module-header__carousel-nav__state strong").text(numItem);
-            });
+            })
+            // .on("changed.owl.carousel", function(event) {
+            //   var numItem = event.page.index + 1;
+            //   if (numItem < 10) numItem = "0"+numItem;
+            //   $(".home-module-header__carousel-nav__state strong").text(numItem);
+            // });
             $(".home-module-header__carousel-nav__button--prev").on("click", function() {
               $(".latest-photos-section__galleries").trigger('prev.owl.carousel');
             });
