@@ -272,6 +272,10 @@
     height: 300px;
   }
 
+  .fifa-ranking-section__content:before {
+    background: rgba(0, 0, 0, 0.3);
+  }
+
   .fifa-ranking-section__main {
     font-size: 26px;
   }
