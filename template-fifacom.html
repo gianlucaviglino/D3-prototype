@@ -937,182 +937,214 @@
         <link href="./assets/css/home_module_ranking.css" rel="stylesheet" type="text/css">
 
         <section class="fifa-ranking-section">
-          <div class="container-fluid">
-            <header class="home-module-header">
-              <div class="row">
-                <div class="col-md-8 col-md-offset-1">
-                  <h1 class="home-module-header__title"><img src="media/module-ranking/ranking-coca-cola-fifa-logo.png" /> Fifa/Coca Cola<br />World Ranking</h1>
-                </div>
-                <div class="col-md-3">
-                  <ul class="fifa-ranking-section__nav list-unstyled">
-                    <li class="fifa-ranking-section__nav__item fifa-ranking-section__nav__item--active"><a href="#">Man</a></li>
-                    <li class="fifa-ranking-section__nav__item"><a href="#">Woman</a></li>
-                  </ul>
-                </div>
-              </div>
-            </header>
-          </div>
-          <div class="fifa-ranking-section__content fifa-ranking-section__content--active">
-            <span class="fifa-ranking-section__content__bg">
-              <picture>
-                <source srcset="media/module-ranking/ranking-bg-1440-630.jpg" media="(min-width: 1280px)" />
-                <source srcset="media/module-ranking/ranking-bg-1024-576.jpg" media="(min-width: 1024px)" />
-                <source srcset="media/module-ranking/ranking-bg-768-432.jpg" media="(min-width: 768px)" />
-                <img srcset="media/module-ranking/ranking-bg-580-580.jpg" />
-              </picture>
-            </span>
             <div class="container-fluid">
-              <div class="row">
-                <div class="col-sm-6 col-md-7 col-lg-8">
-                  <div class="fifa-ranking-section__main">
-                    <div class="fifa-ranking-section__main__wrap">
-                      <p><strong>+47</strong> Cape Verde Islands<br />bounce back in style</p>
-                      <a href="#" class="fifa-ranking-section__main__button">
-                        Discover
-                        <svg width="12px" height="9px" viewBox="0 0 12 9" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-                          <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
-                            <polyline stroke="#FFFFFF" stroke-linecap="round" stroke-linejoin="round" transform="translate(9.157898, 4.455394) scale(-1, 1) translate(-9.157898, -4.455394) " points="11.315796 0.799987793 7 4.50757596 11.315796 8.11079998"></polyline>
-                            <path d="M10.5,4.5 L1.44461486,4.5" stroke="#FFFFFF" stroke-linecap="square"></path>
-                          </g>
-                        </svg>
-                      </a>
+                <header class="home-module-header">
+                    <div class="row">
+                        <div class="col-sm-9 col-md-10 ">
+                            <h1 class="home-module-header__title fifa-section__title"><img src="media/module-ranking/ranking-coca-cola-fifa-logo.png" /> Fifa/Coca Cola<br />World Ranking</h1>
+                        </div>
+                        <div class="col-sm-3 col-md-2">
+
+                            <div class="dropdown fi-select-wrapper fi-select__ranking " data-lang="en-GB">
+                                <button class="btn btn-select dropdown-toggle" type="button" data-toggle="dropdown">
+                                    <span class="fi-selected-item">Men's Ranking</span>
+                                </button>
+                                <ul class="fifa-ranking-section__nav dropdown-menu">
+                                    <li data-value="men-ranking" class="fifa-ranking-section__nav__item fifa-ranking-section__nav__item--active">
+                                        <a href="#">Men's Ranking</a>
+                                    </li>
+                                    <li data-value="women-ranking" class="fifa-ranking-section__nav__item"><a href="#">Women's Ranking</a></li>
+                                </ul>
+                                <select class="fifa-ranking-section__nav fi-select">
+                                    <option value="men-ranking" data-abbr="Men's Ranking">Men's Ranking</option>
+                                    <option value="women-ranking" data-abbr="Women's Ranking">Women's Ranking</option>
+                                </select>
+                                <span class="fi-select__caret">
+                                    <svg class="fi-svg-icon icon-triangle"><use xlink:href="#icon-triangle"></use></svg>
+                                </span>
+                            </div>
+
+                            <!--<ul class="fifa-ranking-section__nav list-unstyled fi-ranking-switch">
+                                <li class="fifa-ranking-section__nav__item fifa-ranking-section__nav__item--active"><a href="#">Men's Ranking</a></li>
+                                <li class="fifa-ranking-section__nav__item"><a href="#">Women's Ranking</a></li>
+                            </ul>-->
+                        </div>
                     </div>
-                  </div>
-                </div>
-                <div class="col-sm-6 col-md-5 col-lg-4">
-                  <ul class="list-unstyled fifa-ranking-section__ranking">
-                    <li class="fifa-ranking-section__ranking__item">
-                      <span class="fifa-ranking-section__ranking__item__number">#1</span>
-                      <img src="http://img.fifa.com/images/flags/4/ger.png" class="fifa-ranking-section__ranking__item__flag" />
-                      <span class="fifa-ranking-section__ranking__item__name">Germany</span>
-                      <svg viewBox="0 0 29 29" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" class="fifa-ranking-section__ranking__item__arrow">
-                        <path d="M16.4930915,8.7716369 L26.0341645,17.2525907 L26.0341645,17.2525907 C26.4469473,17.6195087 26.484128,18.2515811 26.11721,18.6643638 C25.9274426,18.8778522 25.6554385,19 25.3698007,19 L3.63019932,19 L3.63019932,19 C3.07791457,19 2.63019932,18.5522847 2.63019932,18 C2.63019932,17.7143622 2.75234712,17.4423581 2.96583548,17.2525907 L12.5069085,8.7716369 L12.5069085,8.7716369 C13.6435665,7.76127418 15.3564335,7.76127418 16.4930915,8.7716369 Z" stroke="none" stroke-width="1" fill-rule="evenodd" fill="#73BE19"></path>
-                      </svg>
-                      <span class="fifa-ranking-section__ranking__item__points">PTS. <strong>1606</strong></span>
-                    </li>
-                    <li class="fifa-ranking-section__ranking__item">
-                      <span class="fifa-ranking-section__ranking__item__number">#2</span>
-                      <img src="http://img.fifa.com/images/flags/4/bra.png" class="fifa-ranking-section__ranking__item__flag" />
-                      <span class="fifa-ranking-section__ranking__item__name">Brazil</span>
-                      <svg viewBox="0 0 29 29" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" class="fifa-ranking-section__ranking__item__arrow">
-                        <g stroke="none" stroke-width="1" fill-rule="evenodd" fill="#999894">
-                          <path d="M16.4930915,2.7716369 L26.0341645,11.2525907 L26.0341645,11.2525907 C26.4469473,11.6195087 26.484128,12.2515811 26.11721,12.6643638 C25.9274426,12.8778522 25.6554385,13 25.3698007,13 L3.63019932,13 L3.63019932,13 C3.07791457,13 2.63019932,12.5522847 2.63019932,12 C2.63019932,11.7143622 2.75234712,11.4423581 2.96583548,11.2525907 L12.5069085,2.7716369 L12.5069085,2.7716369 C13.6435665,1.76127418 15.3564335,1.76127418 16.4930915,2.7716369 Z"></path>
-                          <path d="M16.4930915,17.7716369 L26.0341645,26.2525907 L26.0341645,26.2525907 C26.4469473,26.6195087 26.484128,27.2515811 26.11721,27.6643638 C25.9274426,27.8778522 25.6554385,28 25.3698007,28 L3.63019932,28 L3.63019932,28 C3.07791457,28 2.63019932,27.5522847 2.63019932,27 C2.63019932,26.7143622 2.75234712,26.4423581 2.96583548,26.2525907 L12.5069085,17.7716369 L12.5069085,17.7716369 C13.6435665,16.7612742 15.3564335,16.7612742 16.4930915,17.7716369 Z" transform="translate(14.500000, 22.000000) scale(1, -1) translate(-14.500000, -22.000000) "></path>
-                        </g>
-                      </svg>
-                      <span class="fifa-ranking-section__ranking__item__points">PTS. <strong>1590</strong></span>
-                    </li>
-                    <li class="fifa-ranking-section__ranking__item">
-                      <span class="fifa-ranking-section__ranking__item__number">#3</span>
-                      <img src="http://img.fifa.com/images/flags/4/por.png" class="fifa-ranking-section__ranking__item__flag" />
-                      <span class="fifa-ranking-section__ranking__item__name">Portugal</span>
-                      <svg viewBox="0 0 29 29" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" class="fifa-ranking-section__ranking__item__arrow">
-                        <path d="M16.4930915,8.7716369 L26.0341645,17.2525907 L26.0341645,17.2525907 C26.4469473,17.6195087 26.484128,18.2515811 26.11721,18.6643638 C25.9274426,18.8778522 25.6554385,19 25.3698007,19 L3.63019932,19 L3.63019932,19 C3.07791457,19 2.63019932,18.5522847 2.63019932,18 C2.63019932,17.7143622 2.75234712,17.4423581 2.96583548,17.2525907 L12.5069085,8.7716369 L12.5069085,8.7716369 C13.6435665,7.76127418 15.3564335,7.76127418 16.4930915,8.7716369 Z" stroke="none" stroke-width="1" fill-rule="evenodd" fill="#73BE19"></path>
-                      </svg>
-                      <span class="fifa-ranking-section__ranking__item__points">PTS. <strong>1386</strong></span>
-                    </li>
-                    <li class="fifa-ranking-section__ranking__item fifa-ranking-section__ranking__item--active">
-                      <span class="fifa-ranking-section__ranking__item__number">#67</span>
-                      <img src="http://img.fifa.com/images/flags/4/cpv.png" class="fifa-ranking-section__ranking__item__flag" />
-                      <span class="fifa-ranking-section__ranking__item__name">Cape Verde Island</span>
-                      <svg viewBox="0 0 29 29" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" class="fifa-ranking-section__ranking__item__arrow">
-                        <path d="M16.4930915,8.7716369 L26.0341645,17.2525907 L26.0341645,17.2525907 C26.4469473,17.6195087 26.484128,18.2515811 26.11721,18.6643638 C25.9274426,18.8778522 25.6554385,19 25.3698007,19 L3.63019932,19 L3.63019932,19 C3.07791457,19 2.63019932,18.5522847 2.63019932,18 C2.63019932,17.7143622 2.75234712,17.4423581 2.96583548,17.2525907 L12.5069085,8.7716369 L12.5069085,8.7716369 C13.6435665,7.76127418 15.3564335,7.76127418 16.4930915,8.7716369 Z" stroke="none" stroke-width="1" fill-rule="evenodd" fill="#73BE19"></path>
-                      </svg>
-                      <span class="fifa-ranking-section__ranking__item__points">PTS. <strong>1035</strong></span>
-                    </li>
-                  </ul>
-                </div>
-              </div>
+                </header>
             </div>
-          </div>
-          <div class="fifa-ranking-section__content">
-            <span class="fifa-ranking-section__content__bg">
-              <picture>
-                <source srcset="media/module-ranking/ranking-bg-1440-630-2.jpg" media="(min-width: 1280px)" />
-                <source srcset="media/module-ranking/ranking-bg-1024-576-2.jpg" media="(min-width: 1024px)" />
-                <source srcset="media/module-ranking/ranking-bg-768-432-2.jpg" media="(min-width: 768px)" />
-                <img srcset="media/module-ranking/ranking-bg-580-580-2.jpg" />
-              </picture>
-            </span>
-            <div class="container-fluid">
-              <div class="row">
-                <div class="col-sm-6 col-md-7 col-lg-8">
-                  <div class="fifa-ranking-section__main">
-                    <div class="fifa-ranking-section__main__wrap">
-                      <p><strong>+30</strong> Australia<br />bounce back in style</p>
-                      <a href="#" class="fifa-ranking-section__main__button">
-                        Discover
-                        <svg width="12px" height="9px" viewBox="0 0 12 9" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-                          <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
-                            <polyline stroke="#FFFFFF" stroke-linecap="round" stroke-linejoin="round" transform="translate(9.157898, 4.455394) scale(-1, 1) translate(-9.157898, -4.455394) " points="11.315796 0.799987793 7 4.50757596 11.315796 8.11079998"></polyline>
-                            <path d="M10.5,4.5 L1.44461486,4.5" stroke="#FFFFFF" stroke-linecap="square"></path>
-                          </g>
-                        </svg>
-                      </a>
+            <div id="men-ranking" class="fifa-ranking-section__content fifa-ranking-section__content--active">
+                <span class="fifa-ranking-section__content__bg">
+                    <picture>
+                        <source srcset="media/module-ranking/ranking-bg-1440-630.jpg" media="(min-width: 1280px)" />
+                        <source srcset="media/module-ranking/ranking-bg-1024-576.jpg" media="(min-width: 1024px)" />
+                        <source srcset="media/module-ranking/ranking-bg-768-432.jpg" media="(min-width: 768px)" />
+                        <img srcset="media/module-ranking/ranking-bg-580-580.jpg" />
+                    </picture>
+                </span>
+                <div class="container-fluid">
+                    <div class="row">
+                        <div class="col-sm-6 col-md-7 col-lg-8">
+                            <div class="fifa-ranking-section__main">
+                                <div class="fifa-ranking-section__main__wrap">
+                                    <p><strong>+47</strong> Cape Verde Islands<br />bounce back in style</p>
+                                    <a href="#" class="fifa-ranking-section__main__button">
+                                        Discover
+                                        <svg width="12px" height="9px" viewBox="0 0 12 9" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                                            <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                                                <polyline stroke="#FFFFFF" stroke-linecap="round" stroke-linejoin="round" transform="translate(9.157898, 4.455394) scale(-1, 1) translate(-9.157898, -4.455394) " points="11.315796 0.799987793 7 4.50757596 11.315796 8.11079998"></polyline>
+                                                <path d="M10.5,4.5 L1.44461486,4.5" stroke="#FFFFFF" stroke-linecap="square"></path>
+                                            </g>
+                                        </svg>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-6 col-md-5 col-lg-4">
+                            <ul class="list-unstyled fifa-ranking-section__ranking">
+                                <li class="fifa-ranking-section__ranking__item">
+                                    <span class="fifa-ranking-section__ranking__item__number">#1</span>
+                                    <img src="http://img.fifa.com/images/flags/4/ger.png" class="fifa-ranking-section__ranking__item__flag" />
+                                    <span class="fifa-ranking-section__ranking__item__name">Germany</span>
+                                    <svg viewBox="0 0 29 29" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" class="fifa-ranking-section__ranking__item__arrow">
+                                        <path d="M16.4930915,8.7716369 L26.0341645,17.2525907 L26.0341645,17.2525907 C26.4469473,17.6195087 26.484128,18.2515811 26.11721,18.6643638 C25.9274426,18.8778522 25.6554385,19 25.3698007,19 L3.63019932,19 L3.63019932,19 C3.07791457,19 2.63019932,18.5522847 2.63019932,18 C2.63019932,17.7143622 2.75234712,17.4423581 2.96583548,17.2525907 L12.5069085,8.7716369 L12.5069085,8.7716369 C13.6435665,7.76127418 15.3564335,7.76127418 16.4930915,8.7716369 Z" stroke="none" stroke-width="1" fill-rule="evenodd" fill="#73BE19"></path>
+                                    </svg>
+                                    <span class="fifa-ranking-section__ranking__item__points">PTS. <strong>1606</strong></span>
+                                </li>
+                                <li class="fifa-ranking-section__ranking__item">
+                                    <span class="fifa-ranking-section__ranking__item__number">#2</span>
+                                    <img src="http://img.fifa.com/images/flags/4/bra.png" class="fifa-ranking-section__ranking__item__flag" />
+                                    <span class="fifa-ranking-section__ranking__item__name">Brazil</span>
+                                    <svg viewBox="0 0 29 29" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" class="fifa-ranking-section__ranking__item__arrow">
+                                        <g stroke="none" stroke-width="1" fill-rule="evenodd" fill="#999894">
+                                            <path d="M16.4930915,2.7716369 L26.0341645,11.2525907 L26.0341645,11.2525907 C26.4469473,11.6195087 26.484128,12.2515811 26.11721,12.6643638 C25.9274426,12.8778522 25.6554385,13 25.3698007,13 L3.63019932,13 L3.63019932,13 C3.07791457,13 2.63019932,12.5522847 2.63019932,12 C2.63019932,11.7143622 2.75234712,11.4423581 2.96583548,11.2525907 L12.5069085,2.7716369 L12.5069085,2.7716369 C13.6435665,1.76127418 15.3564335,1.76127418 16.4930915,2.7716369 Z"></path>
+                                            <path d="M16.4930915,17.7716369 L26.0341645,26.2525907 L26.0341645,26.2525907 C26.4469473,26.6195087 26.484128,27.2515811 26.11721,27.6643638 C25.9274426,27.8778522 25.6554385,28 25.3698007,28 L3.63019932,28 L3.63019932,28 C3.07791457,28 2.63019932,27.5522847 2.63019932,27 C2.63019932,26.7143622 2.75234712,26.4423581 2.96583548,26.2525907 L12.5069085,17.7716369 L12.5069085,17.7716369 C13.6435665,16.7612742 15.3564335,16.7612742 16.4930915,17.7716369 Z" transform="translate(14.500000, 22.000000) scale(1, -1) translate(-14.500000, -22.000000) "></path>
+                                        </g>
+                                    </svg>
+                                    <span class="fifa-ranking-section__ranking__item__points">PTS. <strong>1590</strong></span>
+                                </li>
+                                <li class="fifa-ranking-section__ranking__item">
+                                    <span class="fifa-ranking-section__ranking__item__number">#3</span>
+                                    <img src="http://img.fifa.com/images/flags/4/por.png" class="fifa-ranking-section__ranking__item__flag" />
+                                    <span class="fifa-ranking-section__ranking__item__name">Portugal</span>
+                                    <svg viewBox="0 0 29 29" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" class="fifa-ranking-section__ranking__item__arrow">
+                                        <path d="M16.4930915,8.7716369 L26.0341645,17.2525907 L26.0341645,17.2525907 C26.4469473,17.6195087 26.484128,18.2515811 26.11721,18.6643638 C25.9274426,18.8778522 25.6554385,19 25.3698007,19 L3.63019932,19 L3.63019932,19 C3.07791457,19 2.63019932,18.5522847 2.63019932,18 C2.63019932,17.7143622 2.75234712,17.4423581 2.96583548,17.2525907 L12.5069085,8.7716369 L12.5069085,8.7716369 C13.6435665,7.76127418 15.3564335,7.76127418 16.4930915,8.7716369 Z" stroke="none" stroke-width="1" fill-rule="evenodd" fill="#73BE19"></path>
+                                    </svg>
+                                    <span class="fifa-ranking-section__ranking__item__points">PTS. <strong>1386</strong></span>
+                                </li>
+                                <li class="fifa-ranking-section__ranking__item fifa-ranking-section__ranking__item--active">
+                                    <span class="fifa-ranking-section__ranking__item__number">#67</span>
+                                    <img src="http://img.fifa.com/images/flags/4/cpv.png" class="fifa-ranking-section__ranking__item__flag" />
+                                    <span class="fifa-ranking-section__ranking__item__name">Cape Verde Island</span>
+                                    <svg viewBox="0 0 29 29" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" class="fifa-ranking-section__ranking__item__arrow">
+                                        <path d="M16.4930915,8.7716369 L26.0341645,17.2525907 L26.0341645,17.2525907 C26.4469473,17.6195087 26.484128,18.2515811 26.11721,18.6643638 C25.9274426,18.8778522 25.6554385,19 25.3698007,19 L3.63019932,19 L3.63019932,19 C3.07791457,19 2.63019932,18.5522847 2.63019932,18 C2.63019932,17.7143622 2.75234712,17.4423581 2.96583548,17.2525907 L12.5069085,8.7716369 L12.5069085,8.7716369 C13.6435665,7.76127418 15.3564335,7.76127418 16.4930915,8.7716369 Z" stroke="none" stroke-width="1" fill-rule="evenodd" fill="#73BE19"></path>
+                                    </svg>
+                                    <span class="fifa-ranking-section__ranking__item__points">PTS. <strong>1035</strong></span>
+                                </li>
+                            </ul>
+                        </div>
                     </div>
-                  </div>
                 </div>
-                <div class="col-sm-6 col-md-5 col-lg-4">
-                  <ul class="list-unstyled fifa-ranking-section__ranking">
-                    <li class="fifa-ranking-section__ranking__item">
-                      <span class="fifa-ranking-section__ranking__item__number">#1</span>
-                      <img src="http://img.fifa.com/images/flags/4/usa.png" class="fifa-ranking-section__ranking__item__flag" />
-                      <span class="fifa-ranking-section__ranking__item__name">USA</span>
-                      <svg viewBox="0 0 29 29" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" class="fifa-ranking-section__ranking__item__arrow">
-                        <g stroke="none" stroke-width="1" fill-rule="evenodd" fill="#999894">
-                          <path d="M16.4930915,2.7716369 L26.0341645,11.2525907 L26.0341645,11.2525907 C26.4469473,11.6195087 26.484128,12.2515811 26.11721,12.6643638 C25.9274426,12.8778522 25.6554385,13 25.3698007,13 L3.63019932,13 L3.63019932,13 C3.07791457,13 2.63019932,12.5522847 2.63019932,12 C2.63019932,11.7143622 2.75234712,11.4423581 2.96583548,11.2525907 L12.5069085,2.7716369 L12.5069085,2.7716369 C13.6435665,1.76127418 15.3564335,1.76127418 16.4930915,2.7716369 Z"></path>
-                          <path d="M16.4930915,17.7716369 L26.0341645,26.2525907 L26.0341645,26.2525907 C26.4469473,26.6195087 26.484128,27.2515811 26.11721,27.6643638 C25.9274426,27.8778522 25.6554385,28 25.3698007,28 L3.63019932,28 L3.63019932,28 C3.07791457,28 2.63019932,27.5522847 2.63019932,27 C2.63019932,26.7143622 2.75234712,26.4423581 2.96583548,26.2525907 L12.5069085,17.7716369 L12.5069085,17.7716369 C13.6435665,16.7612742 15.3564335,16.7612742 16.4930915,17.7716369 Z" transform="translate(14.500000, 22.000000) scale(1, -1) translate(-14.500000, -22.000000) "></path>
-                        </g>
-                      </svg>
-                      <span class="fifa-ranking-section__ranking__item__points">PTS. <strong>2104</strong></span>
-                    </li>
-                    <li class="fifa-ranking-section__ranking__item">
-                      <span class="fifa-ranking-section__ranking__item__number">#2</span>
-                      <img src="http://img.fifa.com/images/flags/4/ger.png" class="fifa-ranking-section__ranking__item__flag" />
-                      <span class="fifa-ranking-section__ranking__item__name">Germany</span>
-                      <svg viewBox="0 0 29 29" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" class="fifa-ranking-section__ranking__item__arrow">
-                        <path d="M16.4930915,8.7716369 L26.0341645,17.2525907 L26.0341645,17.2525907 C26.4469473,17.6195087 26.484128,18.2515811 26.11721,18.6643638 C25.9274426,18.8778522 25.6554385,19 25.3698007,19 L3.63019932,19 L3.63019932,19 C3.07791457,19 2.63019932,18.5522847 2.63019932,18 C2.63019932,17.7143622 2.75234712,17.4423581 2.96583548,17.2525907 L12.5069085,8.7716369 L12.5069085,8.7716369 C13.6435665,7.76127418 15.3564335,7.76127418 16.4930915,8.7716369 Z" stroke="none" stroke-width="1" fill-rule="evenodd" fill="#73BE19"></path>
-                      </svg>
-                      <span class="fifa-ranking-section__ranking__item__points">PTS. <strong>2077</strong></span>
-                    </li>
-                    <li class="fifa-ranking-section__ranking__item">
-                      <span class="fifa-ranking-section__ranking__item__number">#3</span>
-                      <img src="http://img.fifa.com/images/flags/4/eng.png" class="fifa-ranking-section__ranking__item__flag" />
-                      <span class="fifa-ranking-section__ranking__item__name">England</span>
-                      <svg viewBox="0 0 29 29" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" class="fifa-ranking-section__ranking__item__arrow">
-                        <path d="M12.5069085,20.2283631 L2.9658355,11.7474093 C2.5530527,11.3804913 2.515872,10.7484189 2.88279,10.3356362 C3.0725574,10.1221478 3.3445615,10 3.6301993,10 L25.3698007,10 C25.9220854,10 26.3698007,10.4477153 26.3698007,11 C26.3698007,11.2856378 26.2476529,11.5576419 26.0341645,11.7474093 L16.4930915,20.2283631 C15.3564335,21.2387258 13.6435665,21.2387258 12.5069085,20.2283631 Z" stroke="none" stroke-width="1" fill-rule="nonzero" fill="#E0011D"></path>
-                      </svg>
-                      <span class="fifa-ranking-section__ranking__item__points">PTS. <strong>2037</strong></span>
-                    </li>
-                    <li class="fifa-ranking-section__ranking__item fifa-ranking-section__ranking__item--active">
-                      <span class="fifa-ranking-section__ranking__item__number">#78</span>
-                      <img src="http://img.fifa.com/images/flags/4/aus.png" class="fifa-ranking-section__ranking__item__flag" />
-                      <span class="fifa-ranking-section__ranking__item__name">Australia</span>
-                      <svg viewBox="0 0 29 29" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" class="fifa-ranking-section__ranking__item__arrow">
-                        <path d="M16.4930915,8.7716369 L26.0341645,17.2525907 L26.0341645,17.2525907 C26.4469473,17.6195087 26.484128,18.2515811 26.11721,18.6643638 C25.9274426,18.8778522 25.6554385,19 25.3698007,19 L3.63019932,19 L3.63019932,19 C3.07791457,19 2.63019932,18.5522847 2.63019932,18 C2.63019932,17.7143622 2.75234712,17.4423581 2.96583548,17.2525907 L12.5069085,8.7716369 L12.5069085,8.7716369 C13.6435665,7.76127418 15.3564335,7.76127418 16.4930915,8.7716369 Z" stroke="none" stroke-width="1" fill-rule="evenodd" fill="#73BE19"></path>
-                      </svg>
-                      <span class="fifa-ranking-section__ranking__item__points">PTS. <strong>1248</strong></span>
-                    </li>
-                  </ul>
-                </div>
-              </div>
             </div>
-          </div>
+            <div id="women-ranking" class="fifa-ranking-section__content">
+                <span class="fifa-ranking-section__content__bg">
+                    <picture>
+                        <source srcset="media/module-ranking/ranking-bg-1440-630-2.jpg" media="(min-width: 1280px)" />
+                        <source srcset="media/module-ranking/ranking-bg-1024-576-2.jpg" media="(min-width: 1024px)" />
+                        <source srcset="media/module-ranking/ranking-bg-768-432-2.jpg" media="(min-width: 768px)" />
+                        <img srcset="media/module-ranking/ranking-bg-580-580-2.jpg" />
+                    </picture>
+                </span>
+                <div class="container-fluid">
+                    <div class="row">
+                        <div class="col-sm-6 col-md-7 col-lg-8">
+                            <div class="fifa-ranking-section__main">
+                                <div class="fifa-ranking-section__main__wrap">
+                                    <p><strong>+30</strong> Australia<br />bounce back in style</p>
+                                    <a href="#" class="fifa-ranking-section__main__button">
+                                        Discover
+                                        <svg width="12px" height="9px" viewBox="0 0 12 9" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                                            <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                                                <polyline stroke="#FFFFFF" stroke-linecap="round" stroke-linejoin="round" transform="translate(9.157898, 4.455394) scale(-1, 1) translate(-9.157898, -4.455394) " points="11.315796 0.799987793 7 4.50757596 11.315796 8.11079998"></polyline>
+                                                <path d="M10.5,4.5 L1.44461486,4.5" stroke="#FFFFFF" stroke-linecap="square"></path>
+                                            </g>
+                                        </svg>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-6 col-md-5 col-lg-4">
+                            <ul class="list-unstyled fifa-ranking-section__ranking">
+                                <li class="fifa-ranking-section__ranking__item">
+                                    <span class="fifa-ranking-section__ranking__item__number">#1</span>
+                                    <img src="http://img.fifa.com/images/flags/4/usa.png" class="fifa-ranking-section__ranking__item__flag" />
+                                    <span class="fifa-ranking-section__ranking__item__name">USA</span>
+                                    <svg viewBox="0 0 29 29" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" class="fifa-ranking-section__ranking__item__arrow">
+                                        <g stroke="none" stroke-width="1" fill-rule="evenodd" fill="#999894">
+                                            <path d="M16.4930915,2.7716369 L26.0341645,11.2525907 L26.0341645,11.2525907 C26.4469473,11.6195087 26.484128,12.2515811 26.11721,12.6643638 C25.9274426,12.8778522 25.6554385,13 25.3698007,13 L3.63019932,13 L3.63019932,13 C3.07791457,13 2.63019932,12.5522847 2.63019932,12 C2.63019932,11.7143622 2.75234712,11.4423581 2.96583548,11.2525907 L12.5069085,2.7716369 L12.5069085,2.7716369 C13.6435665,1.76127418 15.3564335,1.76127418 16.4930915,2.7716369 Z"></path>
+                                            <path d="M16.4930915,17.7716369 L26.0341645,26.2525907 L26.0341645,26.2525907 C26.4469473,26.6195087 26.484128,27.2515811 26.11721,27.6643638 C25.9274426,27.8778522 25.6554385,28 25.3698007,28 L3.63019932,28 L3.63019932,28 C3.07791457,28 2.63019932,27.5522847 2.63019932,27 C2.63019932,26.7143622 2.75234712,26.4423581 2.96583548,26.2525907 L12.5069085,17.7716369 L12.5069085,17.7716369 C13.6435665,16.7612742 15.3564335,16.7612742 16.4930915,17.7716369 Z" transform="translate(14.500000, 22.000000) scale(1, -1) translate(-14.500000, -22.000000) "></path>
+                                        </g>
+                                    </svg>
+                                    <span class="fifa-ranking-section__ranking__item__points">PTS. <strong>2104</strong></span>
+                                </li>
+                                <li class="fifa-ranking-section__ranking__item">
+                                    <span class="fifa-ranking-section__ranking__item__number">#2</span>
+                                    <img src="http://img.fifa.com/images/flags/4/ger.png" class="fifa-ranking-section__ranking__item__flag" />
+                                    <span class="fifa-ranking-section__ranking__item__name">Germany</span>
+                                    <svg viewBox="0 0 29 29" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" class="fifa-ranking-section__ranking__item__arrow">
+                                        <path d="M16.4930915,8.7716369 L26.0341645,17.2525907 L26.0341645,17.2525907 C26.4469473,17.6195087 26.484128,18.2515811 26.11721,18.6643638 C25.9274426,18.8778522 25.6554385,19 25.3698007,19 L3.63019932,19 L3.63019932,19 C3.07791457,19 2.63019932,18.5522847 2.63019932,18 C2.63019932,17.7143622 2.75234712,17.4423581 2.96583548,17.2525907 L12.5069085,8.7716369 L12.5069085,8.7716369 C13.6435665,7.76127418 15.3564335,7.76127418 16.4930915,8.7716369 Z" stroke="none" stroke-width="1" fill-rule="evenodd" fill="#73BE19"></path>
+                                    </svg>
+                                    <span class="fifa-ranking-section__ranking__item__points">PTS. <strong>2077</strong></span>
+                                </li>
+                                <li class="fifa-ranking-section__ranking__item">
+                                    <span class="fifa-ranking-section__ranking__item__number">#3</span>
+                                    <img src="http://img.fifa.com/images/flags/4/eng.png" class="fifa-ranking-section__ranking__item__flag" />
+                                    <span class="fifa-ranking-section__ranking__item__name">England</span>
+                                    <svg viewBox="0 0 29 29" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" class="fifa-ranking-section__ranking__item__arrow">
+                                        <path d="M12.5069085,20.2283631 L2.9658355,11.7474093 C2.5530527,11.3804913 2.515872,10.7484189 2.88279,10.3356362 C3.0725574,10.1221478 3.3445615,10 3.6301993,10 L25.3698007,10 C25.9220854,10 26.3698007,10.4477153 26.3698007,11 C26.3698007,11.2856378 26.2476529,11.5576419 26.0341645,11.7474093 L16.4930915,20.2283631 C15.3564335,21.2387258 13.6435665,21.2387258 12.5069085,20.2283631 Z" stroke="none" stroke-width="1" fill-rule="nonzero" fill="#E0011D"></path>
+                                    </svg>
+                                    <span class="fifa-ranking-section__ranking__item__points">PTS. <strong>2037</strong></span>
+                                </li>
+                                <li class="fifa-ranking-section__ranking__item fifa-ranking-section__ranking__item--active">
+                                    <span class="fifa-ranking-section__ranking__item__number">#78</span>
+                                    <img src="http://img.fifa.com/images/flags/4/aus.png" class="fifa-ranking-section__ranking__item__flag" />
+                                    <span class="fifa-ranking-section__ranking__item__name">Australia</span>
+                                    <svg viewBox="0 0 29 29" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" class="fifa-ranking-section__ranking__item__arrow">
+                                        <path d="M16.4930915,8.7716369 L26.0341645,17.2525907 L26.0341645,17.2525907 C26.4469473,17.6195087 26.484128,18.2515811 26.11721,18.6643638 C25.9274426,18.8778522 25.6554385,19 25.3698007,19 L3.63019932,19 L3.63019932,19 C3.07791457,19 2.63019932,18.5522847 2.63019932,18 C2.63019932,17.7143622 2.75234712,17.4423581 2.96583548,17.2525907 L12.5069085,8.7716369 L12.5069085,8.7716369 C13.6435665,7.76127418 15.3564335,7.76127418 16.4930915,8.7716369 Z" stroke="none" stroke-width="1" fill-rule="evenodd" fill="#73BE19"></path>
+                                    </svg>
+                                    <span class="fifa-ranking-section__ranking__item__points">PTS. <strong>1248</strong></span>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </section>
         <script>
-          $(".fifa-ranking-section__nav a").on("click", function() {
-            index = $(this).parent().index();
-            $(".fifa-ranking-section__nav__item").removeClass("fifa-ranking-section__nav__item--active");
-            $(this).parent().addClass("fifa-ranking-section__nav__item--active");
-            $(".fifa-ranking-section__content").removeClass("fifa-ranking-section__content--active");
-            console.log($($(".fifa-ranking-section__content").get(index)));
-            $($(".fifa-ranking-section__content").get(index)).addClass("fifa-ranking-section__content--active");
-            return false;
-          });
+            $(".fifa-ranking-section__nav a").on("click", function () {
+                var id = $(this).parent().data("value");
+
+                $(".fifa-ranking-section__nav__item").removeClass("fifa-ranking-section__nav__item--active");
+                $(this).parent().addClass("fifa-ranking-section__nav__item--active");
+                $(".fifa-ranking-section__content").removeClass("fifa-ranking-section__content--active");
+                console.log($(".fifa-ranking-section__content#" + id));
+                $(".fifa-ranking-section__content#" + id).addClass("fifa-ranking-section__content--active");
+            });
+
+            $("select.fifa-ranking-section__nav").on("change", function () {
+                var id = $(this).val();
+
+                $(".fifa-ranking-section__nav__item").removeClass("fifa-ranking-section__nav__item--active");
+                $(this).parent().addClass("fifa-ranking-section__nav__item--active");
+                $(".fifa-ranking-section__content").removeClass("fifa-ranking-section__content--active");
+                console.log($(".fifa-ranking-section__content#" + id));
+                $(".fifa-ranking-section__content#" + id).addClass("fifa-ranking-section__content--active");
+            });
+
+
         </script>
         <!-- *****************************************************************************
-        E N D  F I F A   R A N K I N G
-        ***************************************************************************** ->
+            E N D  F I F A   R A N K I N G
+            ***************************************************************************** ->
 
 
     </div>
