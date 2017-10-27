@@ -1167,18 +1167,20 @@
                             <h1 class="home-module-header__title fifa-section__title"><img src="media/module-ranking/ranking-coca-cola-fifa-logo.png" /> Fifa/Coca Cola<br />World Ranking</h1>
                         </div>
                         <div class="col-sm-3 col-md-2">
-
+				
                             <div class="dropdown fi-select-wrapper fi-select__ranking " data-lang="en-GB">
                                 <button class="btn btn-select dropdown-toggle" type="button" data-toggle="dropdown">
                                     <span class="fi-selected-item">Men's Ranking</span>
                                 </button>
                                 <ul class="fifa-ranking-section__nav dropdown-menu">
-                                    <li data-value="men" class="fifa-ranking-section__nav__item fifa-ranking-section__nav__item--active"><a href="#">Men's Ranking</a></li>
-                                    <li data-value="women" class="fifa-ranking-section__nav__item"><a href="#">Women's Ranking</a></li>
+                                    <li data-value="men-ranking" class="fifa-ranking-section__nav__item fifa-ranking-section__nav__item--active">
+                                        <a href="#">Men's Ranking</a>
+                                    </li>
+                                    <li data-value="women-ranking" class="fifa-ranking-section__nav__item"><a href="#">Women's Ranking</a></li>
                                 </ul>
                                 <select class="fifa-ranking-section__nav fi-select">
-                                    <option value="Men's Ranking" data-abbr="Men's Ranking">Men's Ranking</option>
-                                    <option value="Women's Ranking" data-abbr="Women's Ranking">Women's Ranking</option>
+                                    <option value="men-ranking" data-abbr="Men's Ranking">Men's Ranking</option>
+                                    <option value="women-ranking" data-abbr="Women's Ranking">Women's Ranking</option>
                                 </select>
                                 <span class="fi-select__caret">
                                     <svg class="fi-svg-icon icon-triangle"><use xlink:href="#icon-triangle"></use></svg>
@@ -1342,14 +1344,28 @@
         </section>
         <script>
             $(".fifa-ranking-section__nav a").on("click", function () {
-                index = $(this).parent().index();
+                var id = $(this).parent().data("value");
+
                 $(".fifa-ranking-section__nav__item").removeClass("fifa-ranking-section__nav__item--active");
                 $(this).parent().addClass("fifa-ranking-section__nav__item--active");
                 $(".fifa-ranking-section__content").removeClass("fifa-ranking-section__content--active");
-                console.log($($(".fifa-ranking-section__content").get(index)));
-                $($(".fifa-ranking-section__content").get(index)).addClass("fifa-ranking-section__content--active");
+                console.log($(".fifa-ranking-section__content#" + id));
+                $(".fifa-ranking-section__content#" + id).addClass("fifa-ranking-section__content--active");
                 return false;
             });
+
+            $("select.fifa-ranking-section__nav").on("change", function () {
+                var id = $(this).val();
+
+                $(".fifa-ranking-section__nav__item").removeClass("fifa-ranking-section__nav__item--active");
+                $(this).parent().addClass("fifa-ranking-section__nav__item--active");
+                $(".fifa-ranking-section__content").removeClass("fifa-ranking-section__content--active");
+                console.log($(".fifa-ranking-section__content#" + id));
+                $(".fifa-ranking-section__content#" + id).addClass("fifa-ranking-section__content--active");
+                return false;
+            });
+
+
         </script>
         <!-- *****************************************************************************
             E N D  F I F A   R A N K I N G
