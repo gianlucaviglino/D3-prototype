@@ -5,6 +5,13 @@ $l: "(min-width: 1024px)";
 $xl: "(min-width: 1280px)";
 $xxl: "(min-width: 1440px)";
 
+.fancybox-slide--iframe .fancybox-content {
+  max-width: calc(100% - 30px) !important;
+  @media #{$m} {
+    max-width: calc(100% - 100px) !important;
+  }
+}
+
 .fancybox-bg {
   background-color:#2A466E !important;
 }

@@ -1074,6 +1074,37 @@
         </section>
         <script>
           $(function() {
+            $('[data-fancybox="latest-videos"]').fancybox({
+              afterLoad : function( instance, current ) {
+
+                 // Remove scrollbars and change background
+                current.$content.css({
+            			overflow   : 'visible',
+                  background : '#000'
+            		});
+
+              },
+              onUpdate : function( instance, current ) {
+                var width, height, ratio = 16 / 9, video = current.$content;
+                if ( video ) {
+                  video.hide();
+                  width  = current.$slide.width();
+                  height = current.$slide.height() - 100;
+
+                  if ( height * ratio > width ) {
+                    height = width / ratio;
+                  } else {
+                    width = height * ratio;
+                  }
+
+                  video.css({
+                    width  : width,
+                    height : height
+                  }).show();
+
+                }
+              }
+            })
             $(".fi-module-latest-videos__carousel__wrapper").owlCarousel({
               loop: false,
               responsive: {
