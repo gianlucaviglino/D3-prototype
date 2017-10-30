@@ -1,0 +1,337 @@
+.fancybox-bg {
+  background-color: #2A466E !important;
+}
+
+.fancybox-button,
+.fancybox-infobar__body {
+  background: #fff !important;
+  color: #2A466E !important;
+}
+
+.fancybox-arrow:after {
+  background-color: #fff !important;
+  background-image: url(data:image/svg+xml;base64,PHN2ZyBmaWxsPSIjMkE0NjZFIiBoZWlnaHQ9IjQ4IiB2aWV3Qm94PSIwIDAgMjQgMjQiIHdpZHRoPSI0OCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4gICAgPHBhdGggZD0iTTAgMGgyNHYyNEgweiIgZmlsbD0ibm9uZSIvPiAgICA8cGF0aCBkPSJNMTIgNGwtMS40MSAxLjQxTDE2LjE3IDExSDR2MmgxMi4xN2wtNS41OCA1LjU5TDEyIDIwbDgtOHoiLz48L3N2Zz4NCg==) !important;
+}
+
+.fancybox-is-open .fancybox-bg {
+  opacity: 1 !important;
+}
+
+.fancybox-show-nav .fancybox-arrow {
+  opacity: 1 !important;
+}
+
+.fancybox-share svg {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-top: -15px;
+  margin-left: -15px;
+  fill: #2A466E;
+  width: 30px;
+  height: 30px;
+}
+
+.home-module-header {
+  padding-top: 30px;
+}
+
+.home-module-header .row {
+  margin-bottom: 0;
+}
+
+.home-module-header__title {
+  border-left: 1px solid #ccc;
+  padding-left: 10px;
+  font-size: 24px;
+  line-height: 1.1;
+  text-transform: uppercase;
+  font-weight: 600;
+  color: #000;
+  padding-top: 30px;
+  margin-top: -30px;
+  margin-bottom: 25px;
+}
+
+.home-module-header__title img {
+  float: left;
+  margin-right: 10px;
+  margin-top: 2px;
+  height: 46px;
+  display: inline-block;
+}
+
+.home-module-header__carousel-nav {
+  margin-top: 10px;
+  text-align: right;
+  vertical-align: middle;
+}
+
+.home-module-header__carousel-nav__button {
+  width: 30px;
+  height: 30px;
+  display: inline-block;
+  cursor: pointer;
+  text-align: center;
+}
+
+.home-module-header__carousel-nav__button svg {
+  width: 9px;
+  margin-top: 9px;
+}
+
+.home-module-header__carousel-nav__state {
+  font-size: 17px;
+  line-height: 1;
+  color: #B6B6B6;
+  display: block;
+  position: relative;
+  height: 23px;
+  margin: 5px 0 3px;
+  white-space: nowrap;
+  display: inline-block;
+}
+
+.home-module-header__carousel-nav__state strong {
+  color: #2D8ACD;
+  font-size: 24px;
+  display: inline-block;
+  vertical-align: middle;
+  margin-right: 5px;
+  font-weight: normal;
+  white-space: nowrap;
+  position: relative;
+  top: -2px;
+}
+
+.fi-module-calendar {
+  overflow: hidden;
+  background: #29578C;
+  color: #fff;
+}
+
+.fi-module-calendar .container-fluid {
+  overflow: visible !important;
+}
+
+.fi-module-calendar .fi-module__header a {
+  color: #fff;
+}
+
+.fi-module-calendar .fi-module__header .fifa-section__title {
+  color: #fff;
+  border-color: rgba(255, 255, 255, 0.3);
+}
+
+.fi-module-calendar .owl-stage-outer {
+  overflow: visible !important;
+}
+
+.fi-module-calendar__list {
+  padding-top: 20px;
+  padding-bottom: 70px;
+  display: flex;
+  margin-right: -50px !important;
+  width: auto !important;
+  position: relative;
+}
+
+.fi-module-calendar__list .owl-dots {
+  position: absolute;
+  bottom: 30px;
+  left: 0;
+  right: 50px;
+  height: 10px;
+  text-align: center;
+  padding: 0;
+  font-size: 0;
+}
+
+.fi-module-calendar__list .owl-dots .owl-dot {
+  display: inline-block;
+  margin: 0 5px;
+  width: 10px;
+  height: 10px;
+  background: transparent;
+  border-radius: 100%;
+  border: 1px solid #fff;
+  transition: background .2s ease;
+}
+
+.fi-module-calendar__list .owl-dots .owl-dot.active {
+  background-color: #fff;
+}
+
+.fi-module-calendar__list .owl-item:first-child .fi-module-calendar__list__item:before {
+  display: none;
+}
+
+.fi-module-calendar__list__item {
+  font-size: 16px;
+  line-height: 1.1;
+  font-family: 'Open Sans Condensed';
+  text-align: center;
+  text-transform: uppercase;
+  flex-shrink: 0;
+  width: 50%;
+  padding-right: 50px;
+  position: relative;
+}
+
+.owl-item .fi-module-calendar__list__item {
+  width: 100%;
+}
+
+.fi-module-calendar__list__item:before {
+  content: "";
+  position: absolute;
+  top: 30px;
+  left: -25px;
+  height: 80px;
+  width: 1px;
+  background: rgba(255, 255, 255, 0.3);
+  transform: rotate(20deg);
+}
+
+.fi-module-calendar__list__item__type {
+  font-size: 14px;
+  font-weight: bold;
+  display: block;
+  color: #F8C709;
+  margin-bottom: .1em;
+}
+
+.fi-module-calendar__list__item__date {
+  font-size: 14px;
+  font-weight: bold;
+  display: block;
+  margin-bottom: .2em;
+  position: relative;
+  padding-bottom: 15px;
+  margin-bottom: 12px;
+}
+
+.fi-module-calendar__list__item__date:before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  width: 26px;
+  height: 2px;
+  margin-left: -13px;
+  background: #fff;
+}
+
+.fi-module-calendar__list__item__date strong {
+  font-size: 40px;
+  font-weight: normal;
+  display: block;
+  margin-bottom: .1em;
+}
+
+.fi-module-calendar__list__item__name {
+  display: block;
+}
+
+@media (min-width: 768px) {
+  .home-module-header {
+    padding-top: 45px;
+  }
+
+  .home-module-header__title {
+    font-size: 30px;
+    padding-top: 45px;
+    margin-top: -45px;
+    margin-bottom: 35px;
+    padding-left: 15px;
+  }
+
+  .home-module-header__title img {
+    height: 56px;
+    margin-top: 5px;
+    margin-right: 12px;
+  }
+
+  .home-module-header__carousel-nav {
+    text-align: left;
+    margin-top: -18px;
+    padding-left: 70px;
+    width: 140px;
+  }
+
+  .home-module-header__carousel-nav__button {
+    margin-left: -10px;
+  }
+
+  .home-module-header__carousel-nav__state {
+    display: block;
+    font-size: 20px;
+    height: 33px;
+  }
+
+  .home-module-header__carousel-nav__state strong {
+    position: absolute;
+    right: 100%;
+    top: -2px;
+    font-size: 38px;
+  }
+
+  .fi-module-calendar__list {
+    padding-top: 30px;
+    padding-bottom: 80px;
+  }
+
+  .fi-module-calendar__list__item {
+    font-size: 17px;
+  }
+
+  .fi-module-calendar__list__item {
+    width: 25%;
+  }
+}
+
+@media (min-width: 1024px) {
+  .home-module-header {
+    padding-top: 60px;
+  }
+
+  .home-module-header__title {
+    font-size: 35px;
+    padding-top: 60px;
+    margin-bottom: 40px;
+    padding-left: 20px;
+    margin-top: -60px;
+  }
+
+  .home-module-header__title img {
+    height: 64px;
+    margin-top: 7px;
+    margin-right: 15px;
+  }
+
+  .home-module-header__carousel-nav {
+    margin-top: -15px;
+  }
+
+  .home-module-header__carousel-nav__state {
+    font-size: 25px;
+    height: 36px;
+  }
+
+  .home-module-header__carousel-nav__state strong {
+    font-size: 43px;
+  }
+
+  .fi-module-calendar__list {
+    padding-top: 30px;
+    padding-bottom: 60px;
+  }
+
+  .fi-module-calendar__list .owl-dots {
+    display: none;
+  }
+
+  .fi-module-calendar__list__item {
+    width: 16.66667%;
+  }
+}
