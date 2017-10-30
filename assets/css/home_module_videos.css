@@ -104,15 +104,15 @@
   top: -2px;
 }
 
-.fi-module-latest-photos {
+.fi-module-latest-videos {
   overflow: hidden;
 }
 
-.fi-module-latest-photos .owl-stage-outer {
+.fi-module-latest-videos .owl-stage-outer {
   overflow: visible !important;
 }
 
-.fi-module-latest-photos .owl-stage-outer:before {
+.fi-module-latest-videos .owl-stage-outer:before {
   content: "";
   position: absolute;
   top: 0;
@@ -123,45 +123,32 @@
   z-index: 10;
 }
 
-.fi-module-latest-photos__galleries {
-  margin-left: -1px;
-  margin-right: 30px;
+.fi-module-latest-videos__carousel {
   position: relative;
-  /*
-    .container-fluid {
-      border-top: 0 !important;
-      overflow: visible !important;
-      padding-left: 0 !important;
-      padding-right: 30px !important;
-      position: relative;
-      @media (min-width: 768px) {
-        padding-right: 50px !important;
-      }
-      @media (min-width: 1024px) {
-        padding-right: 80px !important;
-      }
-      @media (min-width: 1440px) {
-        padding-right: 0 !important;
-      }
-    }
-    */
 }
 
-.fi-module-latest-photos__galleries:hover .fi-module-latest-photos__galleries__arrow {
+.fi-module-latest-videos__carousel .container-fluid {
+  border-top: 0 !important;
+  overflow: visible !important;
+  padding-left: 0 !important;
+  padding-right: 30px !important;
+  position: relative;
+}
+
+.fi-module-latest-videos__carousel:hover .fi-module-latest-videos__carousel__arrow {
   background-color: rgba(0, 0, 0, 0.4);
 }
 
-.fi-module-latest-photos__galleries:hover .fi-module-latest-photos__galleries__arrow svg {
+.fi-module-latest-videos__carousel:hover .fi-module-latest-videos__carousel__arrow svg {
   transform: translateX(0);
   opacity: 1;
 }
 
-.fi-module-latest-photos__galleries__arrow {
+.fi-module-latest-videos__carousel__arrow {
   position: absolute;
   top: 0;
   width: 100px;
   height: 100%;
-  height: calc(100% - 1px);
   background: transparent;
   z-index: 15;
   cursor: pointer;
@@ -169,7 +156,7 @@
   display: none;
 }
 
-.fi-module-latest-photos__galleries__arrow svg {
+.fi-module-latest-videos__carousel__arrow svg {
   position: absolute;
   top: 50%;
   margin-top: -50px;
@@ -185,57 +172,71 @@
   transition: all .3s ease .1s;
 }
 
-.fi-module-latest-photos__galleries__arrow--left {
+.fi-module-latest-videos__carousel__arrow--left {
   left: 0;
 }
 
-.fi-module-latest-photos__galleries__arrow--right {
-  left: 100%;
-  margin-left: 1px;
+.fi-module-latest-videos__carousel__arrow--right {
+  right: 0;
 }
 
-.fi-module-latest-photos__galleries__arrow--right svg {
+.fi-module-latest-videos__carousel__arrow--right svg {
   transform: translateX(-10px);
 }
 
-.fi-module-latest-photos__galleries__arrow--disabled {
+.fi-module-latest-videos__carousel__arrow--disabled {
   opacity: 0;
   pointer-events: none;
 }
 
-.fi-module-latest-photos__gallery {
-  overflow: hidden;
-  margin: 0 -.5px;
+.fi-module-latest-videos__carousel__wrapper {
+  display: flex;
+  flex-wrap: nowrap;
+  width: 100%;
 }
 
-.fi-module-latest-photos__gallery__item {
+.fi-module-latest-videos__carousel__item {
   float: left;
-  width: 25%;
-  overflow: hidden;
+  flex-shrink: 0;
+  width: 50%;
   position: relative;
 }
 
-.fi-module-latest-photos__gallery__item__caption {
+.owl-item .fi-module-latest-videos__carousel__item {
+  width: 100%;
+}
+
+.fi-module-latest-videos__carousel__item__play {
+  width: 60px;
+  height: 60px;
   position: absolute;
-  bottom: 0;
+  z-index: 4;
+  top: 50%;
+  left: 50%;
+  margin-left: -30px;
+  margin-top: -30px;
+}
+
+.fi-module-latest-videos__carousel__item__play circle {
+  stroke: #f00 !important;
+}
+
+.fi-module-latest-videos__carousel__item__image {
+  display: block;
+  padding-top: 180%;
+  position: relative;
+}
+
+.fi-module-latest-videos__carousel__item__image img {
+  position: absolute;
+  top: 0;
   left: 0;
   width: 100%;
-  z-index: 10;
-  padding: 10px;
-  font: 300 13px/1.2 'Open Sans Condensed';
-  color: #fff;
-  display: none;
+  height: 100%;
+  object-fit: cover;
 }
 
-.fi-module-latest-photos__gallery__item__image {
-  display: block;
-  position: relative;
-  padding-top: 100%;
-  box-sizing: border-box;
-  transform: translate3d(0, 0, 0);
-}
-
-.fi-module-latest-photos__gallery__item__image:before {
+.fi-module-latest-videos__carousel__item__image:before {
   content: "";
   position: absolute;
   top: 0;
@@ -243,38 +244,26 @@
   width: 100%;
   height: 100%;
   background: rgba(0, 0, 0, 0.2);
-  z-index: 1;
-  display: none;
-}
-
-.fi-module-latest-photos__gallery__item__image:after {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  border-left: 1px solid #fff;
-  border-bottom: 1px solid #fff;
   z-index: 2;
 }
 
-.fi-module-latest-photos__gallery__item__image img {
+.fi-module-latest-videos__carousel__item__caption {
   position: absolute;
-  top: 0;
+  bottom: 0;
   left: 0;
-  display: block;
-  object-fit: cover;
   width: 100%;
-  height: 100%;
+  z-index: 3;
+  padding: 10px;
+  font: 300 13px/1.2 'Open Sans Condensed';
+  color: #fff;
 }
 
-.fi-module-latest-photos__gallery__item--big {
-  width: 50%;
-}
-
-.fi-module-latest-photos__gallery__item--right {
-  float: right;
+.fi-module-latest-videos__carousel__item__caption strong {
+  display: block;
+  font-size: 11px;
+  font-weight: bold;
+  text-transform: uppercase;
+  margin-bottom: .2em;
 }
 
 @media (min-width: 768px) {
@@ -320,37 +309,29 @@
     font-size: 38px;
   }
 
-  .fi-module-latest-photos__galleries {
-    margin-right: 50px;
+  .fi-module-latest-videos__carousel .container-fluid {
+    padding-right: 50px !important;
   }
 
-  .fi-module-latest-photos__gallery__item {
-    width: 20%;
-    height: 50%;
+  .fi-module-latest-videos__carousel__item {
+    width: 33%;
   }
 
-  .fi-module-latest-photos__gallery__item__caption {
-    display: block;
+  .fi-module-latest-videos__carousel__item__play {
+    width: 90px;
+    height: 90px;
+    margin-left: -45px;
+    margin-top: -45px;
+  }
+
+  .fi-module-latest-videos__carousel__item__caption {
+    line-height: 1.15;
     padding: 15px;
     font-size: 16px;
-    font-size: 1.15;
   }
 
-  .fi-module-latest-photos__gallery__item__image:before {
-    display: block;
-  }
-
-  .fi-module-latest-photos__gallery__item--big {
-    width: 40%;
-    height: 100%;
-  }
-
-  .fi-module-latest-photos__gallery__item--wide {
-    width: 40%;
-  }
-
-  .fi-module-latest-photos__gallery__item--wide .fi-module-latest-photos__gallery__item__image {
-    padding-top: 50%;
+  .fi-module-latest-videos__carousel__item__caption strong {
+    font-size: 14px;
   }
 }
 
@@ -386,15 +367,33 @@
     font-size: 43px;
   }
 
-  .fi-module-latest-photos__galleries {
-    margin-right: 100px;
+  .fi-module-latest-videos__carousel .container-fluid {
+    padding-right: 100px !important;
   }
 
-  .fi-module-latest-photos__galleries__arrow {
+  .fi-module-latest-videos__carousel__arrow {
     display: block;
   }
 
-  .fi-module-latest-photos__gallery__item__caption {
+  .fi-module-latest-videos__carousel__item {
+    width: 25%;
+  }
+
+  .fi-module-latest-videos__carousel__item__image:before {
+    opacity: 0;
+    transition: opacity .4s ease;
+  }
+
+  .fi-module-latest-videos__carousel__item:hover .fi-module-latest-videos__carousel__item__image:before {
+    opacity: 1;
+  }
+
+  .fi-module-latest-videos__carousel__item:hover .fi-module-latest-videos__carousel__item__caption {
+    transform: translate3d(0, 0, 0);
+    opacity: 1;
+  }
+
+  .fi-module-latest-videos__carousel__item__caption {
     padding: 25px;
     font-size: 22px;
     transform: translate3d(0, 100%, 0);
@@ -402,17 +401,13 @@
     transition: all .3s ease .05s;
   }
 
-  .fi-module-latest-photos__gallery__item__image:before {
-    opacity: 0;
-    transition: opacity .4s ease;
+  .fi-module-latest-videos__carousel__item__caption strong {
+    font-size: 16px;
   }
+}
 
-  .fi-module-latest-photos__gallery__item__image:hover:before {
-    opacity: 1;
-  }
-
-  .fi-module-latest-photos__gallery__item__image:hover .fi-module-latest-photos__gallery__item__caption {
-    transform: translate3d(0, 0, 0);
-    opacity: 1;
+@media (min-width: 1440px) {
+  .fi-module-latest-videos__carousel .container-fluid {
+    padding-right: 0 !important;
   }
 }

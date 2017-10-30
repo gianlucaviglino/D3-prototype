@@ -219,6 +219,9 @@
             <symbol id="icon-carousel-right" viewBox="0 0 29 81">
               <polyline points="2 2 27.4964571 41.084824 2 79.0694571"></polyline>
             </symbol>
+            <symbol id="icon-carousel-left" viewBox="0 0 29 81">
+              <polyline points="27 79.0694571 1.5035429 41.084824 27 2 27 2"></polyline>
+            </symbol>
         </defs>
     </svg>
     <header class="navbar navbar-fixed-top fi-site-header">
@@ -621,7 +624,7 @@
         </div>
     </nav>
     <div class="content-wrap fi-basic-template">
-            <!---------------------------------------------------------------------------------
+        <!---------------------------------------------------------------------------------
         T O P  C O N T E N T
         --------------------------------------------------------------------------------->
         <section class="section" style="background-color:#CCC; height:50vh; text-align:center">
@@ -827,23 +830,79 @@
         <!---------------------------------------------------------------------------------
         C A L E N D A R
         --------------------------------------------------------------------------------->
-        <section class="section" style="background-color:#f2f2f2; height:250px;">
-
-
-            <div class="container-fluid">
-                <div class="fi-module__header">
-                    <h1 class="fifa-section__title">CALENDAR</h1>
-                </div>
+        <link href="./assets/css/home_module_calendar.css" rel="stylesheet" type="text/css">
+        <section class="section fi-module-calendar">
+          <div class="container-fluid">
+            <div class="fi-module__header">
+              <p class="fi-call__more fi-module__call">
+                <a href="#" target="_self" class="fi-o-media-object__link">
+                  <svg class="fi-svg-icon icon-triangle"><use xlink:href="#icon-triangle"></use></svg>
+                  <span class="fi-o-media-object__more__label">Full Calendar</span>
+                </a>
+              </p>
+              <h1 class="fifa-section__title">Offical<br />Calendar</h1>
             </div>
-
+            <ul class="fi-module-calendar__list list-unstyled owl-carousel">
+              <li class="fi-module-calendar__list__item">
+                <span class="fi-module-calendar__list__item__type">Events</span>
+                <span class="fi-module-calendar__list__item__date"><strong>06-28</strong> october</span>
+                <span class="fi-module-calendar__list__item__name">Fifa U17 World Cup<br />India 2017</span>
+              </li>
+              <li class="fi-module-calendar__list__item">
+                <span class="fi-module-calendar__list__item__type">Meetings</span>
+                <span class="fi-module-calendar__list__item__date"><strong>27-28</strong> october</span>
+                <span class="fi-module-calendar__list__item__name">Fifa Council<br />Meeting</span>
+              </li>
+              <li class="fi-module-calendar__list__item">
+                <span class="fi-module-calendar__list__item__type">Meetings</span>
+                <span class="fi-module-calendar__list__item__date"><strong>02</strong> november</span>
+                <span class="fi-module-calendar__list__item__name">Disciplinary<br />Committee</span>
+              </li>
+              <li class="fi-module-calendar__list__item">
+                <span class="fi-module-calendar__list__item__type">Events</span>
+                <span class="fi-module-calendar__list__item__date"><strong>06-14</strong> november</span>
+                <span class="fi-module-calendar__list__item__name">Official or friendly<br />matches</span>
+              </li>
+              <li class="fi-module-calendar__list__item">
+                <span class="fi-module-calendar__list__item__type">Meetings</span>
+                <span class="fi-module-calendar__list__item__date"><strong>17</strong> november</span>
+                <span class="fi-module-calendar__list__item__name">Fifa U17 World Cup<br />India 2017</span>
+              </li>
+              <li class="fi-module-calendar__list__item">
+                <span class="fi-module-calendar__list__item__type">Events</span>
+                <span class="fi-module-calendar__list__item__date"><strong>01</strong> dicember</span>
+                <span class="fi-module-calendar__list__item__name">Final draw<br />Fifa World Cup Russia&trade;</span>
+              </li>
+            </ul>
+          </div>
         </section>
+        <script>
+          $(function() {
+            $(".fi-module-calendar__list").owlCarousel({
+              loop: false,
+              responsive: {
+                0: {
+                  items: 2,
+                  slideBy: 2
+                },
+                768: {
+                  items: 4,
+                  slideBy: 3
+                },
+                1024: {
+                  items: 6
+                }
+              }
+            });
+          });
+        </script>
         <!---------------------------------------------------------------------------------
         E N D  C A L E N D A R
         --------------------------------------------------------------------------------->
         <!---------------------------------------------------------------------------------
         F O C U S   O N
         --------------------------------------------------------------------------------->
-        <section class="section" style="height:35vh;">
+        <section class="section" style="height:50vh;">
 
 
             <div class="container-fluid">
@@ -859,27 +918,11 @@
         <!---------------------------------------------------------------------------------
         P R O M O
         --------------------------------------------------------------------------------->
-        <section class="section fi-promo__about-fifa" style="background:url('media/promo-bg.png') repeat;">
+        <section class="section" style="background-color:#f2f2f2; height:150px; text-align:center">
 
 
             <div class="container-fluid">
-                <div class="fi-promo__wrap">
-                    <div class="fi-promo__image" style="background-image:url('media/promo-image.png')"></div>
-                    <div class="fi-promo__text">
-                        <h3>FIFA FORWARD PROGRAMME</h3>
-                        <h1>a "step change" for global football development</h1>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec diam lectus, ornare malesuada magna sed, cursus gravida risus. Aenean a diam tincidunt, consectetur leo sit amet, bibendum tortor.</p>
-                        <a href="#" class="fi-promo__main__button">
-                            Discover
-                            <svg width="12px" height="9px" viewBox="0 0 12 9" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-                                <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
-                                    <polyline stroke="#2e2e2e" stroke-linecap="round" stroke-linejoin="round" transform="translate(9.157898, 4.455394) scale(-1, 1) translate(-9.157898, -4.455394) " points="11.315796 0.799987793 7 4.50757596 11.315796 8.11079998"></polyline>
-                                    <path d="M10.5,4.5 L1.44461486,4.5" stroke="#2e2e2e" stroke-linecap="square"></path>
-                                </g>
-                            </svg>
-                        </a>
-                    </div>
-                </div>
+                <h2>PROMO</h2>
             </div>
 
         </section>
@@ -907,16 +950,166 @@
         <!---------------------------------------------------------------------------------
         V I D E O S
         --------------------------------------------------------------------------------->
-        <section class="section">
-
-
-            <div class="container-fluid" style="background-color:#f2f2f2; height:450px;">
-                <div class="fi-module__header">
-                    <h1 class="fifa-section__title">LATEST<br />VIDEOS</h1>
-                </div>
+        <link href="./assets/css/home_module_videos.css" rel="stylesheet" type="text/css">
+        <section class="section fi-module-latest-videos">
+          <div class="container-fluid">
+            <div class="fi-module__header">
+              <p class="fi-call__more fi-module__call">
+                <a href="#" target="_self" class="fi-o-media-object__link">
+                  <svg class="fi-svg-icon icon-triangle"><use xlink:href="#icon-triangle"></use></svg>
+                  <span class="fi-o-media-object__more__label">All Videos</span>
+                </a>
+              </p>
+              <h1 class="fifa-section__title">Latest<br />Videos</h1>
             </div>
-
+          </div>
+          <div class="fi-module-latest-videos__carousel">
+            <span class="fi-module-latest-videos__carousel__arrow fi-module-latest-videos__carousel__arrow--right">
+              <svg><use xlink:href="#icon-carousel-right"></use></svg>
+            </span>
+            <div class="container-fluid">
+              <span class="fi-module-latest-videos__carousel__arrow fi-module-latest-videos__carousel__arrow--left fi-module-latest-videos__carousel__arrow--disabled">
+                <svg><use xlink:href="#icon-carousel-left"></use></svg>
+              </span>
+              <div class="fi-module-latest-videos__carousel__wrapper owl-carousel">
+                <div class="fi-module-latest-videos__carousel__item">
+                  <a href="https://www.youtube.com/watch?v=Ny-Hnq970Ps" data-fancybox="latest-videos" data-caption="Cras mattis consectetur purus sit amet fermentum">
+                    <span class="fi-module-latest-videos__carousel__item__image">
+                      <img src="media/module-videos/01-580x773.jpg" />
+                    </span>
+                    <span class="fi-module-latest-videos__carousel__item__caption">
+                      <strong>Lorem ipsum</strong>
+                      Cras mattis consectetur purus sit amet fermentum
+                    </span>
+                    <svg class="fi-module-latest-videos__carousel__item__play fi-svg-icon icon-search"><use xlink:href="#icon-play"></use></svg>
+                  </a>
+                </div>
+                <div class="fi-module-latest-videos__carousel__item">
+                  <a href="https://www.youtube.com/watch?v=1DZCqyoOef4" data-fancybox="latest-videos" data-caption="Cras mattis consectetur purus sit amet fermentum">
+                    <span class="fi-module-latest-videos__carousel__item__image">
+                      <img src="media/module-videos/02-580x773.jpg" />
+                    </span>
+                    <span class="fi-module-latest-videos__carousel__item__caption">
+                      <strong>Lorem ipsum</strong>
+                      Cras mattis consectetur purus sit amet fermentum
+                    </span>
+                    <svg class="fi-module-latest-videos__carousel__item__play"><use xlink:href="#icon-play"></use></svg>
+                  </a>
+                </div>
+                <div class="fi-module-latest-videos__carousel__item">
+                  <a href="https://www.youtube.com/watch?v=Ny-Hnq970Ps" data-fancybox="latest-videos" data-caption="Cras mattis consectetur purus sit amet fermentum">
+                    <span class="fi-module-latest-videos__carousel__item__image">
+                      <img src="media/module-videos/01-580x773.jpg" />
+                    </span>
+                    <span class="fi-module-latest-videos__carousel__item__caption">
+                      <strong>Lorem ipsum</strong>
+                      Cras mattis consectetur purus sit amet fermentum
+                    </span>
+                    <svg class="fi-module-latest-videos__carousel__item__play"><use xlink:href="#icon-play"></use></svg>
+                  </a>
+                </div>
+                <div class="fi-module-latest-videos__carousel__item">
+                  <a href="https://www.youtube.com/watch?v=1DZCqyoOef4" data-fancybox="latest-videos" data-caption="Cras mattis consectetur purus sit amet fermentum">
+                    <span class="fi-module-latest-videos__carousel__item__image">
+                      <img src="media/module-videos/02-580x773.jpg" />
+                    </span>
+                    <span class="fi-module-latest-videos__carousel__item__caption">
+                      <strong>Lorem ipsum</strong>
+                      Cras mattis consectetur purus sit amet fermentum
+                    </span>
+                    <svg class="fi-module-latest-videos__carousel__item__play"><use xlink:href="#icon-play"></use></svg>
+                  </a>
+                </div>
+                <div class="fi-module-latest-videos__carousel__item">
+                  <a href="https://www.youtube.com/watch?v=Ny-Hnq970Ps" data-fancybox="latest-videos" data-caption="Cras mattis consectetur purus sit amet fermentum">
+                    <span class="fi-module-latest-videos__carousel__item__image">
+                      <img src="media/module-videos/01-580x773.jpg" />
+                    </span>
+                    <span class="fi-module-latest-videos__carousel__item__caption">
+                      <strong>Lorem ipsum</strong>
+                      Cras mattis consectetur purus sit amet fermentum
+                    </span>
+                    <svg class="fi-module-latest-videos__carousel__item__play"><use xlink:href="#icon-play"></use></svg>
+                  </a>
+                </div>
+                <div class="fi-module-latest-videos__carousel__item">
+                  <a href="https://www.youtube.com/watch?v=1DZCqyoOef4" data-fancybox="latest-videos" data-caption="Cras mattis consectetur purus sit amet fermentum">
+                    <span class="fi-module-latest-videos__carousel__item__image">
+                      <img src="media/module-videos/02-580x773.jpg" />
+                    </span>
+                    <span class="fi-module-latest-videos__carousel__item__caption">
+                      <strong>Lorem ipsum</strong>
+                      Cras mattis consectetur purus sit amet fermentum
+                    </span>
+                    <svg class="fi-module-latest-videos__carousel__item__play"><use xlink:href="#icon-play"></use></svg>
+                  </a>
+                </div>
+                <div class="fi-module-latest-videos__carousel__item">
+                  <a href="https://www.youtube.com/watch?v=Ny-Hnq970Ps" data-fancybox="latest-videos" data-caption="Cras mattis consectetur purus sit amet fermentum">
+                    <span class="fi-module-latest-videos__carousel__item__image">
+                      <img src="media/module-videos/01-580x773.jpg" />
+                    </span>
+                    <span class="fi-module-latest-videos__carousel__item__caption">
+                      <strong>Lorem ipsum</strong>
+                      Cras mattis consectetur purus sit amet fermentum
+                    </span>
+                    <svg class="fi-module-latest-videos__carousel__item__play"><use xlink:href="#icon-play"></use></svg>
+                  </a>
+                </div>
+                <div class="fi-module-latest-videos__carousel__item">
+                  <a href="https://www.youtube.com/watch?v=1DZCqyoOef4" data-fancybox="latest-videos" data-caption="Cras mattis consectetur purus sit amet fermentum">
+                    <span class="fi-module-latest-videos__carousel__item__image">
+                      <img src="media/module-videos/02-580x773.jpg" />
+                    </span>
+                    <span class="fi-module-latest-videos__carousel__item__caption">
+                      <strong>Lorem ipsum</strong>
+                      Cras mattis consectetur purus sit amet fermentum
+                    </span>
+                    <svg class="fi-module-latest-videos__carousel__item__play"><use xlink:href="#icon-play"></use></svg>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
         </section>
+        <script>
+          $(function() {
+            $(".fi-module-latest-videos__carousel__wrapper").owlCarousel({
+              loop: false,
+              responsive: {
+                0: {
+                  items: 2,
+                },
+                768: {
+                  items: 3,
+                },
+                1024: {
+                  items: 4
+                }
+              }
+            }).on('changed.owl.carousel', function(event) {
+              var item = event.item.index + 1;
+              var page = event.page.index + 1;
+              var pages = event.page.count;
+              if (item == 1) {
+                $(".fi-module-latest-videos__carousel__arrow--left").addClass("fi-module-latest-videos__carousel__arrow--disabled");
+              } else {
+                $(".fi-module-latest-videos__carousel__arrow--left").removeClass("fi-module-latest-videos__carousel__arrow--disabled");
+              }
+              if (page == pages) {
+                $(".fi-module-latest-videos__carousel__arrow--right").addClass("fi-module-latest-videos__carousel__arrow--disabled");
+              } else {
+                $(".fi-module-latest-videos__carousel__arrow--right").removeClass("fi-module-latest-videos__carousel__arrow--disabled");
+              }
+            });;
+            $(".fi-module-latest-videos__carousel__arrow--left").on("click", function() {
+              $(".fi-module-latest-videos__carousel__wrapper").trigger('prev.owl.carousel');
+            });
+            $(".fi-module-latest-videos__carousel__arrow--right").on("click", function() {
+              $(".fi-module-latest-videos__carousel__wrapper").trigger('next.owl.carousel');
+            });
+          });
+        </script>
         <!---------------------------------------------------------------------------------
         E N D  V I D E O S
         --------------------------------------------------------------------------------->
@@ -927,10 +1120,17 @@
 
 
 
+
+
+
+
+
+
+
+
         <!-- *****************************************************************************
         P H O T O S
         ***************************************************************************** -->
-        
         <link href="./assets/css/home_module_photos.css" rel="stylesheet" type="text/css">
         <link href="./assets/css/owl.carousel.min.css" rel="stylesheet" type="text/css">
         <link href="./assets/css/jquery.fancybox.min.css" rel="stylesheet" type="text/css">
@@ -949,208 +1149,209 @@
             </div>
           </div>
           <div class="fi-module-latest-photos__galleries">
-            <div class="container-fluid">
-              <span class="fi-module-latest-photos__galleries__arrow">
-                <svg><use xlink:href="#icon-carousel-right"></use></svg>
-              </span>
-              <div class="owl-carousel fi-module-latest-photos__carousel">
-                <ul class="fi-module-latest-photos__gallery list-unstyled">
-                  <li class="fi-module-latest-photos__gallery__item fi-module-latest-photos__gallery__item--big">
-                    <a href="media/module-gallery/01.jpg" data-fancybox="latest-photos" class="fi-module-latest-photos__gallery__item__image" data-caption="Head coach of England, Steve Cooper poses for photos with Sol Campbell">
-                      <picture>
-                        <source srcset="media/module-gallery/01-800x800.jpg" media="(min-width: 1440px)" />
-                        <img srcset="media/module-gallery/01-580x580.jpg" />
-                      </picture>
-                      <span class="fi-module-latest-photos__gallery__item__caption">Head coach of England, Steve Cooper poses for photos with Sol Campbell</span>
-                    </a>
-                  </li>
-                  <li class="fi-module-latest-photos__gallery__item fi-module-latest-photos__gallery__item--wide">
-                    <a href="media/module-gallery/02.jpg" data-fancybox="latest-photos" class="fi-module-latest-photos__gallery__item__image" data-caption="Abel Ruiz of Spain celebrates a scored goal">
-                      <picture>
-                        <source srcset="media/module-gallery/02-768x432.jpg" media="(min-width: 1024px)" />
-                        <source srcset="media/module-gallery/02-320x180.jpg" media="(min-width: 768px)" />
-                        <img srcset="media/module-gallery/02-220x220.jpg" />
-                      </picture>
-                      <span class="fi-module-latest-photos__gallery__item__caption">Abel Ruiz of Spain celebrates a scored goal</span>
-                    </a>
-                  </li>
-                  <li class="fi-module-latest-photos__gallery__item">
-                    <a href="media/module-gallery/03.jpg" data-fancybox="latest-photos" class="fi-module-latest-photos__gallery__item__image" data-caption="Goalkeeper of England, Curtis Anderson in action">
-                      <picture>
-                        <source srcset="media/module-gallery/03-580x580.jpg" media="(min-width: 1024px)" />
-                        <img srcset="media/module-gallery/03-220x220.jpg" />
-                      </picture>
-                      <span class="fi-module-latest-photos__gallery__item__caption">Goalkeeper of England, Curtis Anderson in action</span>
-                    </a>
-                  </li>
-                  <li class="fi-module-latest-photos__gallery__item">
-                    <a href="media/module-gallery/04.jpg" data-fancybox="latest-photos" class="fi-module-latest-photos__gallery__item__image" data-caption="Players of Mali enter to the field">
-                      <picture>
-                        <source srcset="media/module-gallery/04-580x580.jpg" media="(min-width: 1024px)" />
-                        <img srcset="media/module-gallery/04-220x220.jpg" />
-                      </picture>
-                      <span class="fi-module-latest-photos__gallery__item__caption">Players of Mali enter to the field</span>
-                    </a>
-                  </li>
-                  <li class="fi-module-latest-photos__gallery__item fi-module-latest-photos__gallery__item--wide">
-                    <a href="media/module-gallery/05.jpg" data-fancybox="latest-photos" class="fi-module-latest-photos__gallery__item__image" data-caption="Korea DPR fans">
-                      <picture>
-                        <source srcset="media/module-gallery/05-768x432.jpg" media="(min-width: 1024px)" />
-                        <source srcset="media/module-gallery/05-320x180.jpg" media="(min-width: 768px)" />
-                        <img srcset="media/module-gallery/05-220x220.jpg" />
-                      </picture>
-                      <span class="fi-module-latest-photos__gallery__item__caption">Korea DPR fans</span>
-                    </a>
-                  </li>
-                </ul>
-                <ul class="fi-module-latest-photos__gallery list-unstyled">
-                  <li class="fi-module-latest-photos__gallery__item fi-module-latest-photos__gallery__item--big fi-module-latest-photos__gallery__item--right">
-                    <a href="media/module-gallery/02.jpg" data-fancybox="latest-photos" class="fi-module-latest-photos__gallery__item__image" data-caption="Abel Ruiz of Spain celebrates a scored goal">
-                      <picture>
-                        <source srcset="media/module-gallery/02-800x800.jpg" media="(min-width: 1440px)" />
-                        <img srcset="media/module-gallery/02-580x580.jpg" />
-                      </picture>
-                      <span class="fi-module-latest-photos__gallery__item__caption">Abel Ruiz of Spain celebrates a scored goal</span>
-                    </a>
-                  </li>
-                  <li class="fi-module-latest-photos__gallery__item">
-                    <a href="media/module-gallery/05.jpg" data-fancybox="latest-photos" class="fi-module-latest-photos__gallery__item__image" data-caption="Korea DPR fans">
-                      <picture>
-                        <source srcset="media/module-gallery/05-580x580.jpg" media="(min-width: 1024px)" />
-                        <img srcset="media/module-gallery/05-220x220.jpg" />
-                      </picture>
-                      <span class="fi-module-latest-photos__gallery__item__caption">Korea DPR fans</span>
-                    </a>
-                  </li>
-                  <li class="fi-module-latest-photos__gallery__item fi-module-latest-photos__gallery__item--wide">
-                    <a href="media/module-gallery/01.jpg" data-fancybox="latest-photos" class="fi-module-latest-photos__gallery__item__image" data-caption="Head coach of England, Steve Cooper poses for photos with Sol Campbell">
-                      <picture>
-                        <source srcset="media/module-gallery/01-768x432.jpg" media="(min-width: 1024px)" />
-                        <source srcset="media/module-gallery/01-320x180.jpg" media="(min-width: 768px)" />
-                        <img srcset="media/module-gallery/01-220x220.jpg" />
-                      </picture>
-                      <span class="fi-module-latest-photos__gallery__item__caption">Head coach of England, Steve Cooper poses for photos with Sol Campbell</span>
-                    </a>
-                  </li>
-                  <li class="fi-module-latest-photos__gallery__item fi-module-latest-photos__gallery__item--wide">
-                    <a href="media/module-gallery/03.jpg" data-fancybox="latest-photos" class="fi-module-latest-photos__gallery__item__image" data-caption="Goalkeeper of England, Curtis Anderson in action">
-                      <picture>
-                        <source srcset="media/module-gallery/03-768x432.jpg" media="(min-width: 1024px)" />
-                        <source srcset="media/module-gallery/03-320x180.jpg" media="(min-width: 768px)" />
-                        <img srcset="media/module-gallery/03-220x220.jpg" />
-                      </picture>
-                      <span class="fi-module-latest-photos__gallery__item__caption">Goalkeeper of England, Curtis Anderson in action</span>
-                    </a>
-                  </li>
-                  <li class="fi-module-latest-photos__gallery__item">
-                    <a href="media/module-gallery/04.jpg" data-fancybox="latest-photos" class="fi-module-latest-photos__gallery__item__image" data-caption="Players of Mali enter to the field">
-                      <picture>
-                        <source srcset="media/module-gallery/04-580x580.jpg" media="(min-width: 1024px)" />
-                        <img srcset="media/module-gallery/04-220x220.jpg" />
-                      </picture>
-                      <span class="fi-module-latest-photos__gallery__item__caption">Players of Mali enter to the field</span>
-                    </a>
-                  </li>
-                </ul>
-                <ul class="fi-module-latest-photos__gallery list-unstyled">
-                  <li class="fi-module-latest-photos__gallery__item fi-module-latest-photos__gallery__item--big">
-                    <a href="media/module-gallery/03.jpg" data-fancybox="latest-photos" class="fi-module-latest-photos__gallery__item__image" data-caption="Goalkeeper of England, Curtis Anderson in action">
-                      <picture>
-                        <source srcset="media/module-gallery/03-800x800.jpg" media="(min-width: 1440px)" />
-                        <img srcset="media/module-gallery/03-580x580.jpg" />
-                      </picture>
-                      <span class="fi-module-latest-photos__gallery__item__caption">Goalkeeper of England, Curtis Anderson in action</span>
-                    </a>
-                  </li>
-                  <li class="fi-module-latest-photos__gallery__item">
-                    <a href="media/module-gallery/05.jpg" data-fancybox="latest-photos" class="fi-module-latest-photos__gallery__item__image" data-caption="Korea DPR fans">
-                      <picture>
-                        <source srcset="media/module-gallery/05-580x580.jpg" media="(min-width: 1024px)" />
-                        <img srcset="media/module-gallery/05-220x220.jpg" />
-                      </picture>
-                      <span class="fi-module-latest-photos__gallery__item__caption">Korea DPR fans</span>
-                    </a>
-                  </li>
-                  <li class="fi-module-latest-photos__gallery__item fi-module-latest-photos__gallery__item--wide">
-                    <a href="media/module-gallery/04.jpg" data-fancybox="latest-photos" class="fi-module-latest-photos__gallery__item__image" data-caption="Players of Mali enter to the field">
-                      <picture>
-                        <source srcset="media/module-gallery/04-768x432.jpg" media="(min-width: 1024px)" />
-                        <source srcset="media/module-gallery/04-320x180.jpg" media="(min-width: 768px)" />
-                        <img srcset="media/module-gallery/04-220x220.jpg" />
-                      </picture>
-                      <span class="fi-module-latest-photos__gallery__item__caption">Players of Mali enter to the field</span>
-                    </a>
-                  </li>
-                  <li class="fi-module-latest-photos__gallery__item fi-module-latest-photos__gallery__item--wide">
-                    <a href="media/module-gallery/01.jpg" data-fancybox="latest-photos" class="fi-module-latest-photos__gallery__item__image" data-caption="Head coach of England, Steve Cooper poses for photos with Sol Campbell">
-                      <picture>
-                        <source srcset="media/module-gallery/01-768x432.jpg" media="(min-width: 1024px)" />
-                        <source srcset="media/module-gallery/01-320x180.jpg" media="(min-width: 768px)" />
-                        <img srcset="media/module-gallery/01-220x220.jpg" />
-                      </picture>
-                      <span class="fi-module-latest-photos__gallery__item__caption">Head coach of England, Steve Cooper poses for photos with Sol Campbell</span>
-                    </a>
-                  </li>
-                  <li class="fi-module-latest-photos__gallery__item">
-                    <a href="media/module-gallery/02.jpg" data-fancybox="latest-photos" class="fi-module-latest-photos__gallery__item__image" data-caption="Abel Ruiz of Spain celebrates a scored goal">
-                      <picture>
-                        <source srcset="media/module-gallery/02-580x580.jpg" media="(min-width: 1024px)" />
-                        <img srcset="media/module-gallery/02-220x220.jpg" />
-                      </picture>
-                      <span class="fi-module-latest-photos__gallery__item__caption">Abel Ruiz of Spain celebrates a scored goal</span>
-                    </a>
-                  </li>
-                </ul>
-                <ul class="fi-module-latest-photos__gallery list-unstyled">
-                  <li class="fi-module-latest-photos__gallery__item fi-module-latest-photos__gallery__item--big fi-module-latest-photos__gallery__item--right">
-                    <a href="media/module-gallery/04.jpg" data-fancybox="latest-photos" class="fi-module-latest-photos__gallery__item__image" data-caption="Players of Mali enter to the field">
-                      <picture>
-                        <source srcset="media/module-gallery/04-800x800.jpg" media="(min-width: 1440px)" />
-                        <img srcset="media/module-gallery/04-580x580.jpg" />
-                      </picture>
-                      <span class="fi-module-latest-photos__gallery__item__caption">Players of Mali enter to the field</span>
-                    </a>
-                  </li>
-                  <li class="fi-module-latest-photos__gallery__item fi-module-latest-photos__gallery__item--wide">
-                    <a href="media/module-gallery/01.jpg" data-fancybox="latest-photos" class="fi-module-latest-photos__gallery__item__image" data-caption="Head coach of England, Steve Cooper poses for photos with Sol Campbell">
-                      <picture>
-                        <source srcset="media/module-gallery/01-768x432.jpg" media="(min-width: 1024px)" />
-                        <source srcset="media/module-gallery/01-320x180.jpg" media="(min-width: 768px)" />
-                        <img srcset="media/module-gallery/01-220x220.jpg" />
-                      </picture>
-                      <span class="fi-module-latest-photos__gallery__item__caption">Head coach of England, Steve Cooper poses for photos with Sol Campbell</span>
-                    </a>
-                  </li>
-                  <li class="fi-module-latest-photos__gallery__item">
-                    <a href="media/module-gallery/05.jpg" data-fancybox="latest-photos" class="fi-module-latest-photos__gallery__item__image" data-caption="Korea DPR fans">
-                      <picture>
-                        <source srcset="media/module-gallery/05-580x580.jpg" media="(min-width: 1024px)" />
-                        <img srcset="media/module-gallery/05-220x220.jpg" />
-                      </picture>
-                      <span class="fi-module-latest-photos__gallery__item__caption">Korea DPR fans</span>
-                    </a>
-                  </li>
-                  <li class="fi-module-latest-photos__gallery__item">
-                    <a href="media/module-gallery/02.jpg" data-fancybox="latest-photos" class="fi-module-latest-photos__gallery__item__image" data-caption="Abel Ruiz of Spain celebrates a scored goal">
-                      <picture>
-                        <source srcset="media/module-gallery/02-580x580.jpg" media="(min-width: 1024px)" />
-                        <img srcset="media/module-gallery/02-220x220.jpg" />
-                      </picture>
-                      <span class="fi-module-latest-photos__gallery__item__caption">Abel Ruiz of Spain celebrates a scored goal</span>
-                    </a>
-                  </li>
-                  <li class="fi-module-latest-photos__gallery__item fi-module-latest-photos__gallery__item--wide">
-                    <a href="media/module-gallery/03.jpg" data-fancybox="latest-photos" class="fi-module-latest-photos__gallery__item__image" data-caption="Goalkeeper of England, Curtis Anderson in action">
-                      <picture>
-                        <source srcset="media/module-gallery/03-768x432.jpg" media="(min-width: 1024px)" />
-                        <source srcset="media/module-gallery/03-320x180.jpg" media="(min-width: 768px)" />
-                        <img srcset="media/module-gallery/03-220x220.jpg" />
-                      </picture>
-                      <span class="fi-module-latest-photos__gallery__item__caption">Goalkeeper of England, Curtis Anderson in action</span>
-                    </a>
-                  </li>
-                </ul>
-              </div>
+            <span class="fi-module-latest-photos__galleries__arrow fi-module-latest-photos__galleries__arrow--left fi-module-latest-photos__galleries__arrow--disabled">
+              <svg><use xlink:href="#icon-carousel-left"></use></svg>
+            </span>
+            <span class="fi-module-latest-photos__galleries__arrow fi-module-latest-photos__galleries__arrow--right">
+              <svg><use xlink:href="#icon-carousel-right"></use></svg>
+            </span>
+            <div class="owl-carousel fi-module-latest-photos__carousel">
+              <ul class="fi-module-latest-photos__gallery list-unstyled">
+                <li class="fi-module-latest-photos__gallery__item fi-module-latest-photos__gallery__item--big">
+                  <a href="media/module-gallery/01.jpg" data-fancybox="latest-photos" class="fi-module-latest-photos__gallery__item__image" data-caption="Head coach of England, Steve Cooper poses for photos with Sol Campbell">
+                    <picture>
+                      <source srcset="media/module-gallery/01-800x800.jpg" media="(min-width: 1440px)" />
+                      <img srcset="media/module-gallery/01-580x580.jpg" />
+                    </picture>
+                    <span class="fi-module-latest-photos__gallery__item__caption">Head coach of England, Steve Cooper poses for photos with Sol Campbell</span>
+                  </a>
+                </li>
+                <li class="fi-module-latest-photos__gallery__item fi-module-latest-photos__gallery__item--wide">
+                  <a href="media/module-gallery/02.jpg" data-fancybox="latest-photos" class="fi-module-latest-photos__gallery__item__image" data-caption="Abel Ruiz of Spain celebrates a scored goal">
+                    <picture>
+                      <source srcset="media/module-gallery/02-768x432.jpg" media="(min-width: 1024px)" />
+                      <source srcset="media/module-gallery/02-320x180.jpg" media="(min-width: 768px)" />
+                      <img srcset="media/module-gallery/02-220x220.jpg" />
+                    </picture>
+                    <span class="fi-module-latest-photos__gallery__item__caption">Abel Ruiz of Spain celebrates a scored goal</span>
+                  </a>
+                </li>
+                <li class="fi-module-latest-photos__gallery__item">
+                  <a href="media/module-gallery/03.jpg" data-fancybox="latest-photos" class="fi-module-latest-photos__gallery__item__image" data-caption="Goalkeeper of England, Curtis Anderson in action">
+                    <picture>
+                      <source srcset="media/module-gallery/03-580x580.jpg" media="(min-width: 1024px)" />
+                      <img srcset="media/module-gallery/03-220x220.jpg" />
+                    </picture>
+                    <span class="fi-module-latest-photos__gallery__item__caption">Goalkeeper of England, Curtis Anderson in action</span>
+                  </a>
+                </li>
+                <li class="fi-module-latest-photos__gallery__item">
+                  <a href="media/module-gallery/04.jpg" data-fancybox="latest-photos" class="fi-module-latest-photos__gallery__item__image" data-caption="Players of Mali enter to the field">
+                    <picture>
+                      <source srcset="media/module-gallery/04-580x580.jpg" media="(min-width: 1024px)" />
+                      <img srcset="media/module-gallery/04-220x220.jpg" />
+                    </picture>
+                    <span class="fi-module-latest-photos__gallery__item__caption">Players of Mali enter to the field</span>
+                  </a>
+                </li>
+                <li class="fi-module-latest-photos__gallery__item fi-module-latest-photos__gallery__item--wide">
+                  <a href="media/module-gallery/05.jpg" data-fancybox="latest-photos" class="fi-module-latest-photos__gallery__item__image" data-caption="Korea DPR fans">
+                    <picture>
+                      <source srcset="media/module-gallery/05-768x432.jpg" media="(min-width: 1024px)" />
+                      <source srcset="media/module-gallery/05-320x180.jpg" media="(min-width: 768px)" />
+                      <img srcset="media/module-gallery/05-220x220.jpg" />
+                    </picture>
+                    <span class="fi-module-latest-photos__gallery__item__caption">Korea DPR fans</span>
+                  </a>
+                </li>
+              </ul>
+              <ul class="fi-module-latest-photos__gallery list-unstyled">
+                <li class="fi-module-latest-photos__gallery__item fi-module-latest-photos__gallery__item--big fi-module-latest-photos__gallery__item--right">
+                  <a href="media/module-gallery/02.jpg" data-fancybox="latest-photos" class="fi-module-latest-photos__gallery__item__image" data-caption="Abel Ruiz of Spain celebrates a scored goal">
+                    <picture>
+                      <source srcset="media/module-gallery/02-800x800.jpg" media="(min-width: 1440px)" />
+                      <img srcset="media/module-gallery/02-580x580.jpg" />
+                    </picture>
+                    <span class="fi-module-latest-photos__gallery__item__caption">Abel Ruiz of Spain celebrates a scored goal</span>
+                  </a>
+                </li>
+                <li class="fi-module-latest-photos__gallery__item">
+                  <a href="media/module-gallery/05.jpg" data-fancybox="latest-photos" class="fi-module-latest-photos__gallery__item__image" data-caption="Korea DPR fans">
+                    <picture>
+                      <source srcset="media/module-gallery/05-580x580.jpg" media="(min-width: 1024px)" />
+                      <img srcset="media/module-gallery/05-220x220.jpg" />
+                    </picture>
+                    <span class="fi-module-latest-photos__gallery__item__caption">Korea DPR fans</span>
+                  </a>
+                </li>
+                <li class="fi-module-latest-photos__gallery__item fi-module-latest-photos__gallery__item--wide">
+                  <a href="media/module-gallery/01.jpg" data-fancybox="latest-photos" class="fi-module-latest-photos__gallery__item__image" data-caption="Head coach of England, Steve Cooper poses for photos with Sol Campbell">
+                    <picture>
+                      <source srcset="media/module-gallery/01-768x432.jpg" media="(min-width: 1024px)" />
+                      <source srcset="media/module-gallery/01-320x180.jpg" media="(min-width: 768px)" />
+                      <img srcset="media/module-gallery/01-220x220.jpg" />
+                    </picture>
+                    <span class="fi-module-latest-photos__gallery__item__caption">Head coach of England, Steve Cooper poses for photos with Sol Campbell</span>
+                  </a>
+                </li>
+                <li class="fi-module-latest-photos__gallery__item fi-module-latest-photos__gallery__item--wide">
+                  <a href="media/module-gallery/03.jpg" data-fancybox="latest-photos" class="fi-module-latest-photos__gallery__item__image" data-caption="Goalkeeper of England, Curtis Anderson in action">
+                    <picture>
+                      <source srcset="media/module-gallery/03-768x432.jpg" media="(min-width: 1024px)" />
+                      <source srcset="media/module-gallery/03-320x180.jpg" media="(min-width: 768px)" />
+                      <img srcset="media/module-gallery/03-220x220.jpg" />
+                    </picture>
+                    <span class="fi-module-latest-photos__gallery__item__caption">Goalkeeper of England, Curtis Anderson in action</span>
+                  </a>
+                </li>
+                <li class="fi-module-latest-photos__gallery__item">
+                  <a href="media/module-gallery/04.jpg" data-fancybox="latest-photos" class="fi-module-latest-photos__gallery__item__image" data-caption="Players of Mali enter to the field">
+                    <picture>
+                      <source srcset="media/module-gallery/04-580x580.jpg" media="(min-width: 1024px)" />
+                      <img srcset="media/module-gallery/04-220x220.jpg" />
+                    </picture>
+                    <span class="fi-module-latest-photos__gallery__item__caption">Players of Mali enter to the field</span>
+                  </a>
+                </li>
+              </ul>
+              <ul class="fi-module-latest-photos__gallery list-unstyled">
+                <li class="fi-module-latest-photos__gallery__item fi-module-latest-photos__gallery__item--big">
+                  <a href="media/module-gallery/03.jpg" data-fancybox="latest-photos" class="fi-module-latest-photos__gallery__item__image" data-caption="Goalkeeper of England, Curtis Anderson in action">
+                    <picture>
+                      <source srcset="media/module-gallery/03-800x800.jpg" media="(min-width: 1440px)" />
+                      <img srcset="media/module-gallery/03-580x580.jpg" />
+                    </picture>
+                    <span class="fi-module-latest-photos__gallery__item__caption">Goalkeeper of England, Curtis Anderson in action</span>
+                  </a>
+                </li>
+                <li class="fi-module-latest-photos__gallery__item">
+                  <a href="media/module-gallery/05.jpg" data-fancybox="latest-photos" class="fi-module-latest-photos__gallery__item__image" data-caption="Korea DPR fans">
+                    <picture>
+                      <source srcset="media/module-gallery/05-580x580.jpg" media="(min-width: 1024px)" />
+                      <img srcset="media/module-gallery/05-220x220.jpg" />
+                    </picture>
+                    <span class="fi-module-latest-photos__gallery__item__caption">Korea DPR fans</span>
+                  </a>
+                </li>
+                <li class="fi-module-latest-photos__gallery__item fi-module-latest-photos__gallery__item--wide">
+                  <a href="media/module-gallery/04.jpg" data-fancybox="latest-photos" class="fi-module-latest-photos__gallery__item__image" data-caption="Players of Mali enter to the field">
+                    <picture>
+                      <source srcset="media/module-gallery/04-768x432.jpg" media="(min-width: 1024px)" />
+                      <source srcset="media/module-gallery/04-320x180.jpg" media="(min-width: 768px)" />
+                      <img srcset="media/module-gallery/04-220x220.jpg" />
+                    </picture>
+                    <span class="fi-module-latest-photos__gallery__item__caption">Players of Mali enter to the field</span>
+                  </a>
+                </li>
+                <li class="fi-module-latest-photos__gallery__item fi-module-latest-photos__gallery__item--wide">
+                  <a href="media/module-gallery/01.jpg" data-fancybox="latest-photos" class="fi-module-latest-photos__gallery__item__image" data-caption="Head coach of England, Steve Cooper poses for photos with Sol Campbell">
+                    <picture>
+                      <source srcset="media/module-gallery/01-768x432.jpg" media="(min-width: 1024px)" />
+                      <source srcset="media/module-gallery/01-320x180.jpg" media="(min-width: 768px)" />
+                      <img srcset="media/module-gallery/01-220x220.jpg" />
+                    </picture>
+                    <span class="fi-module-latest-photos__gallery__item__caption">Head coach of England, Steve Cooper poses for photos with Sol Campbell</span>
+                  </a>
+                </li>
+                <li class="fi-module-latest-photos__gallery__item">
+                  <a href="media/module-gallery/02.jpg" data-fancybox="latest-photos" class="fi-module-latest-photos__gallery__item__image" data-caption="Abel Ruiz of Spain celebrates a scored goal">
+                    <picture>
+                      <source srcset="media/module-gallery/02-580x580.jpg" media="(min-width: 1024px)" />
+                      <img srcset="media/module-gallery/02-220x220.jpg" />
+                    </picture>
+                    <span class="fi-module-latest-photos__gallery__item__caption">Abel Ruiz of Spain celebrates a scored goal</span>
+                  </a>
+                </li>
+              </ul>
+              <ul class="fi-module-latest-photos__gallery list-unstyled">
+                <li class="fi-module-latest-photos__gallery__item fi-module-latest-photos__gallery__item--big fi-module-latest-photos__gallery__item--right">
+                  <a href="media/module-gallery/04.jpg" data-fancybox="latest-photos" class="fi-module-latest-photos__gallery__item__image" data-caption="Players of Mali enter to the field">
+                    <picture>
+                      <source srcset="media/module-gallery/04-800x800.jpg" media="(min-width: 1440px)" />
+                      <img srcset="media/module-gallery/04-580x580.jpg" />
+                    </picture>
+                    <span class="fi-module-latest-photos__gallery__item__caption">Players of Mali enter to the field</span>
+                  </a>
+                </li>
+                <li class="fi-module-latest-photos__gallery__item fi-module-latest-photos__gallery__item--wide">
+                  <a href="media/module-gallery/01.jpg" data-fancybox="latest-photos" class="fi-module-latest-photos__gallery__item__image" data-caption="Head coach of England, Steve Cooper poses for photos with Sol Campbell">
+                    <picture>
+                      <source srcset="media/module-gallery/01-768x432.jpg" media="(min-width: 1024px)" />
+                      <source srcset="media/module-gallery/01-320x180.jpg" media="(min-width: 768px)" />
+                      <img srcset="media/module-gallery/01-220x220.jpg" />
+                    </picture>
+                    <span class="fi-module-latest-photos__gallery__item__caption">Head coach of England, Steve Cooper poses for photos with Sol Campbell</span>
+                  </a>
+                </li>
+                <li class="fi-module-latest-photos__gallery__item">
+                  <a href="media/module-gallery/05.jpg" data-fancybox="latest-photos" class="fi-module-latest-photos__gallery__item__image" data-caption="Korea DPR fans">
+                    <picture>
+                      <source srcset="media/module-gallery/05-580x580.jpg" media="(min-width: 1024px)" />
+                      <img srcset="media/module-gallery/05-220x220.jpg" />
+                    </picture>
+                    <span class="fi-module-latest-photos__gallery__item__caption">Korea DPR fans</span>
+                  </a>
+                </li>
+                <li class="fi-module-latest-photos__gallery__item">
+                  <a href="media/module-gallery/02.jpg" data-fancybox="latest-photos" class="fi-module-latest-photos__gallery__item__image" data-caption="Abel Ruiz of Spain celebrates a scored goal">
+                    <picture>
+                      <source srcset="media/module-gallery/02-580x580.jpg" media="(min-width: 1024px)" />
+                      <img srcset="media/module-gallery/02-220x220.jpg" />
+                    </picture>
+                    <span class="fi-module-latest-photos__gallery__item__caption">Abel Ruiz of Spain celebrates a scored goal</span>
+                  </a>
+                </li>
+                <li class="fi-module-latest-photos__gallery__item fi-module-latest-photos__gallery__item--wide">
+                  <a href="media/module-gallery/03.jpg" data-fancybox="latest-photos" class="fi-module-latest-photos__gallery__item__image" data-caption="Goalkeeper of England, Curtis Anderson in action">
+                    <picture>
+                      <source srcset="media/module-gallery/03-768x432.jpg" media="(min-width: 1024px)" />
+                      <source srcset="media/module-gallery/03-320x180.jpg" media="(min-width: 768px)" />
+                      <img srcset="media/module-gallery/03-220x220.jpg" />
+                    </picture>
+                    <span class="fi-module-latest-photos__gallery__item__caption">Goalkeeper of England, Curtis Anderson in action</span>
+                  </a>
+                </li>
+              </ul>
             </div>
           </div>
         </section>
@@ -1165,25 +1366,235 @@
             ];
             $.fancybox.defaults.hash = false;
             $('.fi-module-latest-photos__carousel').owlCarousel({
-              loop:true,
+              loop:false,
               margin:1,
               nav:false,
               items:1
+            }).on('changed.owl.carousel', function(event) {
+              var page = event.page.index + 1;
+              var pages = event.page.count;
+              if (page == 1) {
+                $(".fi-module-latest-photos__galleries__arrow--left").addClass("fi-module-latest-photos__galleries__arrow--disabled");
+              } else {
+                $(".fi-module-latest-photos__galleries__arrow--left").removeClass("fi-module-latest-photos__galleries__arrow--disabled");
+              }
+              if (page == pages) {
+                $(".fi-module-latest-photos__galleries__arrow--right").addClass("fi-module-latest-photos__galleries__arrow--disabled");
+              } else {
+                $(".fi-module-latest-photos__galleries__arrow--right").removeClass("fi-module-latest-photos__galleries__arrow--disabled");
+              }
             });
-            $(".fi-module-latest-photos__galleries__arrow").on("click", function() {
+            $(".fi-module-latest-photos__galleries__arrow--left").on("click", function() {
+              $(".fi-module-latest-photos__carousel").trigger('prev.owl.carousel');
+            });
+            $(".fi-module-latest-photos__galleries__arrow--right").on("click", function() {
               $(".fi-module-latest-photos__carousel").trigger('next.owl.carousel');
             });
           });
         </script>
-
         <!-- *****************************************************************************
         E N D  P H O T O S
         ***************************************************************************** -->
-       
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        <!-- *********************************************************************
+        F I F A   R A N K I N G
+        ********************************************************************* -->
+
+        <link href="./assets/css/home_module_ranking.css" rel="stylesheet" type="text/css">
+
+        <section class="fi-module-ranking section">
+          <div class="container-fluid">
+            <div class="fi-module__header">
+              <div class="fi-call__more fi-module__call">
+                <ul class="fi-module-ranking__nav list-unstyled">
+                  <li class="fi-module-ranking__nav__item fi-module-ranking__nav__item--active"><a href="#">Man</a></li>
+                  <li class="fi-module-ranking__nav__item"><a href="#">Woman</a></li>
+                </ul>
+              </div>
+              <h1 class="fifa-section__title"><img src="media/module-ranking/ranking-coca-cola-fifa-logo.png" /> Fifa/Coca Cola<br />World Ranking</h1>
+            </div>
+          </div>
+          <div class="fi-module-ranking__content fi-module-ranking__content--active">
+            <span class="fi-module-ranking__content__bg">
+              <picture>
+                <source srcset="media/module-ranking/ranking-bg-1440-630.jpg" media="(min-width: 1280px)" />
+                <source srcset="media/module-ranking/ranking-bg-1024-576.jpg" media="(min-width: 1024px)" />
+                <source srcset="media/module-ranking/ranking-bg-768-432.jpg" media="(min-width: 768px)" />
+                <img srcset="media/module-ranking/ranking-bg-580-580.jpg" />
+              </picture>
+            </span>
+            <div class="container-fluid">
+              <div class="row">
+                <div class="col-sm-6 col-md-7 col-lg-8">
+                  <div class="fi-module-ranking__main">
+                    <div class="fi-module-ranking__main__wrap">
+                      <p><strong>+47</strong> Cape Verde Islands<br />bounce back in style</p>
+                      <a href="#" class="fi-module-ranking__main__button">
+                        Discover
+                        <svg width="12px" height="9px" viewBox="0 0 12 9" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                          <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                            <polyline stroke="#FFFFFF" stroke-linecap="round" stroke-linejoin="round" transform="translate(9.157898, 4.455394) scale(-1, 1) translate(-9.157898, -4.455394) " points="11.315796 0.799987793 7 4.50757596 11.315796 8.11079998"></polyline>
+                            <path d="M10.5,4.5 L1.44461486,4.5" stroke="#FFFFFF" stroke-linecap="square"></path>
+                          </g>
+                        </svg>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-sm-6 col-md-5 col-lg-4">
+                  <ul class="list-unstyled fi-module-ranking__ranking">
+                    <li class="fi-module-ranking__ranking__item">
+                      <span class="fi-module-ranking__ranking__item__number">#1</span>
+                      <img src="http://img.fifa.com/images/flags/4/ger.png" class="fi-module-ranking__ranking__item__flag" />
+                      <span class="fi-module-ranking__ranking__item__name">Germany</span>
+                      <svg viewBox="0 0 29 29" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" class="fi-module-ranking__ranking__item__arrow">
+                        <path d="M16.4930915,8.7716369 L26.0341645,17.2525907 L26.0341645,17.2525907 C26.4469473,17.6195087 26.484128,18.2515811 26.11721,18.6643638 C25.9274426,18.8778522 25.6554385,19 25.3698007,19 L3.63019932,19 L3.63019932,19 C3.07791457,19 2.63019932,18.5522847 2.63019932,18 C2.63019932,17.7143622 2.75234712,17.4423581 2.96583548,17.2525907 L12.5069085,8.7716369 L12.5069085,8.7716369 C13.6435665,7.76127418 15.3564335,7.76127418 16.4930915,8.7716369 Z" stroke="none" stroke-width="1" fill-rule="evenodd" fill="#73BE19"></path>
+                      </svg>
+                      <span class="fi-module-ranking__ranking__item__points">PTS. <strong>1606</strong></span>
+                    </li>
+                    <li class="fi-module-ranking__ranking__item">
+                      <span class="fi-module-ranking__ranking__item__number">#2</span>
+                      <img src="http://img.fifa.com/images/flags/4/bra.png" class="fi-module-ranking__ranking__item__flag" />
+                      <span class="fi-module-ranking__ranking__item__name">Brazil</span>
+                      <svg viewBox="0 0 29 29" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" class="fi-module-ranking__ranking__item__arrow">
+                        <g stroke="none" stroke-width="1" fill-rule="evenodd" fill="#999894">
+                          <path d="M16.4930915,2.7716369 L26.0341645,11.2525907 L26.0341645,11.2525907 C26.4469473,11.6195087 26.484128,12.2515811 26.11721,12.6643638 C25.9274426,12.8778522 25.6554385,13 25.3698007,13 L3.63019932,13 L3.63019932,13 C3.07791457,13 2.63019932,12.5522847 2.63019932,12 C2.63019932,11.7143622 2.75234712,11.4423581 2.96583548,11.2525907 L12.5069085,2.7716369 L12.5069085,2.7716369 C13.6435665,1.76127418 15.3564335,1.76127418 16.4930915,2.7716369 Z"></path>
+                          <path d="M16.4930915,17.7716369 L26.0341645,26.2525907 L26.0341645,26.2525907 C26.4469473,26.6195087 26.484128,27.2515811 26.11721,27.6643638 C25.9274426,27.8778522 25.6554385,28 25.3698007,28 L3.63019932,28 L3.63019932,28 C3.07791457,28 2.63019932,27.5522847 2.63019932,27 C2.63019932,26.7143622 2.75234712,26.4423581 2.96583548,26.2525907 L12.5069085,17.7716369 L12.5069085,17.7716369 C13.6435665,16.7612742 15.3564335,16.7612742 16.4930915,17.7716369 Z" transform="translate(14.500000, 22.000000) scale(1, -1) translate(-14.500000, -22.000000) "></path>
+                        </g>
+                      </svg>
+                      <span class="fi-module-ranking__ranking__item__points">PTS. <strong>1590</strong></span>
+                    </li>
+                    <li class="fi-module-ranking__ranking__item">
+                      <span class="fi-module-ranking__ranking__item__number">#3</span>
+                      <img src="http://img.fifa.com/images/flags/4/por.png" class="fi-module-ranking__ranking__item__flag" />
+                      <span class="fi-module-ranking__ranking__item__name">Portugal</span>
+                      <svg viewBox="0 0 29 29" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" class="fi-module-ranking__ranking__item__arrow">
+                        <path d="M16.4930915,8.7716369 L26.0341645,17.2525907 L26.0341645,17.2525907 C26.4469473,17.6195087 26.484128,18.2515811 26.11721,18.6643638 C25.9274426,18.8778522 25.6554385,19 25.3698007,19 L3.63019932,19 L3.63019932,19 C3.07791457,19 2.63019932,18.5522847 2.63019932,18 C2.63019932,17.7143622 2.75234712,17.4423581 2.96583548,17.2525907 L12.5069085,8.7716369 L12.5069085,8.7716369 C13.6435665,7.76127418 15.3564335,7.76127418 16.4930915,8.7716369 Z" stroke="none" stroke-width="1" fill-rule="evenodd" fill="#73BE19"></path>
+                      </svg>
+                      <span class="fi-module-ranking__ranking__item__points">PTS. <strong>1386</strong></span>
+                    </li>
+                    <li class="fi-module-ranking__ranking__item fi-module-ranking__ranking__item--active">
+                      <span class="fi-module-ranking__ranking__item__number">#67</span>
+                      <img src="http://img.fifa.com/images/flags/4/cpv.png" class="fi-module-ranking__ranking__item__flag" />
+                      <span class="fi-module-ranking__ranking__item__name">Cape Verde Island</span>
+                      <svg viewBox="0 0 29 29" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" class="fi-module-ranking__ranking__item__arrow">
+                        <path d="M16.4930915,8.7716369 L26.0341645,17.2525907 L26.0341645,17.2525907 C26.4469473,17.6195087 26.484128,18.2515811 26.11721,18.6643638 C25.9274426,18.8778522 25.6554385,19 25.3698007,19 L3.63019932,19 L3.63019932,19 C3.07791457,19 2.63019932,18.5522847 2.63019932,18 C2.63019932,17.7143622 2.75234712,17.4423581 2.96583548,17.2525907 L12.5069085,8.7716369 L12.5069085,8.7716369 C13.6435665,7.76127418 15.3564335,7.76127418 16.4930915,8.7716369 Z" stroke="none" stroke-width="1" fill-rule="evenodd" fill="#73BE19"></path>
+                      </svg>
+                      <span class="fi-module-ranking__ranking__item__points">PTS. <strong>1035</strong></span>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="fi-module-ranking__content">
+            <span class="fi-module-ranking__content__bg">
+              <picture>
+                <source srcset="media/module-ranking/ranking-bg-1440-630-2.jpg" media="(min-width: 1280px)" />
+                <source srcset="media/module-ranking/ranking-bg-1024-576-2.jpg" media="(min-width: 1024px)" />
+                <source srcset="media/module-ranking/ranking-bg-768-432-2.jpg" media="(min-width: 768px)" />
+                <img srcset="media/module-ranking/ranking-bg-580-580-2.jpg" />
+              </picture>
+            </span>
+            <div class="container-fluid">
+              <div class="row">
+                <div class="col-sm-6 col-md-7 col-lg-8">
+                  <div class="fi-module-ranking__main">
+                    <div class="fi-module-ranking__main__wrap">
+                      <p><strong>+30</strong> Australia<br />bounce back in style</p>
+                      <a href="#" class="fi-module-ranking__main__button">
+                        Discover
+                        <svg width="12px" height="9px" viewBox="0 0 12 9" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                          <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                            <polyline stroke="#FFFFFF" stroke-linecap="round" stroke-linejoin="round" transform="translate(9.157898, 4.455394) scale(-1, 1) translate(-9.157898, -4.455394) " points="11.315796 0.799987793 7 4.50757596 11.315796 8.11079998"></polyline>
+                            <path d="M10.5,4.5 L1.44461486,4.5" stroke="#FFFFFF" stroke-linecap="square"></path>
+                          </g>
+                        </svg>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-sm-6 col-md-5 col-lg-4">
+                  <ul class="list-unstyled fi-module-ranking__ranking">
+                    <li class="fi-module-ranking__ranking__item">
+                      <span class="fi-module-ranking__ranking__item__number">#1</span>
+                      <img src="http://img.fifa.com/images/flags/4/usa.png" class="fi-module-ranking__ranking__item__flag" />
+                      <span class="fi-module-ranking__ranking__item__name">USA</span>
+                      <svg viewBox="0 0 29 29" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" class="fi-module-ranking__ranking__item__arrow">
+                        <g stroke="none" stroke-width="1" fill-rule="evenodd" fill="#999894">
+                          <path d="M16.4930915,2.7716369 L26.0341645,11.2525907 L26.0341645,11.2525907 C26.4469473,11.6195087 26.484128,12.2515811 26.11721,12.6643638 C25.9274426,12.8778522 25.6554385,13 25.3698007,13 L3.63019932,13 L3.63019932,13 C3.07791457,13 2.63019932,12.5522847 2.63019932,12 C2.63019932,11.7143622 2.75234712,11.4423581 2.96583548,11.2525907 L12.5069085,2.7716369 L12.5069085,2.7716369 C13.6435665,1.76127418 15.3564335,1.76127418 16.4930915,2.7716369 Z"></path>
+                          <path d="M16.4930915,17.7716369 L26.0341645,26.2525907 L26.0341645,26.2525907 C26.4469473,26.6195087 26.484128,27.2515811 26.11721,27.6643638 C25.9274426,27.8778522 25.6554385,28 25.3698007,28 L3.63019932,28 L3.63019932,28 C3.07791457,28 2.63019932,27.5522847 2.63019932,27 C2.63019932,26.7143622 2.75234712,26.4423581 2.96583548,26.2525907 L12.5069085,17.7716369 L12.5069085,17.7716369 C13.6435665,16.7612742 15.3564335,16.7612742 16.4930915,17.7716369 Z" transform="translate(14.500000, 22.000000) scale(1, -1) translate(-14.500000, -22.000000) "></path>
+                        </g>
+                      </svg>
+                      <span class="fi-module-ranking__ranking__item__points">PTS. <strong>2104</strong></span>
+                    </li>
+                    <li class="fi-module-ranking__ranking__item">
+                      <span class="fi-module-ranking__ranking__item__number">#2</span>
+                      <img src="http://img.fifa.com/images/flags/4/ger.png" class="fi-module-ranking__ranking__item__flag" />
+                      <span class="fi-module-ranking__ranking__item__name">Germany</span>
+                      <svg viewBox="0 0 29 29" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" class="fi-module-ranking__ranking__item__arrow">
+                        <path d="M16.4930915,8.7716369 L26.0341645,17.2525907 L26.0341645,17.2525907 C26.4469473,17.6195087 26.484128,18.2515811 26.11721,18.6643638 C25.9274426,18.8778522 25.6554385,19 25.3698007,19 L3.63019932,19 L3.63019932,19 C3.07791457,19 2.63019932,18.5522847 2.63019932,18 C2.63019932,17.7143622 2.75234712,17.4423581 2.96583548,17.2525907 L12.5069085,8.7716369 L12.5069085,8.7716369 C13.6435665,7.76127418 15.3564335,7.76127418 16.4930915,8.7716369 Z" stroke="none" stroke-width="1" fill-rule="evenodd" fill="#73BE19"></path>
+                      </svg>
+                      <span class="fi-module-ranking__ranking__item__points">PTS. <strong>2077</strong></span>
+                    </li>
+                    <li class="fi-module-ranking__ranking__item">
+                      <span class="fi-module-ranking__ranking__item__number">#3</span>
+                      <img src="http://img.fifa.com/images/flags/4/eng.png" class="fi-module-ranking__ranking__item__flag" />
+                      <span class="fi-module-ranking__ranking__item__name">England</span>
+                      <svg viewBox="0 0 29 29" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" class="fi-module-ranking__ranking__item__arrow">
+                        <path d="M12.5069085,20.2283631 L2.9658355,11.7474093 C2.5530527,11.3804913 2.515872,10.7484189 2.88279,10.3356362 C3.0725574,10.1221478 3.3445615,10 3.6301993,10 L25.3698007,10 C25.9220854,10 26.3698007,10.4477153 26.3698007,11 C26.3698007,11.2856378 26.2476529,11.5576419 26.0341645,11.7474093 L16.4930915,20.2283631 C15.3564335,21.2387258 13.6435665,21.2387258 12.5069085,20.2283631 Z" stroke="none" stroke-width="1" fill-rule="nonzero" fill="#E0011D"></path>
+                      </svg>
+                      <span class="fi-module-ranking__ranking__item__points">PTS. <strong>2037</strong></span>
+                    </li>
+                    <li class="fi-module-ranking__ranking__item fi-module-ranking__ranking__item--active">
+                      <span class="fi-module-ranking__ranking__item__number">#78</span>
+                      <img src="http://img.fifa.com/images/flags/4/aus.png" class="fi-module-ranking__ranking__item__flag" />
+                      <span class="fi-module-ranking__ranking__item__name">Australia</span>
+                      <svg viewBox="0 0 29 29" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" class="fi-module-ranking__ranking__item__arrow">
+                        <path d="M16.4930915,8.7716369 L26.0341645,17.2525907 L26.0341645,17.2525907 C26.4469473,17.6195087 26.484128,18.2515811 26.11721,18.6643638 C25.9274426,18.8778522 25.6554385,19 25.3698007,19 L3.63019932,19 L3.63019932,19 C3.07791457,19 2.63019932,18.5522847 2.63019932,18 C2.63019932,17.7143622 2.75234712,17.4423581 2.96583548,17.2525907 L12.5069085,8.7716369 L12.5069085,8.7716369 C13.6435665,7.76127418 15.3564335,7.76127418 16.4930915,8.7716369 Z" stroke="none" stroke-width="1" fill-rule="evenodd" fill="#73BE19"></path>
+                      </svg>
+                      <span class="fi-module-ranking__ranking__item__points">PTS. <strong>1248</strong></span>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <script>
+          $(".fi-module-ranking__nav a").on("click", function() {
+            index = $(this).parent().index();
+            $(".fi-module-ranking__nav__item").removeClass("fi-module-ranking__nav__item--active");
+            $(this).parent().addClass("fi-module-ranking__nav__item--active");
+            $(".fi-module-ranking__content").removeClass("fi-module-ranking__content--active");
+            console.log($($(".fi-module-ranking__content").get(index)));
+            $($(".fi-module-ranking__content").get(index)).addClass("fi-module-ranking__content--active");
+            return false;
+          });
+        </script>
+        <!-- *****************************************************************************
+        E N D  F I F A   R A N K I N G
+        ***************************************************************************** ->
+
 
     </div>
 
-<br><br><br><br><br><br><br>
+
 
 
     <div class="fi-back-to-top" data-spy="affix" data-offset-top="60"><a href="#/thirdparties/templates/generic/#"><i class="fi-icon fi-icon-up"></i></a></div>

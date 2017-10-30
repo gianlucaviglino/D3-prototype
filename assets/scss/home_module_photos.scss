@@ -1,0 +1,214 @@
+@import "common";
+.fi-module-latest-photos {
+  overflow: hidden;
+  .owl-stage-outer {
+    overflow: visible !important;
+    &:before {
+      content:"";
+      position: absolute;
+      top: 0;
+      right: 100%;
+      height: 100%;
+      width: 999em;
+      background: #fff;
+      z-index: 10;
+    }
+  }
+  &__galleries {
+    margin-left: -1px;
+    margin-right: 30px;
+    position: relative;
+    @media #{$m} {
+      margin-right: 50px;
+    }
+    @media #{$l} {
+      margin-right: 100px;
+    }
+    &:hover {
+      .fi-module-latest-photos__galleries__arrow {
+        background-color: rgba(0,0,0,.4);
+        svg {
+          transform: translateX(0);
+          opacity: 1;
+        }
+      }
+    }
+    /*
+    .container-fluid {
+      border-top: 0 !important;
+      overflow: visible !important;
+      padding-left: 0 !important;
+      padding-right: 30px !important;
+      position: relative;
+      @media #{$m} {
+        padding-right: 50px !important;
+      }
+      @media #{$l} {
+        padding-right: 80px !important;
+      }
+      @media #{$xxl} {
+        padding-right: 0 !important;
+      }
+    }
+    */
+    &__arrow {
+      position: absolute;
+      top: 0;
+      width: 100px;
+      height: 100%;
+      height: calc(100% - 1px);
+      background: rgba(0,0,0,0);
+      z-index: 15;
+      cursor: pointer;
+      transition: background .3s ease;
+      display: none;
+      @media #{$l} {
+        display: block;
+      }
+      svg {
+        position: absolute;
+        top: 50%;
+        margin-top: -50px;
+        stroke:#fff;
+        stroke-width: 3;
+        fill: none;
+        height: 100px;
+        left: 50%;
+        width: 30px;
+        opacity: 0;
+        margin-left: -15px;
+        transform: translateX(10px);
+        transition: all .3s ease .1s;
+      }
+      &--left {
+        left: 0;
+      }
+      &--right {
+        left: 100%;
+        margin-left: 1px;
+        svg {
+          transform: translateX(-10px);
+        }
+      }
+      &--disabled {
+        opacity: 0;
+        pointer-events: none;
+      }
+    }
+  }
+  &__gallery {
+    overflow: hidden;
+    margin: 0 -.5px;
+    &__item {
+      float: left;
+      width: 25%;
+      overflow: hidden;
+      position: relative;
+      @media #{$m} {
+        width: 20%;
+        height: 50%;
+      }
+      &__caption {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        z-index: 10;
+        padding: 10px;
+        font: 300 13px/1.2 'Open Sans Condensed';
+        color:#fff;
+        display: none;
+        @media #{$m} {
+          display: block;
+          padding: 15px;
+          font-size: 16px;
+          font-size: 1.15;
+        }
+        @media #{$l} {
+          padding: 25px;
+          font-size: 22px;
+          transform: translate3d(0,100%,0);
+          opacity: 0;
+          transition: all .3s ease .05s;
+        }
+      }
+      &__image {
+        display: block;
+        position: relative;
+        padding-top: 100%;
+        box-sizing: border-box;
+        transform: translate3d(0,0,0);
+        &:before {
+          content:"";
+          position: absolute;
+          top: 0;
+          left: 0;
+          width: 100%;
+          height: 100%;
+          background:rgba(#000,.2);
+          z-index: 1;
+          display: none;
+          @media #{$m} {
+            display: block;
+          }
+          @media #{$l} {
+            opacity: 0;
+            transition: opacity .4s ease;
+          }
+        }
+        &:after {
+          content:"";
+          position: absolute;
+          top: 0;
+          left: 0;
+          width: 100%;
+          height: 100%;
+          border-left: 1px solid #fff;
+          border-bottom: 1px solid #fff;
+          z-index: 2;
+        }
+        img {
+          position: absolute;
+          top: 0;
+          left: 0;
+          display: block;
+          object-fit: cover;
+          width: 100%;
+          height: 100%;
+        }
+        &:hover {
+          @media #{$l} {
+            &:before {
+              opacity: 1;
+            }
+            .fi-module-latest-photos__gallery__item__caption {
+              transform: translate3d(0,0,0);
+              opacity: 1;
+            }
+          }
+        }
+      }
+      &--big {
+        width: 50%;
+        //height: 100%;
+        @media #{$m} {
+          width: 40%;
+          height: 100%;
+        }
+      }
+      &--right {
+        float: right;
+      }
+      &--wide {
+        @media #{$m} {
+          width: 40%;
+        }
+        .fi-module-latest-photos__gallery__item__image {
+          @media #{$m} {
+            padding-top: 50%;
+          }
+        }
+      }
+    }
+  }
+}

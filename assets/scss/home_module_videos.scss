@@ -1,0 +1,202 @@
+@import "common";
+.fi-module-latest-videos {
+  overflow: hidden;
+  .owl-stage-outer {
+    overflow: visible !important;
+    &:before {
+      content:"";
+      position: absolute;
+      top: 0;
+      right: 100%;
+      height: 100%;
+      width: 999em;
+      background: #fff;
+      z-index: 10;
+    }
+  }
+  &__carousel {
+    position: relative;
+    .container-fluid {
+      border-top: 0 !important;
+      overflow: visible !important;
+      padding-left: 0 !important;
+      padding-right: 30px !important;
+      position: relative;
+      @media #{$m} {
+        padding-right: 50px !important;
+      }
+      @media #{$l} {
+        padding-right: 100px !important;
+      }
+      @media #{$xxl} {
+        padding-right: 0 !important;
+      }
+    }
+    &:hover {
+      .fi-module-latest-videos__carousel__arrow {
+        background-color: rgba(0,0,0,.4);
+        svg {
+          transform: translateX(0);
+          opacity: 1;
+        }
+      }
+    }
+    &__arrow {
+      position: absolute;
+      top: 0;
+      width: 100px;
+      height: 100%;
+      background: rgba(0,0,0,0);
+      z-index: 15;
+      cursor: pointer;
+      transition: background .3s ease;
+      display: none;
+      @media #{$l} {
+        display: block;
+      }
+      @media #{$xxl} {
+        //margin-left: 0;
+      }
+      svg {
+        position: absolute;
+        top: 50%;
+        margin-top: -50px;
+        stroke:#fff;
+        stroke-width: 3;
+        fill: none;
+        height: 100px;
+        left: 50%;
+        width: 30px;
+        opacity: 0;
+        margin-left: -15px;
+        transform: translateX(10px);
+        transition: all .3s ease .1s;
+      }
+      &--left {
+        left: 0;
+      }
+      &--right {
+        right: 0;
+        svg {
+          transform: translateX(-10px);
+        }
+      }
+      &--disabled {
+        opacity: 0;
+        pointer-events: none;
+      }
+    }
+    &__wrapper {
+      display: flex;
+      flex-wrap: nowrap;
+      width: 100%;
+    }
+    &__item {
+      float: left;
+      flex-shrink: 0;
+      width: 50%;
+      position: relative;
+      @media #{$m} {
+        width: 33%;
+      }
+      @media #{$l} {
+        width: 25%;
+      }
+      .owl-item & {
+        width: 100%;
+      }
+      &__play {
+        width: 60px;
+        height: 60px;
+        position: absolute;
+        z-index: 4;
+        top: 50%;
+        left: 50%;
+        margin-left: -30px;
+        margin-top: -30px;
+        @media #{$m} {
+          width: 90px;
+          height: 90px;
+          margin-left: -45px;
+          margin-top: -45px;
+        }
+        circle {
+          stroke: #f00 !important;
+        }
+      }
+      &__image {
+        display: block;
+        padding-top: 180%;
+        position: relative;
+        img {
+          position: absolute;
+          top: 0;
+          left: 0;
+          width: 100%;
+          height: 100%;
+          object-fit: cover;
+        }
+        &:before {
+          content:"";
+          position: absolute;
+          top: 0;
+          left: 0;
+          width: 100%;
+          height: 100%;
+          background: rgba(#000,.2);
+          z-index: 2;
+          @media #{$l} {
+            opacity: 0;
+            transition: opacity .4s ease;
+          }
+        }
+      }
+      &:hover {
+        @media #{$l} {
+          .fi-module-latest-videos__carousel__item__image:before {
+            opacity: 1;
+          }
+          .fi-module-latest-videos__carousel__item__caption {
+            transform: translate3d(0,0,0);
+            opacity: 1;
+          }
+        }
+      }
+      &__caption {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        z-index: 3;
+        padding: 10px;
+        font: 300 13px/1.2 'Open Sans Condensed';
+        color:#fff;
+        @media #{$m} {
+          line-height: 1.15;
+          padding: 15px;
+          font-size: 16px;
+        }
+        @media #{$l} {
+          padding: 25px;
+          font-size: 22px;
+          transform: translate3d(0,100%,0);
+          opacity: 0;
+          transition: all .3s ease .05s;
+        }
+        strong {
+          display: block;
+          font-size: 11px;
+          font-weight: bold;
+          text-transform: uppercase;
+          margin-bottom: .2em;
+          @media #{$m} {
+            font-size: 14px;
+          }
+          @media #{$l} {
+            font-size: 16px;
+          }
+        }
+      }
+    }
+  }
+}
