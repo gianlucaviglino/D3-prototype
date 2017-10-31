@@ -624,6 +624,17 @@
       <!---------------------------------------------------------------------------------
         T O P  C O N T E N T
         --------------------------------------------------------------------------------->
+        <style>
+             @media (min-width: 480px) {
+                .fi-o-media-object__top-content__mask .fi-top-content__mask,
+                .fi-o-media-object__top-content__mask .img-responsive {
+                    -webkit-clip-path: polygon(0 100%, 14% 0, 100% 0, 86% 100%);
+                    clip-path: polygon(0 100%, 14% 0, 100% 0, 86% 100%);
+                    -webkit-clip-path: url(#clip-fifabrand);
+                    clip-path: url(#clip-fifabrand);
+                }
+            }
+        </style>
         <section class="section">
             <div class="fi-top-content">
 
