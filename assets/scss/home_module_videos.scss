@@ -128,6 +128,7 @@
         display: block;
         padding-top: 180%;
         position: relative;
+        overflow: hidden;
         img {
           position: absolute;
           top: 0;
@@ -135,6 +136,8 @@
           width: 100%;
           height: 100%;
           object-fit: cover;
+          transition: transform .3s ease;
+          transform: scale(1.01) translate3d(0,0,0);
         }
         &:before {
           content:"";
@@ -152,6 +155,9 @@
         }
       }
       &:hover {
+        img {
+          transform: scale(1.1) translate3d(0,0,0);
+        }
         @media #{$l} {
           .fi-module-latest-videos__carousel__item__image:before {
             opacity: 1;
