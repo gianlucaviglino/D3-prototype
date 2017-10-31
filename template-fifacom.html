@@ -85,7 +85,7 @@
 <body style="">
     <svg style="position: absolute; width: 0; height: 0;" width="0" height="0" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
         <defs>
-	<clipPath id="clip-fifabrand" clipPathUnits="objectBoundingBox">
+	    <clipPath id="clip-fifabrand" clipPathUnits="objectBoundingBox">
                 <polygon points="0 1, 0 0, 1 0, 0.88 1" />
             </clipPath>
             <symbol id="icon-fifacom-logo" viewBox="0 0 111.72 20">
@@ -678,7 +678,7 @@
                                         <source data-srcset="./media/module-top-content/1/t_s2.jpg" media="(min-width: 320px)" srcset="./media/module-top-content/1/t_s2.jpg">
                                         <img data-src="./media/module-top-content/t_l3.jpg" onerror="setDefaultPicture(this, 't_l1', 't_l2', 't_l3', 't_s2');" class="img-responsive lazyloaded" src="./media/module-top-content/t_l3.jpg">
                                     </picture>
-
+                                    <div class="fi-top-content__mask"></div>
                                 </figure>
                                 <div class="container-fluid">
                                     <div class="fi-o-media-object__body">
@@ -706,12 +706,12 @@
                                         <source data-srcset="./media/module-top-content/2/t_s2.jpg" media="(min-width: 320px)" srcset="./media/module-top-content/2/t_s2.jpg">
                                         <img data-src="./media/module-top-content/t_l3.jpg" onerror="setDefaultPicture(this, 't_l1', 't_l2', 't_l3', 't_s2');" class="img-responsive lazyloaded" src="./media/module-top-content/t_l3.jpg">
                                     </picture>
-
+                                    <div class="fi-top-content__mask"></div>
                                 </figure>
                                 <div class="container-fluid">
                                     <div class="fi-o-media-object__body">
-                                        <p class="fi-o-media-object__roofline">FIFA U-17 World Cup</p>
-                                        <h1 class="d3-o-media-object__title fi-o-media-object__title">Paraguay - Mali match preview article</h1>
+                                        <p class="fi-o-media-object__roofline">FIFA U-20 WOMEN'S WORLD CUP</p>
+                                        <h1 class="d3-o-media-object__title fi-o-media-object__title">Trio through as Japan get high five</h1>
                                     </div>
                                 </div>
                             </a>
@@ -733,18 +733,24 @@
                                         <source data-srcset="./media/module-top-content/3/t_s2.jpg" media="(min-width: 320px)" srcset="./media/module-top-content/3/t_s2.jpg">
                                         <img data-src="./media/module-top-content/t_l3.jpg" onerror="setDefaultPicture(this, 't_l1', 't_l2', 't_l3', 't_s2');" class="img-responsive lazyloaded" src="./media/module-top-content/t_l3.jpg">
                                     </picture>
-
+                                    <div class="fi-top-content__mask"></div>
                                 </figure>
                                 <div class="container-fluid">
                                     <div class="fi-o-media-object__body">
-                                        <p class="fi-o-media-object__roofline">FIFA U-17 World Cup</p>
-                                        <h1 class="d3-o-media-object__title fi-o-media-object__title">Paraguay - Mali match preview article</h1>
+                                        <p class="fi-o-media-object__roofline">FIFA COUNCIL</p>
+                                        <h1 class="d3-o-media-object__title fi-o-media-object__title">FIFA Council approves key organisational elements of the FIFA World Cup™</h1>
                                     </div>
                                 </div>
                             </a>
                         </div>
-
-
+                        <!--<div class="top-content-carousel__nav">
+                            <div class="owl-prev">
+                                <svg><use xlink:href="#icon-carousel-left"></use></svg>
+                            </div>
+                            <div class="owl-next">
+                                <svg><use xlink:href="#icon-carousel-right"></use></svg>
+                            </div>
+                        </div>-->
 
                     </div>
 
@@ -754,25 +760,43 @@
                         $(document).ready(function () {
                             var owl = $('.top-content-carousel');
                             owl.owlCarousel({
-                                dots: false,
                                 margin: 0,
                                 nav: false,
-                                loop: false,
+                                dots: true,
+                                loop: true,
+                                //navContainerClass: "top-content-carousel__nav",
+                                //navClass: ["top-content-carousel__nav__prev", "top-content-carousel__nav__next"],
+                                //navText: ["<svg class='icon-carousel-left'><use xlink:href='#icon-carousel-left'></use></svg>", "<svg class='icon-carousel-right'><use xlink:href='#icon-carousel-right'></use></svg>"],
                                 responsive: {
                                     0: {
-                                        items: 1,
-                                        dots: true
+                                        items: 1
 
                                     },
                                     480: {
                                         items: 1,
-                                        //stagePadding: 50
+                                        stagePadding: 20,
                                         margin: -150,
+                                    },
+                                    768: {
+                                        items: 1,
+                                        stagePadding: 40,
+                                        margin: -190,
                                     },
                                     1024: {
                                         items: 1,
-                                        //stagePadding: 150,
-                                        margin: -350,
+                                        stagePadding: 50,
+                                        margin: -220,
+                                    },
+                                    1400: {
+                                        items: 1,
+                                        stagePadding: 50,
+                                        margin: -280,
+                                    }
+,
+                                    2500: {
+                                        items: 1,
+                                        stagePadding: 100,
+                                        margin: -380,
                                     }
                                 }
                             })
