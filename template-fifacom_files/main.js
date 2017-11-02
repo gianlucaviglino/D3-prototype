@@ -1231,13 +1231,14 @@ require(['jquery', 'utility', 'headroom', 'waypoints', 'fi_select', 'placeholder
                   });
 
                   var $dropdowns = $('.fi-site-header a[data-dropdown]');
+                  var $dropdownsClose = $('.fi-site-header__dropdown-wrap .fi-site-header__dropdown__close');
                   //dropdown menus toggle
                   $dropdowns.on('click', function (e) {
                       e.preventDefault();
                       var $this = $(this);
                       var li = $this.parent();
                       var dropdown = $this.data('dropdown');
-
+                      $($dropdownsClose).removeClass('hidden');
                       $('.fi-site-header__dropdown-wrap > div > div').not($('.' + dropdown)).addClass('hidden');
                       $('.' + dropdown).toggleClass('hidden');
                       $dropdowns.parent().not(li).removeClass('active');
@@ -1266,6 +1267,17 @@ require(['jquery', 'utility', 'headroom', 'waypoints', 'fi_select', 'placeholder
                           $body.removeClass("fi-site-dropdown-second-level-open");
                       }
 
+                  });
+                  $dropdownsClose.on('click', function () {
+                      var $this = $(this);
+                      var dropdown = $this.data('dropdown');
+                      $('.fi-site-header__dropdown-wrap > div > div').not($('.' + dropdown)).addClass('hidden');
+                      $($dropdownsClose).addClass('hidden');
+                      $body.removeClass("fi-site-dropdown-open");
+                      $body.removeClass("dropdown-main--open");
+                      $body.removeClass("dropdown-login--open");
+                      $body.removeClass("dropdown-search--open");
+                      $(".fi-site-header-toogle li").removeClass('active');
                   });
 
                   //languages dropdown select
