@@ -31,9 +31,6 @@
 
 
 
-
-
-
     <meta property="og:locale" content="en-GB">
     <meta property="og:site_name" content="www.fifa.com">
 
@@ -1618,12 +1615,13 @@
           </div>
           <div class="fi-module-ranking__content fi-module-ranking__content--active">
             <span class="fi-module-ranking__content__bg">
-              <picture>
+              <!-- <picture>
                 <source srcset="media/module-ranking/ranking-bg-1440-630.jpg" media="(min-width: 1280px)" />
                 <source srcset="media/module-ranking/ranking-bg-1024-576.jpg" media="(min-width: 1024px)" />
                 <source srcset="media/module-ranking/ranking-bg-768-432.jpg" media="(min-width: 768px)" />
                 <img srcset="media/module-ranking/ranking-bg-580-580.jpg" />
-              </picture>
+              </picture> -->
+              <img srcset="media/module-ranking/ranking-bg-1440-630.jpg" />
             </span>
             <div class="container-fluid">
               <div class="row">
@@ -1886,6 +1884,11 @@
 
         });
     </script>-->
+
+    <script src="./assets/js/ofi.min.js"></script>
+    <script>
+        $(function() { objectFitImages(); })
+    </script>
     <table id="gridTable" class="fi-grid-layout hidden">
         <tbody>
             <tr>

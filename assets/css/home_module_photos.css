@@ -183,6 +183,7 @@
   left: 0;
   display: block;
   object-fit: cover;
+  font-family: 'object-fit: cover;';
   width: 100%;
   height: 100%;
   transition: transform .3s ease;
