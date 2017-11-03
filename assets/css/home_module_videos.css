@@ -155,7 +155,8 @@
   width: 100%;
   z-index: 3;
   padding: 10px;
-  font: 300 13px/1.2 'Open Sans Condensed';
+  font: 300 13px/1.2 'Open Sans
+    ';
   color: #fff;
 }
 
