@@ -1,397 +1,360 @@
-.home-module-header {
-  padding-top: 30px;
-}
 
 .home-module-header .row {
-  margin-bottom: 0;
+    margin-bottom: 0;
 }
 
-.home-module-header__title {
-  border-left: 1px solid #ccc;
-  padding-left: 10px;
-  font-size: 24px;
-  line-height: 1.1;
-  text-transform: uppercase;
-  font-weight: 600;
-  color: #000;
-  padding-top: 30px;
-  margin-top: -30px;
-  margin-bottom: 25px;
-}
-
-.home-module-header__title img {
-  float: left;
-  margin-right: 10px;
-  margin-top: 2px;
-  height: 46px;
-  display: inline-block;
+.fifa-section__title img {
+    float: left;
+    margin-right: 10px;
+    margin-top: 2px;
+    height: 46px;
+    display: inline-block;
 }
 
 .home-module-header__carousel-nav {
-  margin-top: 10px;
-  text-align: right;
-  vertical-align: middle;
+    margin-top: 10px;
+    text-align: right;
+    vertical-align: middle;
 }
 
 .home-module-header__carousel-nav__button {
-  width: 30px;
-  height: 30px;
-  display: inline-block;
-  cursor: pointer;
-  text-align: center;
+    width: 30px;
+    height: 30px;
+    display: inline-block;
+    cursor: pointer;
+    text-align: center;
 }
 
-.home-module-header__carousel-nav__button svg {
-  width: 9px;
-  margin-top: 9px;
-}
+    .home-module-header__carousel-nav__button svg {
+        width: 9px;
+        margin-top: 9px;
+    }
 
 .home-module-header__carousel-nav__state {
-  font-size: 17px;
-  line-height: 1;
-  color: #B6B6B6;
-  display: block;
-  position: relative;
-  height: 23px;
-  margin: 5px 0 3px;
-  white-space: nowrap;
-  display: inline-block;
+    font-size: 17px;
+    line-height: 1;
+    color: #B6B6B6;
+    display: block;
+    position: relative;
+    height: 23px;
+    margin: 5px 0 3px;
+    white-space: nowrap;
+    display: inline-block;
 }
 
-.home-module-header__carousel-nav__state strong {
-  color: #2D8ACD;
-  font-size: 24px;
-  display: inline-block;
-  vertical-align: middle;
-  margin-right: 5px;
-  font-weight: normal;
-  white-space: nowrap;
-  position: relative;
-  top: -2px;
-}
+    .home-module-header__carousel-nav__state strong {
+        color: #2D8ACD;
+        font-size: 24px;
+        display: inline-block;
+        vertical-align: middle;
+        margin-right: 5px;
+        font-weight: normal;
+        white-space: nowrap;
+        position: relative;
+        top: -2px;
+    }
 
 .fifa-ranking-section .container-fluid {
-  background: transparent !important;
+    background: transparent !important;
 }
 
 .fifa-ranking-section__content {
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center;
-  color: #fff;
-  position: relative;
-  overflow: hidden;
-  padding: 15px 0 5px;
-  display: none;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    color: #fff;
+    position: relative;
+    overflow: hidden;
+    padding: 15px 0 5px;
+    display: none;
 }
 
 .fifa-ranking-section__content--active {
-  display: block;
+    display: block;
 }
 
 .fifa-ranking-section__content .row {
-  margin-bottom: 0;
+    margin-bottom: 0;
 }
 
 .fifa-ranking-section__content .container-fluid {
-  position: relative;
-  z-index: 2;
+    position: relative;
+    z-index: 2;
 }
 
 .fifa-ranking-section__content:before {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background: rgba(0, 0, 0, 0.4);
-  z-index: 1;
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.4);
+    z-index: 1;
 }
 
 .fifa-ranking-section__content__bg {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  display: block;
-  display: flex;
-  flex-direction: column;
-  flex-wrap: wrap;
-  align-items: flex-start;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: block;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: flex-start;
 }
 
-.fifa-ranking-section__content__bg picture,
-.fifa-ranking-section__content__bg img {
-  display: block;
-  object-fit: cover;
-  width: 100%;
-  height: 100%;
-  object-position: center 30%;
-}
+    .fifa-ranking-section__content__bg picture,
+    .fifa-ranking-section__content__bg img {
+        display: block;
+        object-fit: cover;
+        width: 100%;
+        height: 100%;
+        object-position: center 30%;
+    }
 
 .fifa-ranking-section__main {
-  font-size: 22px;
-  line-height: 1.2;
+    font-size: 22px;
+    line-height: 1.2;
 }
 
-.fifa-ranking-section__main strong {
-  font-size: 60px;
-  font-weight: normal;
-  display: block;
-  line-height: 1;
-  margin-bottom: 5px;
-}
+    .fifa-ranking-section__main strong {
+        font-size: 60px;
+        font-weight: normal;
+        display: block;
+        line-height: 1;
+        margin-bottom: 5px;
+    }
 
 .fifa-ranking-section__main__button {
-  display: inline-block;
-  background: #FED001;
-  height: 36px;
-  color: #fff;
-  line-height: 36px;
-  font-size: 13px;
-  text-transform: uppercase;
-  padding: 0 30px;
-  margin-top: 15px;
-  transition: background .2s ease;
+    display: inline-block;
+    background: #FED001;
+    height: 36px;
+    color: #fff;
+    line-height: 36px;
+    font-size: 13px;
+    text-transform: uppercase;
+    padding: 0 30px;
+    margin-top: 15px;
+    transition: background .2s ease;
 }
 
-.fifa-ranking-section__main__button:hover {
-  background-color: #e5bb01;
-  color: #fff;
-  text-decoration: none;
-}
+    .fifa-ranking-section__main__button:hover {
+        background-color: #e5bb01;
+        color: #fff;
+        text-decoration: none;
+    }
 
 .fifa-ranking-section__ranking {
-  border-top: 1px solid rgba(255, 255, 255, 0.2);
-  margin-top: 20px;
-  font-size: 18px;
-  line-height: 1.2;
-  margin-left: -10px;
-  margin-right: -10px;
+    border-top: 1px solid rgba(255, 255, 255, 0.2);
+    margin-top: 20px;
+    font-size: 18px;
+    line-height: 1.2;
+    margin-left: -10px;
+    margin-right: -10px;
 }
 
 .fifa-ranking-section__ranking__item {
-  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
-  height: 58px;
-  display: flex;
-  align-items: center;
-  padding-left: 5px;
-  padding-right: 5px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+    height: 58px;
+    display: flex;
+    align-items: center;
+    padding-left: 5px;
+    padding-right: 5px;
 }
 
 .fifa-ranking-section__ranking__item--active {
-  background: rgba(255, 255, 255, 0.2);
+    background: rgba(255, 255, 255, 0.2);
 }
 
 .fifa-ranking-section__ranking__item__number {
-  width: 44px;
-  flex-shrink: 0;
-  font-size: .8em;
-  text-align: center;
-  font-weight: 300;
+    width: 44px;
+    flex-shrink: 0;
+    font-size: .8em;
+    text-align: center;
+    font-weight: 300;
 }
 
 .fifa-ranking-section__ranking__item__flag {
-  width: 36px;
-  height: 24px;
-  margin-right: 10px;
-  flex-shrink: 0;
+    width: 36px;
+    height: 24px;
+    margin-right: 10px;
+    flex-shrink: 0;
 }
 
 .fifa-ranking-section__ranking__item__arrow {
-  width: 22px;
-  height: 22px;
-  flex-shrink: 0;
-  margin-left: 5px;
+    width: 22px;
+    height: 22px;
+    flex-shrink: 0;
+    margin-left: 5px;
 }
 
 .fifa-ranking-section__ranking__item__name {
-  width: 100%;
+    width: 100%;
 }
 
 .fifa-ranking-section__ranking__item__points {
-  width: 80px;
-  font-size: 13px;
-  white-space: nowrap;
-  flex-shrink: 0;
-  margin-left: 6px;
-  font-weight: 300;
+    width: 80px;
+    font-size: 13px;
+    white-space: nowrap;
+    flex-shrink: 0;
+    margin-left: 6px;
+    font-weight: 300;
 }
 
-.fifa-ranking-section__ranking__item__points strong {
-  font-size: 20px;
-  font-weight: normal;
-}
+    .fifa-ranking-section__ranking__item__points strong {
+        font-size: 20px;
+        font-weight: normal;
+    }
 
 @media (min-width: 768px) {
-  .home-module-header {
-    padding-top: 45px;
-  }
 
-  .home-module-header__title {
-    font-size: 30px;
-    padding-top: 45px;
-    margin-top: -45px;
-    margin-bottom: 35px;
-    padding-left: 15px;
-  }
 
-  .home-module-header__title img {
-    height: 56px;
-    margin-top: 5px;
-    margin-right: 12px;
-  }
+    .fifa-section__title img {
+        height: 56px;
+        margin-top: 5px;
+        margin-right: 12px;
+    }
 
-  .home-module-header__carousel-nav {
-    text-align: left;
-    margin-top: -18px;
-    padding-left: 70px;
-    width: 140px;
-  }
+    .home-module-header__carousel-nav {
+        text-align: left;
+        margin-top: -18px;
+        padding-left: 70px;
+        width: 140px;
+    }
 
-  .home-module-header__carousel-nav__button {
-    margin-left: -10px;
-  }
+    .home-module-header__carousel-nav__button {
+        margin-left: -10px;
+    }
 
-  .home-module-header__carousel-nav__state {
-    display: block;
-    font-size: 20px;
-    height: 33px;
-  }
+    .home-module-header__carousel-nav__state {
+        display: block;
+        font-size: 20px;
+        height: 33px;
+    }
 
-  .home-module-header__carousel-nav__state strong {
-    position: absolute;
-    right: 100%;
-    top: -2px;
-    font-size: 38px;
-  }
+        .home-module-header__carousel-nav__state strong {
+            position: absolute;
+            right: 100%;
+            top: -2px;
+            font-size: 38px;
+        }
 
-  .fifa-ranking-section__content {
-    height: 300px;
-  }
+    .fifa-ranking-section__content {
+        height: 300px;
+    }
 
-  .fifa-ranking-section__content:before {
-    background: rgba(0, 0, 0, 0.3);
-  }
+        .fifa-ranking-section__content:before {
+            background: rgba(0, 0, 0, 0.3);
+        }
 
-  .fifa-ranking-section__main {
-    font-size: 26px;
-  }
+    .fifa-ranking-section__main {
+        font-size: 26px;
+    }
 
-  .fifa-ranking-section__main strong {
-    font-size: 100px;
-  }
+        .fifa-ranking-section__main strong {
+            font-size: 100px;
+        }
 
-  .fifa-ranking-section__main__button {
-    margin-top: 20px;
-  }
+    .fifa-ranking-section__main__button {
+        margin-top: 20px;
+    }
 
-  .fifa-ranking-section__ranking {
-    font-size: 19px;
-    margin-top: 0;
-    margin-left: 0;
-    margin-right: 0;
-  }
+    .fifa-ranking-section__ranking {
+        font-size: 19px;
+        margin-top: 0;
+        margin-left: 0;
+        margin-right: 0;
+    }
 
-  .fifa-ranking-section__ranking__item {
-    height: 68px;
-    padding: 0;
-  }
+    .fifa-ranking-section__ranking__item {
+        height: 68px;
+        padding: 0;
+    }
 
-  .fifa-ranking-section__ranking__item__number {
-    width: 48px;
-  }
+    .fifa-ranking-section__ranking__item__number {
+        width: 48px;
+    }
 
-  .fifa-ranking-section__ranking__item__flag {
-    margin-right: 14px;
-  }
+    .fifa-ranking-section__ranking__item__flag {
+        margin-right: 14px;
+    }
 
-  .fifa-ranking-section__ranking__item__points {
-    width: 85px;
-  }
+    .fifa-ranking-section__ranking__item__points {
+        width: 85px;
+    }
 }
 
 @media (min-width: 1024px) {
-  .home-module-header {
-    padding-top: 60px;
-  }
 
-  .home-module-header__title {
-    font-size: 35px;
-    padding-top: 60px;
-    margin-bottom: 40px;
-    padding-left: 20px;
-    margin-top: -60px;
-  }
+    .fifa-section__title img {
+        height: 64px;
+        margin-top: 7px;
+        margin-right: 15px;
+    }
 
-  .home-module-header__title img {
-    height: 64px;
-    margin-top: 7px;
-    margin-right: 15px;
-  }
+    .home-module-header__carousel-nav {
+        margin-top: -15px;
+    }
 
-  .home-module-header__carousel-nav {
-    margin-top: -15px;
-  }
+    .home-module-header__carousel-nav__state {
+        font-size: 25px;
+        height: 36px;
+    }
 
-  .home-module-header__carousel-nav__state {
-    font-size: 25px;
-    height: 36px;
-  }
+        .home-module-header__carousel-nav__state strong {
+            font-size: 43px;
+        }
 
-  .home-module-header__carousel-nav__state strong {
-    font-size: 43px;
-  }
+    .fifa-ranking-section__main {
+        font-size: 28px;
+    }
 
-  .fifa-ranking-section__main {
-    font-size: 28px;
-  }
+        .fifa-ranking-section__main strong {
+            font-size: 120px;
+        }
 
-  .fifa-ranking-section__main strong {
-    font-size: 120px;
-  }
+    .fifa-ranking-section__ranking__item__flag {
+        width: 47px;
+        height: 31px;
+        margin-right: 14px;
+    }
 
-  .fifa-ranking-section__ranking__item__flag {
-    width: 47px;
-    height: 31px;
-    margin-right: 14px;
-  }
+    .fifa-ranking-section__ranking__item__arrow {
+        width: 29px;
+        height: 29px;
+    }
 
-  .fifa-ranking-section__ranking__item__arrow {
-    width: 29px;
-    height: 29px;
-  }
+    .fifa-ranking-section__ranking__item__points {
+        font-size: 15px;
+        width: 100px;
+    }
 
-  .fifa-ranking-section__ranking__item__points {
-    font-size: 15px;
-    width: 100px;
-  }
-
-  .fifa-ranking-section__ranking__item__points strong {
-    font-size: 22px;
-  }
+        .fifa-ranking-section__ranking__item__points strong {
+            font-size: 22px;
+        }
 }
 
 @media (min-width: 1280px) {
-  .fifa-ranking-section__main {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    height: 280px;
-  }
+    .fifa-ranking-section__main {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        height: 280px;
+    }
 
-  .fifa-ranking-section__main__wrap {
-    padding-left: 240px;
-    position: relative;
-  }
+    .fifa-ranking-section__main__wrap {
+        padding-left: 240px;
+        position: relative;
+    }
 
-  .fifa-ranking-section__main strong {
-    position: absolute;
-    top: -10px;
-    left: 0;
-    width: 215px;
-    text-align: right;
-  }
+    .fifa-ranking-section__main strong {
+        position: absolute;
+        top: -10px;
+        left: 0;
+        width: 215px;
+        text-align: right;
+    }
 }
