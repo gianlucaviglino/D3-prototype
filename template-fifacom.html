@@ -223,7 +223,7 @@
             </symbol>
         </defs>
     </svg>
-  <header class="navbar navbar-fixed-top fi-site-header">
+ <header class="navbar navbar-fixed-top fi-site-header">
         <!--TOP HEADER-->
         <div class="fi-site-header__top">
             <div class="container-fluid">
@@ -238,12 +238,12 @@
                         </a>
                     </li>
                     <li class="fi-icons-bar__search">
-                        <a href="#" data-dropdown="<!--fi-site-header__dropdown__search-->">
+                        <a href="#" data-dropdown="fi-site-header__dropdown__search">
                             <svg class="fi-svg-icon icon-search"><use xlink:href="#icon-search"></use></svg>
                         </a>
                     </li>
                     <li class="fi-icons-bar__login">
-                        <a href="#" data-dropdown="<!--fi-site-header__dropdown__login-->">
+                        <a href="#" data-dropdown="fi-site-header__dropdown__login">
                             <svg class="fi-svg-icon icon-login"><use xlink:href="#icon-login"></use></svg>
                             <!--<i class="fi-icon fi-icon-login"></i>-->
                         </a>
@@ -343,12 +343,12 @@
                 </ul>
                 <ul class="nav navbar-nav navbar-right fi-icons-bar pull-right">
                     <li class="fi-icons-bar__search">
-                        <a href="#" data-dropdown="<!--fi-site-header__dropdown__search-->">
+                        <a href="#" data-dropdown="fi-site-header__dropdown__search">
                             <svg class="fi-svg-icon icon-search"><use xlink:href="#icon-search"></use></svg>
                         </a>
                     </li>
                     <li class="fi-icons-bar__login">
-                        <a href="#" data-dropdown="<!--fi-site-header__dropdown__login-->">
+                        <a href="#" data-dropdown="fi-site-header__dropdown__login">
                             <svg class="fi-svg-icon icon-login"><use xlink:href="#icon-login"></use></svg>
                             <!--<i class="fi-icon fi-icon-login"></i>-->
                         </a>
@@ -708,26 +708,19 @@
 
                 </div>
                 <div class="fi-site-header__dropdown__search hidden">
-                    <div class="row">
-                        <div class="col-xs-12 fi-search__wrap">
-                            <div class="fi-title-wrap">
-                                <h5 class="fi-heading">Search</h5>
+                    <div class="fi-search__wrap">
+                        <div class="fi-search">
+                            <div class="form-group">
+                                <form action="https://www.fifa.com/search/index.htmx" method="get">
+                                    <input id="#" name="q" maxlength="100" data-required="true" class="form-control fi-search__text" title="Search" type="text" placeholder="Search">
+                                    <div class="fi-search__submit-wrap" id="#">
+                                        <input class="btn btn-primary fi-btn--submit" value="Search" type="submit">
+                                    </div>
+                                </form>
                             </div>
-                            <div class="fi-search">
-                                <div class="form-group">
-                                    <form action="https://www.fifa.com/search/index.htmx" method="get">
-                                        <input id="#" name="q" maxlength="100" data-required="true" class="form-control fi-search__text" title="Search" type="text" placeholder="Search">
-                                        <div class="fi-search__submit-wrap" id="#">
-                                            <input class="btn btn-primary fi-btn--submit" value="Search" type="submit">
-                                        </div>
-                                    </form>
-                                </div>
-                            </div>
-
                         </div>
-                    </div>
 
-                    <i class="fi-icon fi-icon-close"></i>
+                    </div>
                 </div>
             </div>
         </div>
