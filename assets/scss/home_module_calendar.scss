@@ -1,136 +1,160 @@
 @import "common";
+
 .fi-module-calendar {
-  overflow: hidden;
-  background: #29578C;
-  color:#fff;
-  .container-fluid {
-    overflow: visible !important;
-  }
-  .fi-module__header {
-    a {
-      color: #fff;
+    overflow: hidden;
+    background: #29578C;
+    color: #fff;
+
+    .container-fluid {
+        overflow: visible !important;
     }
-    .fifa-section__title {
-      color:#fff;
-      border-color: rgba(#fff,.3);
-    }
-  }
-  .owl-stage-outer {
-    overflow: visible !important;
-  }
-  &__list {
-    padding-top: 20px;
-    padding-bottom: 70px;
-    display: flex;
-    margin-right: -50px !important;
-    width: auto !important;
-    position: relative;
-    @media #{$m} {
-      padding-top: 30px;
-      padding-bottom: 80px;
-    }
-    @media #{$l} {
-      padding-top: 30px;
-      padding-bottom: 60px;
-    }
-    .owl-dots {
-      position: absolute;
-      bottom: 30px;
-      left: 0;
-      right: 50px;
-      height: 10px;
-      text-align: center;
-      padding: 0;
-      font-size: 0;
-      .owl-dot {
-        display: inline-block;
-        margin: 0 5px;
-        width: 10px;
-        height: 10px;
-        background: transparent;
-        border-radius: 100%;
-        border: 1px solid #fff;
-        transition: background .2s ease;
-        &.active {
-          background-color:#fff;
+
+    .section__header {
+        a {
+            color: #fff;
         }
-      }
-      @media #{$l} {
-        display: none;
-      }
+
+        .fsection__title {
+            color: #fff;
+            border-color: rgba(#fff,.3);
+        }
     }
-    .owl-item:first-child {
-      .fi-module-calendar__list__item:before {
-        display: none;
-      }
+
+    .owl-stage-outer {
+        overflow: visible !important;
     }
-    &__item {
-      font-size: 16px;
-      line-height: 1.1;
-      font-family: 'Open Sans Condensed';
-      text-align: center;
-      text-transform: uppercase;
-      flex-shrink: 0;
-      width: 50%;
-      padding-right: 50px;
-      position: relative;
-      @media #{$m} {
-        font-size: 17px;
-      }
-      .owl-item & {
-        width: 100%;
-      }
-      @media #{$m} {
-        width: (100% / 4);
-      }
-      @media #{$l} {
-        width: (100% / 6);
-      }
-      &:before {
-        content:"";
-        position: absolute;
-        top: 30px;
-        left: -25px;
-        height: 80px;
-        width: 1px;
-        background: rgba(#fff,.3);
-        transform: rotate(20deg);
-      }
-      &__type {
-        font-size: 14px;
-        font-weight: bold;
-        display: block;
-        color:#F8C709;
-        margin-bottom: .1em;
-      }
-      &__date {
-        font-size: 14px;
-        font-weight: bold;
-        display: block;
-        margin-bottom: .2em;
+
+    &__list {
+        padding-top: 20px;
+        padding-bottom: 70px;
+        display: flex;
+        margin-#{$dirReverse}: -50px !important;
+        width: auto !important;
         position: relative;
-        padding-bottom: 15px;
-        margin-bottom: 12px;
-        &:before {
-          content:"";
-          position: absolute;
-          bottom: 0;
-          left: 50%;
-          width: 26px;
-          height: 2px;
-          margin-left: -13px;
-          background:#fff;
+
+        @media #{$m} {
+            padding-top: 30px;
+            padding-bottom: 80px;
         }
-        strong {
-          font-size: 40px;
-          font-weight: normal;
-          display: block;
-          margin-bottom: .1em;
+
+        @media #{$l} {
+            padding-top: 30px;
+            padding-bottom: 60px;
         }
-      }
-      &__name {
-        display: block;
-      }
+
+        .owl-dots {
+            position: absolute;
+            bottom: 30px;
+            #{$dir}: 0;
+            #{$dirReverse}: 50px;
+            height: 10px;
+            text-align: center;
+            padding: 0;
+            font-size: 0;
+
+            .owl-dot {
+                display: inline-block;
+                margin: 0 5px;
+                width: 10px;
+                height: 10px;
+                background: transparent;
+                border-radius: 100%;
+                border: 1px solid #fff;
+                transition: background .2s ease;
+
+                &.active {
+                    background-color: #fff;
+                }
+            }
+
+            @media #{$l} {
+                display: none;
+            }
+        }
+
+        .owl-item:first-child {
+            .fi-module-calendar__list__item:before {
+                display: none;
+            }
+        }
+
+        &__item {
+            font-size: 16px;
+            line-height: 1.1;
+            //font-family: 'Open Sans Condensed';
+            text-align: center;
+            text-transform: uppercase;
+            flex-shrink: 0;
+            width: 50%;
+            padding-#{$dirReverse}: 50px;
+            position: relative;
+
+            @media #{$m} {
+                font-size: 17px;
+            }
+
+            .owl-item & {
+                width: 100%;
+            }
+
+            @media #{$m} {
+                width: (100% / 4);
+            }
+
+            @media #{$l} {
+                width: (100% / 6);
+            }
+
+            &:before {
+                content: "";
+                position: absolute;
+                top: 30px;
+                #{$dir}: -25px;
+                height: 80px;
+                width: 1px;
+                background: rgba(#fff,.3);
+                transform: rotate(20deg);
+            }
+
+            &__type {
+                font-size: 14px;
+                font-weight: bold;
+                display: block;
+                color: #F8C709;
+                margin-bottom: .1em;
+            }
+
+            &__date {
+                font-size: 14px;
+                font-weight: bold;
+                display: block;
+                margin-bottom: .2em;
+                position: relative;
+                padding-bottom: 15px;
+                margin-bottom: 12px;
+
+                &:before {
+                    content: "";
+                    position: absolute;
+                    bottom: 0;
+                    #{$dir}: 50%;
+                    width: 26px;
+                    height: 2px;
+                    margin-#{$dir}: -13px;
+                    background: #fff;
+                }
+
+                strong {
+                    font-size: 40px;
+                    font-weight: normal;
+                    display: block;
+                    margin-bottom: .1em;
+                }
+            }
+
+            &__name {
+                display: block;
+            }
+        }
     }
-  }
 }
