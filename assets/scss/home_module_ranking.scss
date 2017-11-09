@@ -1,39 +1,7 @@
-$xs: "(max-width:479px)";
-$s: "(min-width: 480px)";
-$m: "(min-width: 768px)";
-$l: "(min-width: 1024px)";
-$xl: "(min-width: 1280px)";
-$xxl: "(min-width: 1440px)";
-
-.fifa-ranking-section {
-  .container-fluid {
-    max-width: 1200px;
-    background: transparent !important;
-  }
-  &__title {
-    border-left: 1px solid #ccc;
-    padding-left: 10px;
-    font-size: 24px;
-    line-height: 1.1;
-    text-transform: uppercase;
-    font-weight: 600;
-    color:#000;
-    padding-top: 30px;
-    margin-bottom: 30px;
-    @media #{$m} {
-      font-size: 30px;
-      padding-top: 45px;
-      margin-bottom: 35px;
-      margin-left: 30px;
-      padding-left: 15px;
-    }
-    @media #{$l} {
-      font-size: 35px;
-      padding-top: 60px;
-      margin-bottom: 40px;
-      margin-left: 90px;
-      padding-left: 20px;
-    }
+@import "common";
+.fi-module-ranking {
+  margin-bottom: 100px;
+  .fifa-section__title {
     img {
       float: left;
       margin-right: 10px;
@@ -52,6 +20,9 @@ $xxl: "(min-width: 1440px)";
       }
     }
   }
+  .container-fluid {
+    border-top: 0 !important;
+  }
   &__content {
     background-size: cover;
     background-repeat: no-repeat;
@@ -60,6 +31,15 @@ $xxl: "(min-width: 1440px)";
     position: relative;
     overflow: hidden;
     padding: 15px 0 5px;
+    display: none;
+    font-family: 'Open Sans Condensed', sans-serif;
+    .container-fluid {
+      //padding-left: 0 !important;
+      //padding-right: 0 !important;
+    }
+    &--active {
+      display: block;
+    }
     .row {
       margin-bottom: 0;
     }
@@ -68,7 +48,7 @@ $xxl: "(min-width: 1440px)";
       z-index: 2;
     }
     @media #{$m} {
-      height: 300px;
+      height: 320px;
     }
     &:before {
       content:"";
@@ -79,6 +59,9 @@ $xxl: "(min-width: 1440px)";
       height: 100%;
       background: rgba(#000,.4);
       z-index: 1;
+      @media #{$m} {
+        background: rgba(#000,.3);
+      }
     }
     &__bg {
       position: absolute;
@@ -113,7 +96,7 @@ $xxl: "(min-width: 1440px)";
       display: flex;
       flex-direction: column;
       justify-content: center;
-      height: 280px;
+      height: 300px;
     }
     &__wrap {
       @media #{$xl} {
@@ -143,20 +126,19 @@ $xxl: "(min-width: 1440px)";
     }
     &__button {
       display: inline-block;
-      background:#FED001;
+      background:#fff;
       height: 36px;
-      color: #fff;
-      line-height: 36px;
-      font-size: 13px;
+      color: #29578C;
       text-transform: uppercase;
       padding: 0 30px;
       margin-top: 15px;
-      transition: background .2s ease;
+      transition: all .2s ease;
+      font: 16px/36px 'Open Sans Condensed';
       @media #{$m} {
         margin-top: 20px;
       }
       &:hover {
-        background-color: darken(#FED001,5);
+        background-color: #29578C;
         color: #fff;
         text-decoration: none;
       }
@@ -164,16 +146,27 @@ $xxl: "(min-width: 1440px)";
   }
   &__ranking {
     border-top: 1px solid rgba(#fff,.2);
-    margin-top: 20px;
     font-size: 18px;
     line-height: 1.2;
     margin-left: -10px;
     margin-right: -10px;
+    &:first-child {
+      margin-top: 20px;
+      @media #{$m} {
+        margin-top: 0;
+      }
+    }
     @media #{$m} {
-      font-size: 19px;
-      margin-top: 0;
+      font-size: 20px;
       margin-left: 0;
       margin-right: 0;
+    }
+    &__caption {
+      font: 600 13px/1 'Open Sans';
+      text-transform: uppercase;
+      color:#FFCB03;
+      margin-top: 12px;
+      margin-bottom: 7px;
     }
     &__item {
       border-bottom: 1px solid rgba(#fff,.2);
@@ -183,7 +176,7 @@ $xxl: "(min-width: 1440px)";
       padding-left: 5px;
       padding-right: 5px;
       @media #{$m} {
-        height: 68px;
+        height: 65px;
         padding: 0;
       }
       &--active {
@@ -219,8 +212,15 @@ $xxl: "(min-width: 1440px)";
         flex-shrink: 0;
         margin-left: 5px;
         @media #{$l} {
-          width: 29px;
-          height: 29px;
+          width: 26px;
+          height: 26px;
+        }
+        fill: #A2A599;
+        &--up {
+          fill:#58EE03;
+        }
+        &--down {
+          fill:#E0181F;
         }
       }
       &__name {
@@ -231,14 +231,10 @@ $xxl: "(min-width: 1440px)";
         font-size: 13px;
         white-space: nowrap;
         flex-shrink: 0;
-        margin-left: 6px;
+        margin-left: 10px;
         font-weight: 300;
-        @media #{$m} {
-          width: 85px;
-        }
         @media #{$l} {
           font-size: 15px;
-          width: 100px;
         }
         strong {
           font-size: 20px;

@@ -2,6 +2,10 @@
   overflow: hidden;
 }
 
+.fi-module-latest-photos .object-fit-polyfill {
+  position: static !important;
+}
+
 .fi-module-latest-photos .owl-stage-outer {
   overflow: visible !important;
 }
