@@ -1242,28 +1242,38 @@ require(['jquery', 'utility', 'headroom', 'waypoints', 'fi_select', 'placeholder
                       $('.fi-site-header__dropdown-wrap > div > div').not($('.' + dropdown)).addClass('hidden');
                       $('.' + dropdown).toggleClass('hidden');
                       $dropdowns.parent().not(li).removeClass('active');
-                      li.toggleClass('active');
+
+                      $body.addClass("fi-site-dropdown-open");
 
                       if (dropdown == "fi-site-header__dropdown__sectionheader") {
                           $body.toggleClass("fi-site-dropdown-second-level-open");
                           $body.removeClass("fi-site-dropdown-open");
                       } else {
                           if (dropdown == "fi-site-header__dropdown__main") {
-                              $body.toggleClass("fi-site-dropdown-open dropdown-main--open", $('.fi-site-header .active a[data-dropdown]').length > 0);
+                              $body.toggleClass("fi-site-dropdown-open dropdown-main--open");
                               $body.removeClass("dropdown-login--open");
                               $body.removeClass("dropdown-search--open");
+                              $body.removeClass("dropdown-lang--open");
                           }
                           if (dropdown == "fi-site-header__dropdown__search") {
-                              $body.toggleClass("fi-site-dropdown-open dropdown-search--open", $('.fi-site-header .active a[data-dropdown]').length > 0);
+                              $body.toggleClass("fi-site-dropdown-open dropdown-search--open");
                               $body.removeClass("dropdown-login--open");
                               $body.removeClass("dropdown-main--open");
+                              $body.removeClass("dropdown-lang--open");
                           }
                           if (dropdown == "fi-site-header__dropdown__login") {
-                              $body.toggleClass("fi-site-dropdown-open dropdown-login--open", $('.fi-site-header .active a[data-dropdown]').length > 0);
+                              $body.toggleClass("fi-site-dropdown-open dropdown-login--open");
                               $body.removeClass("dropdown-main--open");
                               $body.removeClass("dropdown-search--open");
+                              $body.removeClass("dropdown-lang--open");
                           }
-                          $body.toggleClass("fi-site-dropdown-open", $('.fi-site-header .active a[data-dropdown]').length > 0);
+                          if (dropdown == "fi-site-header__dropdown__lang") {
+                              $body.toggleClass("fi-site-dropdown-open dropdown-lang--open");
+                              $body.removeClass("dropdown-main--open");
+                              $body.removeClass("dropdown-search--open");
+                              $body.removeClass("dropdown-login--open");
+                          }
+                          $body.toggleClass("fi-site-dropdown-open");
                           $body.removeClass("fi-site-dropdown-second-level-open");
                       }
 
@@ -1277,7 +1287,8 @@ require(['jquery', 'utility', 'headroom', 'waypoints', 'fi_select', 'placeholder
                       $body.removeClass("dropdown-main--open");
                       $body.removeClass("dropdown-login--open");
                       $body.removeClass("dropdown-search--open");
-                      $(".fi-site-header-toogle li").removeClass('active');
+                      $body.removeClass("dropdown-lang--open");
+
                   });
 
                   //languages dropdown select
