@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <!-- saved from url=(0074)#/thirdparties/templates/generic/ -->
-<html lang="en-GB" dir="ltr">
+<html lang="ar-SA" dir="rtl">
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
@@ -66,10 +66,10 @@
     <!--[if lte IE 9]>
        <link href="/CompiledAssets/css/base-ie.css?_t=ee8659d32d45a91e40d54e728e6bce64" rel="stylesheet" type="text/css" />
       <![endif]-->
-    <link href="./template-fifacom_files/base-2018.css" rel="stylesheet" type="text/css">
-    <link href="./template-fifacom_files/hp-2018.css" rel="stylesheet" type="text/css">
-    <!--<link href="../../CompiledAssets/css/base-2018.css" rel="stylesheet" type="text/css" />
-    <link href="../../CompiledAssets/css/sections/hp-2018.css" rel="stylesheet" type="text/css" />-->
+    <link href="./template-fifacom_files/base-rtl.css" rel="stylesheet" type="text/css">
+    <link href="./template-fifacom_files/hp-rtl.css" rel="stylesheet" type="text/css">
+    <!--<link href="../../CompiledAssets/css/base-rtl.css" rel="stylesheet" type="text/css" />
+    <link href="../../CompiledAssets/css/sections/hp-rtl.css" rel="stylesheet" type="text/css" />-->
     <!--<link href="../../../CompiledAssets/css/fonts.css" rel="stylesheet" type="text/css" />-->
     <link href="./template-fifacom_files/fonts.css" rel="stylesheet" type="text/css">
 
@@ -953,41 +953,43 @@
                         $(document).ready(function () {
                             var owl = $('.top-content-carousel');
                             owl.owlCarousel({
+                                rtl: true,
                                 margin: 0,
                                 nav: false,
                                 dots: true,
                                 loop: true,
+                                items: 1,
                                 //navContainerClass: "top-content-carousel__nav",
                                 //navClass: ["top-content-carousel__nav__prev", "top-content-carousel__nav__next"],
                                 //navText: ["<svg class='icon-carousel-left'><use xlink:href='#icon-carousel-left'></use></svg>", "<svg class='icon-carousel-right'><use xlink:href='#icon-carousel-right'></use></svg>"],
                                 responsive: {
                                     0: {
-                                        items: 1
+                                        //items: 1
 
                                     },
                                     480: {
-                                        items: 1,
+                                        //items: 1,
                                         stagePadding: 20,
                                         margin: -150,
                                     },
                                     768: {
-                                        items: 1,
+                                        //items: 1,
                                         stagePadding: 40,
                                         margin: -190,
                                     },
                                     1024: {
-                                        items: 1,
+                                        //items: 1,
                                         stagePadding: 50,
                                         margin: -220,
                                     },
                                     1400: {
-                                        items: 1,
+                                        //items: 1,
                                         stagePadding: 50,
                                         margin: -280,
                                     }
     ,
                                     2500: {
-                                        items: 1,
+                                        //items: 1,
                                         stagePadding: 100,
                                         margin: -380,
                                     }
@@ -1169,6 +1171,7 @@
                     $(document).ready(function () {
                         var owl = $('.owl-carousel-news');
                         owl.owlCarousel({
+                            rtl: true,
                             dots: false,
                             margin: 10,
                             nav: false,
@@ -1299,6 +1302,7 @@
         <script>
             $(function () {
                 $(".fi-module-calendar__list").owlCarousel({
+                    rtl: true,
                     loop: false,
                     responsive: {
                         0: {
@@ -1388,6 +1392,12 @@
                         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec diam lectus, ornare malesuada magna sed, cursus gravida risus. Aenean a diam tincidunt, consectetur leo sit amet, bibendum tortor.</p>
                         <a href="#" class="fi-promo__main__button">
                             Discover
+                            <svg width="12px" height="9px" viewBox="0 0 12 9" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                                <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                                    <polyline stroke="#2e2e2e" stroke-linecap="round" stroke-linejoin="round" transform="translate(9.157898, 4.455394) scale(-1, 1) translate(-9.157898, -4.455394) " points="11.315796 0.799987793 7 4.50757596 11.315796 8.11079998"></polyline>
+                                    <path d="M10.5,4.5 L1.44461486,4.5" stroke="#2e2e2e" stroke-linecap="square"></path>
+                                </g>
+                            </svg>
                         </a>
                     </div>
                 </div>
@@ -1400,8 +1410,8 @@
         <!---------------------------------------------------------------------------------
         V I D E O S
         --------------------------------------------------------------------------------->
-        <!--<link href="./assets/css/fancybox.css" rel="stylesheet" type="text/css">-->
-        <!--<link href="./assets/css/home_module_videos.css" rel="stylesheet" type="text/css">-->
+        <!--<link href="./assets/css/fancybox.css" rel="stylesheet" type="text/css">
+        <link href="./assets/css/home_module_videos.css" rel="stylesheet" type="text/css">-->
         <section class="section fi-module-latest-videos">
             <div class="container-fluid">
                 <div class="section__header">
@@ -1601,6 +1611,7 @@
                     }
                 });
                 $(".fi-module-latest-videos__carousel__wrapper").owlCarousel({
+                    rtl: true,
                     loop: false,
                     responsive: {
                         0: {
@@ -1642,8 +1653,8 @@
         <!-- *****************************************************************************
         P H O T O S
         ***************************************************************************** -->
-        <!--<link href="./assets/css/home_module_photos.css" rel="stylesheet" type="text/css">-->
-        <!--<link href="./assets/css/owl.carousel.min.css" rel="stylesheet" type="text/css">-->
+        <!--<link href="./assets/css/home_module_photos.css" rel="stylesheet" type="text/css">
+        <link href="./assets/css/owl.carousel.min.css" rel="stylesheet" type="text/css">-->
         <!--<link href="./assets/css/jquery.fancybox.min.css" rel="stylesheet" type="text/css">-->
         <script src="./assets/js/owl.carousel.min.js"></script>
         <script src="./assets/js/jquery.fancybox.min.js"></script>
@@ -1988,6 +1999,7 @@
                 });
 
                 $('.fi-module-latest-photos__carousel').owlCarousel({
+                    rtl: true,
                     loop: false,
                     margin: 1,
                     nav: false,
